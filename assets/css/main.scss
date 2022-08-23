@@ -1,0 +1,115 @@
+body {
+  background: center / cover url("~assets/images/shark1.jpg") no-repeat;
+  min-height: 100vh;
+}
+
+.home-enter-active,
+.home-leave-active {
+  transition: all 0.3s;
+}
+.home-enter,
+.home-leave-active {
+  filter: blur(10px);
+}
+
+.iucn-status-container {
+  .coco {
+    text-align: center;
+  }
+
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: 900px;
+    }
+
+    & > li {
+      text-transform: capitalize;
+      font-weight: bold;
+      padding: 5px;
+      border: 2px solid white;
+      border-radius: 50%;
+
+      width: 13%;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      position: relative;
+
+      background-color: white;
+      border-color: black;
+      color: black;
+
+      font-size: 14px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &.ex {
+        border-color: black;
+        background-color: black;
+        color: darkred;
+      }
+
+      &.ew {
+        border-color: black;
+        background-color: black;
+        color: white;
+      }
+
+      &.cr {
+        border-color: darkred;
+        background-color: darkred;
+        color: white;
+      }
+
+      &.en {
+        border-color: white;
+        background-color: orangered;
+        color: white;
+      }
+
+      &.vu {
+        border-color: white;
+        background-color: darkgoldenrod;
+        color: white;
+      }
+
+      &.nt {
+        border-color: lightseagreen;
+        background-color: lightseagreen;
+        color: white;
+      }
+
+      &.lc {
+        border-color: lightskyblue;
+        background-color: lightskyblue;
+        color: white;
+      }
+    }
+  }
+}
+
+.button {
+  background-color: white;
+  border: 2px solid gray;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+  border-radius: 8px;
+  min-width: 80px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    border-color: black;
+  }
+}
