@@ -14,7 +14,6 @@
         <li>
           <nuxt-link :to="'/home/species'" no-prefetch>Species</nuxt-link>
         </li>
-        <li><nuxt-link to="/" no-prefetch>Areas</nuxt-link></li>
         <li><nuxt-link to="/home/interactive" no-prefetch>Quiz</nuxt-link></li>
         <li><nuxt-link :to="'/home/about'" no-prefetch>About</nuxt-link></li>
       </ul>
@@ -60,6 +59,6 @@ li {
 }
 
 li:hover {
-  text-decoration-color: white  ;
+  text-decoration-color: white;
 }
 </style>
