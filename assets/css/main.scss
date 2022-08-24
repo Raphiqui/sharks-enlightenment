@@ -23,7 +23,6 @@ body {
 
     @media (max-width: 768px) {
       flex-direction: column;
-      height: 900px;
     }
 
     & > li {
@@ -51,6 +50,17 @@ body {
 
       @media (max-width: 768px) {
         width: 100%;
+        display: none;
+
+        &.ex,
+        &.ew,
+        &.cr,
+        &.en,
+        &.vu,
+        &.nt,
+        &.lc {
+          display: flex !important;
+        }
       }
 
       &.ex {
@@ -111,5 +121,11 @@ body {
 
   &:hover {
     border-color: black;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
   }
 }

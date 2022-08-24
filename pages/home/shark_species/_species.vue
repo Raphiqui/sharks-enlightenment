@@ -22,13 +22,17 @@
             <div class="coco">
               <span class="section-title">Conservation status (IUCN)</span>
             </div>
-            <ul>
+            <ul class="iucn-grid">
               <li
                 v-for="(value, key) in iucnStatus"
                 :key="key"
-                :class="{
-                  [key.toLowerCase()]: key === shark.uicn_status.toUpperCase(),
-                }"
+                :class="[
+                  {
+                    [key.toLowerCase()]:
+                      key === shark.uicn_status.toUpperCase(),
+                  },
+                  'iucn-cell',
+                ]"
               >
                 {{ value }}
               </li>
@@ -136,10 +140,13 @@ export default {
   align-items: center;
   flex-direction: column;
 
+  & > *:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
   .title {
     font-size: 24px;
     font-weight: bold;
-    padding-bottom: 20px;
 
     text-transform: uppercase;
   }
