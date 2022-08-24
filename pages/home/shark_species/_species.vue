@@ -20,7 +20,14 @@
         <div class="bar stuff4">
           <div class="iucn-status-container">
             <div class="coco">
-              <span class="section-title">Conservation status (IUCN)</span>
+              <span class="section-title"
+                >Conservation status (<a
+                  href="https://www.iucn.org/fr"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >IUCN</a
+                >)</span
+              >
             </div>
             <ul class="iucn-grid">
               <li
