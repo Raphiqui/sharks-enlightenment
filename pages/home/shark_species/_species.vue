@@ -11,8 +11,8 @@
         <div class="bar stuff2">
           <h2 class="title">{{ shark.name }}</h2>
           <h3>{{ shark.scientific_name }}</h3>
-          <span>{{ shark.length }}</span>
-          <span>{{ shark.weight }}</span>
+          <span>Length (average)&nbsp;: {{ shark.length }}</span>
+          <span>Weight (average)&nbsp;: {{ shark.weight }}</span>
         </div>
         <div class="bar stuff3">
           {{ shark.description }}
