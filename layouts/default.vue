@@ -175,15 +175,22 @@ header {
     li {
       text-transform: uppercase;
       transition: 0.3s ease all;
-      padding-bottom: 4px;
       border-bottom: 1px solid transparent;
       font-weight: 700;
       cursor: pointer;
-      text-decoration: underline 0.15em transparent;
-      transition: text-decoration-color 300ms;
+      display: inline-block;
 
-      &:hover {
-        text-decoration-color: white;
+      &::after {
+        content: "";
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: white;
+        transition: 300ms;
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
 
