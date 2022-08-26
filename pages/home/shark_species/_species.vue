@@ -63,6 +63,10 @@
 <script>
 export default {
   name: "Species",
+  transition: {
+    name: "home",
+    mode: "out-in",
+  },
   data() {
     return {
       iucnStatus: this.$store.state.iucnStatus,
@@ -118,7 +122,6 @@ export default {
     minmax(var(--auto-grid-min-size), 1fr)
   );
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 
   border-radius: 12px;
   overflow: hidden;
@@ -152,7 +155,7 @@ export default {
   }
 
   .title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 
     text-transform: uppercase;

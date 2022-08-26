@@ -41,6 +41,10 @@
 <script>
 export default {
   name: "about",
+  transition: {
+    name: "home",
+    mode: "out-in",
+  },
 };
 </script>
 

@@ -20,6 +20,10 @@
 <script>
 export default {
   name: "Species",
+  transition: {
+    name: "home",
+    mode: "out-in",
+  },
   data() {
     return {};
   },
@@ -66,7 +70,6 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 .species-container > ul > li {

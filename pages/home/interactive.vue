@@ -61,6 +61,10 @@
 <script>
 export default {
   name: "interactive",
+  transition: {
+    name: "home",
+    mode: "out-in",
+  },
   data() {
     return {
       questions: [],
@@ -139,7 +143,6 @@ export default {
 
 .title,
 .subtitle {
-  font-family: Montserrat, sans-serif;
   font-weight: normal;
 }
 .animated {
