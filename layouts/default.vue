@@ -200,6 +200,7 @@ header {
 
       img {
         width: 100%;
+        max-width: 40px;
         height: 40px;
         transition: 0.3s ease all;
       }
