@@ -162,16 +162,16 @@ export const state = () => ({
         { text: "Maybe" },
       ],
       answer:
-        "Yes definitly. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger.",
+        "Definitly. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger.",
     },
     {
       text: "Are sharks killers like in the movies ?",
       responses: [
-        { text: " Very Small Aperture Terminal", correct: true },
-        { text: "Varying Size Aperture Terminal " },
-        { text: "None of the above" },
+        { text: "Yes, absolutly" },
+        { text: "Not at all", correct: true },
+        { text: "Sometimes they can kill for pleasure" },
       ],
-      answer: "Not at all. Human being often forget that all things are not thinking and acting like he does. Sharks are really unknown from us. Most of people don't like them just because they've always the bad role.",
+      answer: "No, they're not killers. That's not because they're shown acting like killers that this is true. In fact sharks are rarely hunting because they're not eating much. Also, to them human flesh is not a very tasty meal. Finally, this notion of 'killer' is really human and shouldn't be applied to shark's behaviors.",
     },
     {
       text: "What is shark finning ?",
@@ -189,30 +189,24 @@ export const state = () => ({
         "Shark finning is the act of removing fins from sharks and discarding the rest of the shark back into the ocean. This act is prohibited in many countries. The sharks are often still alive when discarded, but without their fins. Unable to swim effectively, they sink to the bottom of the ocean and die of suffocation or are eaten by other predators.",
     },
     {
-      text: "Why can't we observe great white sharks in captivity ?",
+      text: "Can we observe great white sharks in captivity ?",
       responses: [
         {
-          text: "Because they're pelagic species so they can't survive",
-          correct: true,
+          text: "Yes"
         },
-        { text: "Hyphenation text markup language " },
-        { text: "Hyper text markup language" },
+        { text: "No", correct: true, },
+        { text: "Sometimes" },
       ],
-      answer: "Because they're pelagic.",
-    },
-    {
-      text: "Is Megalodon still alive ?",
-      responses: [{ text: "Yes ", correct: true }, { text: "No" }, { text: "What is a Megalodon ?" }],
-      answer: "Megalodon (Otodus megalodon) is the largest shark which has ever exists in our oceans. Went extinct millions years ago.",
+      answer: "It seems that they're incapable to survive in captivity. During the past some tries have been made such as the one in 2016 at Okanawa island in the south of Japan, Churaumi aquarium tried to conserve a male victim of unfortunate fishing. He died 3 days after being captured. Studies showed that he refused to eat. In fact great white sharks travel hundreds of kilometers, we can't image the size of the aquarium to contain such space. Moreover, they can develop psycological deseas being separeted from their natural environment.",
     },
     {
       text: "Why can't we see skeleton of sharks ?",
       responses: [
         { text: "Strictly speaking, they've no skeleton", correct: true },
-        { text: "It's very difficult to get them beacuse they're drawing deeply to the abysses" },
+        { text: "It's very difficult to get them because they're drowning deeply to the abysses" },
         { text: "Nobody mind about shark skeletons" }
       ],
-      answer: "Sharks have cartilage skeleton, they don't have bones covering their body like a fish you can buy at the supermarket. As so, when they die, eveything can be eaten by their relatives into the ocean.",
+      answer: "Sharks have cartilage skeleton, they don't have bones covering their body like a fish you can buy at the supermarket. As so, when they die, everything can be eaten by their relatives into the ocean.",
     },
   ],
 });

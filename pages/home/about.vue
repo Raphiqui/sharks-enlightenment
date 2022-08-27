@@ -3,7 +3,7 @@
     <div class="about-content">
       <span
         >Work of a passionate about oceanography and everything related to
-        it</span
+        it.</span
       >
 
       <span>Working as software engineer.</span>
@@ -19,7 +19,7 @@
         swimmer since a long time I always wondered myself during my swimming
         sessions into the sea, what'd I do if I'd encountered a shark (doesn't
         really matter which type but let's assume it'd be a hunter one like
-        Tiger shark or Great white shark showing up right in front of me.</span
+        Tiger shark or Great white shark) showing up right in front of me.</span
       >
 
       <span
