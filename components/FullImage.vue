@@ -1,42 +1,30 @@
 <template>
-  <div 
-    class="bar" 
+  <div
+    class="full-img-container"
     :style="{ backgroundImage: `url(${imagePath})` }"
-  >
-  </div>
+  ></div>
 </template>
 
 <script>
-
 export default {
-  name: 'FullImage',
+  name: "FullImage",
   computed: {},
   props: {
     imagePath: {
       type: String,
       require: true,
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
-<style scoped>
-.bar {
+<style scoped lang="scss">
+.full-img-container {
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.foo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 20px;
-    max-width: 800px;
-    width: 100%;
-    padding: 10px;
-}
-</style>>
+</style>
+>

@@ -1,25 +1,25 @@
 <template>
-  <div class="content">
-    <div class="row-1">
-      <div class="foo">
+  <div class="s-card">
+    <div class="s-card-container">
+      <div class="s-card-container-content">
         <div
-          class="bar stuff1"
+          class="s-card-container-content-grid img"
           :style="{
             backgroundImage: `url(${require(`@/assets/images/species/${shark.path}.jpg`)})`,
           }"
         ></div>
-        <div class="bar stuff2">
+        <div class="s-card-container-content-grid title">
           <h2 class="title">{{ shark.name }}</h2>
           <h3>{{ shark.scientific_name }}</h3>
           <span>Length (average)&nbsp;: {{ shark.length }}</span>
           <span>Weight (average)&nbsp;: {{ shark.weight }}</span>
         </div>
-        <div class="bar stuff3">
+        <div class="s-card-container-content-grid description">
           {{ shark.description }}
         </div>
-        <div class="bar stuff4">
+        <div class="s-card-container-content-grid iucn">
           <div class="iucn-status-container">
-            <div class="coco">
+            <div class="iucn-status-container-content">
               <span class="section-title"
                 >Conservation status (<a
                   href="https://www.iucn.org/fr"
@@ -46,7 +46,7 @@
             </ul>
           </div>
         </div>
-        <div class="bar stuff5">
+        <div class="s-card-container-content-grid rangemap">
           <span class="section-title"> rangemap </span>
 
           <img
@@ -54,7 +54,6 @@
             :src="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
           />
         </div>
-        <div class="bar stuff6"></div>
       </div>
     </div>
   </div>
@@ -86,12 +85,103 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.row-1 {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.s-card {
+  &-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &-content {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      margin: 100px 0;
+
+      background-color: rgba(58, 56, 56, 0.5);
+      backdrop-filter: blur(12px);
+      color: white;
+
+      --auto-grid-min-size: 330px;
+      display: grid;
+      grid-gap: 30px 60px;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size), 1fr)
+      );
+      box-sizing: border-box;
+
+      border-radius: 12px;
+      overflow: hidden;
+
+      &-grid {
+        &.img {
+          height: 300px;
+          background-size: cover;
+          background-position: center;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        &.title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          & > *:not(:last-child) {
+            padding-bottom: 20px;
+          }
+
+          .title {
+            font-size: 22px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+          }
+
+          h3 {
+            font-style: italic;
+            font-size: 18px;
+          }
+        }
+
+        &.rangemap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        &.description,
+        &.iucn {
+          grid-column: 1 / -1;
+        }
+
+        &.iucn {
+          margin-top: 35px;
+          margin: 0 auto;
+          width: 100%;
+
+          @media (max-width: 768px) {
+            width: unset;
+          }
+        }
+
+        &:not(:first-child) {
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        padding: 0 20px;
+        border-radius: unset;
+      }
+    }
+  }
 }
 
 .section-title {
@@ -100,99 +190,5 @@ export default {
   font-weight: 700;
   margin-bottom: 30px;
   display: block;
-}
-
-.foo {
-  max-width: 1100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin: 100px 0;
-
-  background-color: rgba(58, 56, 56, 0.5);
-  backdrop-filter: blur(12px);
-  color: white;
-
-  --auto-grid-min-size: 330px;
-  display: grid;
-  grid-gap: 30px 60px;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
-  box-sizing: border-box;
-
-  border-radius: 12px;
-  overflow: hidden;
-
-  @media (max-width: 768px) {
-    padding: 0 20px;
-    border-radius: unset;
-  }
-}
-
-.bar:not(:first-child) {
-  padding: 10px;
-}
-
-.bar.stuff1 {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  background-repeat: no-repeat;
-}
-
-.bar.stuff2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  & > *:not(:last-child) {
-    padding-bottom: 20px;
-  }
-
-  .title {
-    font-size: 22px;
-    font-weight: bold;
-
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-style: italic;
-    font-size: 18px;
-  }
-}
-
-.bar.stuff5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.bar.stuff3,
-.bar.stuff4 {
-  grid-column: 1 / -1;
-}
-
-.bar.stuff4 {
-  margin-top: 35px;
-  margin: 0 auto;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    width: unset;
-  }
-}
-
-.bar.stuff6 {
-  text-align: center;
-  span {
-    text-transform: capitalize;
-  }
 }
 </style>

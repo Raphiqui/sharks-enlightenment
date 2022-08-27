@@ -14,6 +14,3 @@ export default {
   name: "MainLayer",
 };
 </script>
-
-<style scoped lang="scss">
-</style>

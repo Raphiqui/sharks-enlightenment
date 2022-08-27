@@ -17,7 +17,7 @@ body {
 }
 
 .iucn-status-container {
-  .coco {
+  .iucn-status-container-content {
     text-align: center;
   }
 
@@ -125,11 +125,5 @@ body {
 
   &:hover {
     border-color: black;
-  }
-}
-
-a {
-  &:hover {
-    text-decoration: underline;
   }
 }

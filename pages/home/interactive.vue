@@ -1,11 +1,11 @@
 <template>
-  <div class="questionBox" id="app">
-    <div style="width: 100%" class="question-box-inside">
+  <div class="question-box">
+    <div class="question-box-inside">
       <div class="question-container-header">
         <h1 class="title is-6">Quiz</h1>
       </div>
 
-      <div class="questionContainer" v-if="questionIndex < questions.length">
+      <div class="question-container" v-if="questionIndex < questions.length">
         <div class="title-container title">
           <transition name="fade">
             <h2 v-if="showQuestion">
@@ -14,9 +14,9 @@
           </transition>
         </div>
 
-        <div class="optionContainer">
+        <div class="option-container">
           <transition name="fade">
-            <div v-if="show" style="width: 100%">
+            <div v-if="show" class="option-container-content">
               <div
                 class="option"
                 v-for="(response, index) in questions[questionIndex].responses"
@@ -26,16 +26,7 @@
                 {{ index | charIndex }}. {{ response.text }}
               </div>
             </div>
-            <div
-              v-if="showCorrectAnswer"
-              style="
-                width: 100%;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-              "
-            >
+            <div v-if="showCorrectAnswer" class="correct-answer">
               <div class="correct-answer-container">
                 <div class="correct-response-label-container">
                   Correct response&nbsp;: {{ correctResponse }}
@@ -52,7 +43,7 @@
       <div
         v-if="questionIndex >= questions.length"
         v-bind:key="questionIndex"
-        class="quizCompleted has-text-centered"
+        class="quiz-completed"
       >
         <div class="button" @click="restart()">restart</div>
       </div>
@@ -132,14 +123,19 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+<style lang="scss" scoped>
+.correct-answer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .correct-response-label-container {
   margin-bottom: 20px;
   font-size: 20px;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 .fade-enter-active,
@@ -179,6 +175,7 @@ export default {
 
   color: white;
   max-width: 1100px;
+  width: 100%;
 
   @media (max-width: 768px) {
     border-radius: unset;
@@ -186,7 +183,7 @@ export default {
   }
 }
 
-.questionBox {
+.question-box {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1100px;
@@ -217,7 +214,7 @@ export default {
   }
 
   .title-container,
-  .optionContainer {
+  .option-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +241,7 @@ export default {
       }
     }
   }
-  .quizCompleted {
+  .quiz-completed {
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -256,7 +253,7 @@ export default {
       width: 100px;
     }
   }
-  .questionContainer {
+  .question-container {
     white-space: normal;
     width: 100%;
 
@@ -267,10 +264,15 @@ export default {
       min-height: 600px;
     }
 
-    .optionContainer {
+    .option-container {
       width: 65%;
       padding: 1.5rem;
       flex-grow: 1;
+
+      &-content {
+        width: 100%;
+      }
+
       .option {
         border-radius: 290486px;
         padding: 9px 18px;
@@ -299,17 +301,17 @@ export default {
 }
 
 @media screen and (min-width: 769px) {
-  .questionBox {
+  .question-box {
     align-items: center;
     justify-content: center;
 
-    .questionContainer {
+    .question-container {
       display: flex;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .sidebar {
     height: auto !important;
     border-radius: 6px 6px 0px 0px;
