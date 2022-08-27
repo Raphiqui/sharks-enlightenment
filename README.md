@@ -1,5 +1,10 @@
 # shark-website
 
+## Purpose
+
+I wanted to create a static website with nuxt and deploy it with [versel](https://vercel.com/)
+
+
 ## Build Setup
 
 ```bash
