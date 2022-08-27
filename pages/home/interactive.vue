@@ -37,6 +37,10 @@
               "
             >
               <div class="correct-answer-container">
+                <div class="correct-response-label-container">
+                  Correct response&nbsp;: {{ correctResponse }}
+                </div>
+
                 {{ questions[questionIndex].answer }}
               </div>
               <div class="next-button button" @click="next()">Next</div>
@@ -118,12 +122,25 @@ export default {
       if (this.questions.length > 0) this.questionIndex--;
     },
   },
+  computed: {
+    correctResponse() {
+      return this.questions[this.questionIndex].responses.filter(
+        (resp) => resp.correct === true
+      )[0].text;
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+.correct-response-label-container {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-decoration: underline;
+}
 
 .fade-enter-active,
 .fade-leave-active {
@@ -243,7 +260,7 @@ export default {
     white-space: normal;
     width: 100%;
 
-    height: 250px;
+    height: 350px;
 
     @media (max-width: 768px) {
       height: auto;
