@@ -50,9 +50,7 @@
         v-bind:key="questionIndex"
         class="quizCompleted has-text-centered"
       >
-        <a class="button" @click="restart()"
-          >restart <i class="fa fa-refresh"></i
-        ></a>
+        <div class="button" @click="restart()">restart</div>
       </div>
     </div>
   </div>
@@ -234,13 +232,11 @@ export default {
     padding: 1rem;
     text-align: center;
 
-    > .icon {
-      color: #ff5252;
-      font-size: 5rem;
+    display: flex;
+    justify-content: center;
 
-      .is-active {
-        color: #00e676;
-      }
+    & > .button {
+      width: 100px;
     }
   }
   .questionContainer {
