@@ -387,8 +387,7 @@ header {
       width: 100%;
       max-width: 250px;
       height: 100vh;
-      backdrop-filter: blur(12px);
-      background-color: transparent;
+      background-color: cadetblue;
       top: 0;
       left: 0;
 
@@ -397,11 +396,11 @@ header {
 
         @media (max-width: 768px) {
           text-align: center;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid white;
           padding-bottom: unset;
         }
         .link {
-          color: black;
+          color: white;
 
           @media (max-width: 768px) {
             padding: 10px 0;
