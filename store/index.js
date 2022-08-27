@@ -162,7 +162,7 @@ export const state = () => ({
         { text: "Maybe" },
       ],
       answer:
-        "Yes and more globally the ocean and the earth.",
+        "Yes definitly. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger.",
     },
     {
       text: "Are sharks killers like in the movies ?",
@@ -202,8 +202,17 @@ export const state = () => ({
     },
     {
       text: "Is Megalodon still alive ?",
-      responses: [{ text: "Yes " }, { text: "No" }, { text: "What is a Megalodon ?" }],
+      responses: [{ text: "Yes ", correct: true }, { text: "No" }, { text: "What is a Megalodon ?" }],
       answer: "Megalodon (Otodus megalodon) is the largest shark which has ever exists in our oceans. Went extinct millions years ago.",
+    },
+    {
+      text: "Why can't we see skeleton of sharks ?",
+      responses: [
+        { text: "Strictly speaking, they've no skeleton", correct: true },
+        { text: "It's very difficult to get them beacuse they're drawing deeply to the abysses" },
+        { text: "Nobody mind about shark skeletons" }
+      ],
+      answer: "Sharks have cartilage skeleton, they don't have bones covering their body like a fish you can buy at the supermarket. As so, when they die, eveything can be eaten by their relatives into the ocean.",
     },
   ],
 });
