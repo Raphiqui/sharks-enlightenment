@@ -45,6 +45,15 @@
         v-bind:key="questionIndex"
         class="quiz-completed"
       >
+        <div class="quiz-completed-score-container">
+          <CircleRating
+            :score="(score / questions.length) * 100"
+          ></CircleRating>
+          <div class="quiz-completed-score-text">
+            {{ scoreMessage }}
+          </div>
+        </div>
+
         <div class="button" @click="restart()">restart</div>
       </div>
     </div>
@@ -63,11 +72,12 @@ export default {
       questions: [],
       userResponseSkeleton: null,
       userResponses: null,
-      questionIndex: 0,
+      questionIndex: 6,
       isActive: false,
       show: true,
       showQuestion: true,
       showCorrectAnswer: false,
+      score: 3,
     };
   },
   mounted() {
@@ -85,10 +95,14 @@ export default {
   methods: {
     restart: function () {
       this.questionIndex = 0;
+      this.score = 0;
       this.userResponses = Array(this.questions.length).fill(null);
     },
     selectOption: function (index) {
       this.show = false;
+
+      if ("correct" in this.questions[this.questionIndex].responses[index])
+        this.score++;
 
       setTimeout(() => {
         this.$set(this.userResponses, this.questionIndex, index);
@@ -118,6 +132,14 @@ export default {
       return this.questions[this.questionIndex].responses.filter(
         (resp) => resp.correct === true
       )[0].text;
+    },
+    scoreMessage() {
+      const percentageScore = (this.score / this.questions.length) * 100;
+
+      if (percentageScore > 75) return "You're well aware about sharks ! ";
+      if (percentageScore > 50)
+        return "You've knowledge for sure but you could learn more !";
+      return "It seems you should interest yourself a little bit more, don't worry you'll discover a lot of amazing things !";
     },
   },
 };
@@ -246,8 +268,21 @@ export default {
     padding: 1rem;
     text-align: center;
 
+    flex-direction: column;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    &-score {
+      &-container {
+        width: 100%;
+      }
+
+      &-text {
+        margin-bottom: 20px;
+      }
+    }
 
     & > .button {
       width: 100px;
