@@ -72,7 +72,7 @@ export default {
       questions: [],
       userResponseSkeleton: null,
       userResponses: null,
-      questionIndex: 6,
+      questionIndex: 0,
       isActive: false,
       show: true,
       showQuestion: true,
