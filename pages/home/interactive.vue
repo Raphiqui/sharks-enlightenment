@@ -77,7 +77,7 @@ export default {
       show: true,
       showQuestion: true,
       showCorrectAnswer: false,
-      score: 3,
+      score: 5,
     };
   },
   mounted() {

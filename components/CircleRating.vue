@@ -13,7 +13,7 @@
         r="8"
       ></circle>
       <!-- Range Text -->
-      <text id="cr-container-donut-bg-stroke-range" x="62%" y="70%">
+      <text id="range" x="62%" y="70%">
         {{ score }}%
       </text>
     </svg>
@@ -38,7 +38,7 @@ export default {
   },
   mounted() {
     this.rangeEl = document.getElementById("range");
-    this.stroke = document.querySelector(".stroke");
+    this.stroke = document.querySelector(".cr-container-donut-bg-stroke");
 
     setTimeout(() => {
       this.strokeLength(this.score);
@@ -100,11 +100,11 @@ $cr-container-width: 320;
       stroke: $light-blue;
       stroke-width: 2;
 
-      &-stroke {
+      &-stroke {  
         fill: none;
         stroke: $white;
         stroke-width: 1.5;
-        stroke-dasharray: 51 51;
+        stroke-dasharray: 50.9 50.9;
         stroke-dashoffset: -51;
         stroke-linecap: round;
         transition: 2.5s all ease-in-out;
