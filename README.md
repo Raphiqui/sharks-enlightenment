@@ -1,5 +1,7 @@
 # shark-website
 
+Static, cross-platform, responsive, interactive and soon multi-language app.
+
 ## Build Setup
 
 ```bash
