@@ -1,0 +1,189 @@
+{
+  "next": "suivant",
+  "restart": "recommencer",
+  "correct": "Réponse correcte",
+  "header": {
+    "1": "requins",
+    "2": "quiz",
+    "3": "à propos"
+  },
+  "shark": {
+    "dm": "carte de répartition",
+    "cs": "Statut de conservation",
+    "height": "taille",
+    "weight": "poids",
+    "av": "moyenne",
+    "iucnStatus": {
+      "EX": "éteint",
+      "EW": "éteint à l'état sauvage",
+      "CR": "en danger critique",
+      "EN": "en voie de disparition",
+      "VU": "vulnérable",
+      "NT": "quasi menacé",
+      "LT": "préoccupation mineure"
+    }
+  },
+  "quiz": {
+    "contextual1": "Vous êtes bien renseigné à propos des requins !",
+    "contextual2": "Vous avez connaissances mais vous pouvez en apprendre plus !",
+    "contextual3": "Il semble que vous devriez vous y intéresser un peu plus, ne vous inquiétez pas, vous allez découvrir plein de choses étonnantes !",
+    "1": {
+      "text": "Les requins sont-ils en danger",
+      "responses": {
+        "1": "Oui",
+        "2": "Non",
+        "3": "Peut-être"
+      },
+      "answer": "Absolument. Même si certaines espèces ne sont pas classées par l'uicn comme « en danger », ce n'est pas lorsqu'il est trop tard que nous changerons quelque chose. Il faut le faire bien avant. Le réchauffement climatique, la pêche intensive, la destruction de leur environnement sont quelques-unes des raisons pour lesquelles tous les types de requins sont actuellement en danger."
+    },
+    "2": {
+      "text": "Les requins sont-ils des tueurs comme au cinéma",
+      "responses": {
+        "1": "Oui, absolument",
+        "2": "Pas du tout",
+        "3": "Parfois ils peuvent tuer pour le plaisir"
+      },
+      "answer": "Non, ce ne sont pas des tueurs. Ce n'est pas parce qu'on les montre agir comme des tueurs que c'est vrai. En fait, les requins chassent rarement car ils ne mangent pas beaucoup. De plus, pour eux, la chair humaine n'est pas un repas très savoureux. Enfin, cette notion de 'tueur' est vraiment humaine et ne devrait pas s'appliquer aux comportements des requins."
+    },
+    "3": {
+      "text": "Qu'est-ce-que le finning",
+      "responses": {
+        "1": "Un mouvement associatif créé pour protéger les requins",
+        "2": "Une pratique barbare",
+        "3": "Un comportement specifique lorsqu'ils se nourrissent"
+      },
+      "answer": "La pêche aux ailerons de requin consiste à retirer les ailerons des requins et à rejeter le reste de l'animal dans l'océan. Cet acte est interdit dans de nombreux pays. Les requins sont souvent encore vivants lorsqu'ils sont remis a la mer mais sans leurs ailerons. Incapables de nager, ils coulent au fond de l'océan et meurent de suffocation ou sont mangés par d'autres prédateurs."
+    },
+    "4": {
+      "text": "Peut-on observer des grands requins blancs en captivité",
+      "responses": {
+        "1": "Oui",
+        "2": "Non",
+        "3": "Parfois"
+      },
+      "answer": "Il semble qu'ils soient incapables de survivre en captivité. Dans le passé il y' eu quelques tentatives comme celle de 2016 sur l'île d'Okinawa au sud du Japon, l'aquarium de Churaumi a tenté de conserver un mâle, victime d'une pêche malencontreuse. Il est mort 3 jours après avoir été capturé. Des études ont montré qu'il refusait de se nourrir. Les grands requins blancs parcourent des centaines de kilomètres, un aquarium de cette taille est quasiment impossible à construire. De plus, ils peuvent développer des maladies psychologiques en étant séparés de leur environnement naturel."
+    },
+    "5": {
+      "text": "Pourquoi n'y a t-il pas de squelettes de requins",
+      "responses": {
+        "1": "À proprement parler, ils n'ont pas de squelettes",
+        "2": "C'est très difficile de les récupérer car ils coulent dans les abîmes",
+        "3": "Les squelettes de requins ne sont pas intéréssants"
+      },
+      "answer": "Les requins ont un squelette cartilagineux, ils n'ont pas d'os couvrant leur corps comme un poisson que vous pouvez acheter au supermarché. Ainsi, lorsqu'ils meurent, tout peut être mangé."
+    }
+  },
+  "about": {
+    "1": "Travail d'un passionné d'océanographie et de tout ce qui s'y rapporte.",
+    "2": "Ingénieur logiciel.",
+    "3": "Passionné depuis ma naissance par tout ce qui touche à l'océan et en particulier par les requins, j'ai consacré une partie de mon temps libre à les étudier et à en apprendre le plus possible sur eux.",
+    "4": "Les requins ont toujours été des créatures fascinantes pour moi. Comme je suis aussi nageur depuis longtemps, je me suis toujours demandé lors de mes séances de nage en eaux libres, que ferais-je si je devais rencontrer un requin (peu importe quel espèce mais supposons que ce serait un animal impressionant comme le requin tigre ou le grand requin blanc).",
+    "5": "Bien sûr, en ce moment, en écrivant ces lignes, je dirais que je resterai calme et silencieux en essayant de ne perdre aucune miettes de ce moment passé avec cette créature. Mais en réalité, je ne sais pas quelle réaction j'aurai. Je vais peut-être paniquer, peut-être pas. Une chose est sûre, ce ne sont pas les tueurs que nous montre le cinéma.",
+    "6": "Si un jour je peux travailler à leurs côtés, j'aurais réalisé le plus grand rêve de ma vie."
+  },
+  "sharks": {
+    "blue_shark": {
+      "name": "Requin bleu",
+      "path": "blue_shark",
+      "scientific_name": "Prionace glauca",
+      "length": "3.8 m",
+      "weight": "200 kg",
+      "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
+      "uicn_status": "NT"
+    },
+    "bronze_whale_shark": {
+      "name": "Requin cuivre",
+      "path": "bronze_whale_shark",
+      "scientific_name": "Carcharhinus brachyurus",
+      "length": "3.3 m",
+      "weight": "305 kg",
+      "uicn_status": "NT"
+    },
+    "bull_shark": {
+      "name": "Requin bouledogue",
+      "scientific_name": "Carcharhinus leucas",
+      "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
+      "uicn_status": "NT"
+    },
+    "dusty_shark": {
+      "name": "Requin sombre",
+      "scientific_name": "Carcharhinus obscurus",
+      "uicn_status": "EN"
+    },
+    "gray_nurse_shark": {
+      "name": "Requin taureau",
+      "scientific_name": "Carcharias taurus",
+      "description": "The sand tiger shark, also known as the gray nurse shark, is a slow-moving coastal predator distinguished by its flattened, conical snout and spiked, protruding teeth similar to the tiger shark. It has small eyes and light brown skin that resembles sand, helping the shark blend into its surroundings when looked at from above.",
+      "uicn_status": "CR"
+    },
+    "hammerhead_shark": {
+      "name": "Requin marteau",
+      "scientific_name": "Sphyrna zygaena",
+      "description": "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
+      "uicn_status": "VU"
+    },
+    "tiger_shark": {
+      "name": "Requin tigre",
+      "scientific_name": "Galeocerdo cuvier",
+      "description": "The tiger shark gets its name from the characteristic vertical bars that cover the sides of its body. Though these bars fade slightly as individuals reach adulthood, they are very noticeable in juveniles and at least party visible throughout the lifetime. Reaching lengths of at least 18 feet (5.5 m) and 2000 pounds (nearly a metric tonne), the tiger shark is the fourth largest shark and second largest predatory shark, behind only the great white.",
+      "uicn_status": "NT"
+    },
+    "whale_shark": {
+      "name": "Requin baleine",
+      "scientific_name": "Rhincodon typus",
+      "description": "The largest fish in the world is the graceful, harmless whale shark. Though they reach the size of a school bus, whale sharks eat tiny plankton and fish eggs, which they filter feed as they swim slowly along with their giant mouths wide open. They are one of only three species of filter feeding sharks.",
+      "uicn_status": "EN"
+    },
+    "white_shark": {
+      "name": "Grand requin blanc",
+      "scientific_name": "Carcharodon carcharias",
+      "description": " Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
+      "uicn_status": "VU"
+    },
+    "basking_shark": {
+      "name": "Requin pèlerin",
+      "scientific_name": "Cetorhinus maximus",
+      "description": "The basking shark is the second largest fish in the world, and like the largest fish (the whale shark) and the largest animal (the great whales), basking sharks are filter feeders that eat tiny, planktonic prey. Reaching lengths of 40 feet (12 m) and resembling predatory sharks in appearance, the basking shark can give an intimidating impression, but they are quite harmless. They spend most of their time near the surface, swimming with their extraordinarily large mouths open, filtering out their preferred prey, but they may also make deeper, feeding dives.",
+      "uicn_status": "EN"
+    },
+    "spiny_dogfish": {
+      "name": "Aiguillat commun",
+      "scientific_name": "Squalus acanthias",
+      "description": "The spiny dogfish may go by many names, including piked dogfish, rock salmon and spiky dog, but only one truly represents this shark’s unique defense strategy. Using sharp, venomous spines in the front of each dorsal fin, the spiny dogfish is a small but mighty predator that isn’t afraid to take a jab at passing fish. They are considered one of the most abundant living shark species in the ocean, but are harmless to humans.",
+      "uicn_status": "VU"
+    },
+    "shortfin_mako_shark": {
+      "name": "requin mako",
+      "scientific_name": "Isurus oxyrinchus",
+      "description": "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
+      "uicn_status": "EN"
+    },
+    "grey_shark": {
+      "name": "Requin gris",
+      "scientific_name": "Carcharhinus amblyrhynchos",
+      "uicn_status": "NT"
+    },
+    "thresher_shark": {
+      "name": "Requin renard commun",
+      "scientific_name": "Alopias vulpinus",
+      "description": "The pelagic thresher shark is one of three thresher sharks, all three known for their extremely long tails. Adult pelagic threshers’ tails are longer than the rest of the body. Scientists believe that they are highly migratory, but there have not been sufficient tagging studies to confirm that suspicion. Little is known about the ecology of pelagic thresher sharks, as they are difficult to study in their natural habitat (the open ocean).",
+      "uicn_status": "VU"
+    },
+    "porbeagle": {
+      "name": "Requin taupe commun",
+      "scientific_name": "Lamna nasus",
+      "description": "The porbeagle shark is a wide-ranging shark that’s recognized by its conical snout, white underbelly and dark gray top. Scholars have proposed that the porbeagle shark’s name originates from the combination of “porpoise” and “beagle” – referencing the shark’s rounded body and dogged hunting methods.",
+      "uicn_status": "VU"
+    },
+    "smalltooth_sand_tiger": {
+      "name": "Requin féroce",
+      "scientific_name": "Odontaspis ferox",
+      "uicn_status": "NT"
+    },
+    "bluntnose_sixgill_shark": {
+      "name": "Requin griset",
+      "scientific_name": "Hexanchus griseus",
+      "uicn_status": "NT"
+    }
+  }
+}
