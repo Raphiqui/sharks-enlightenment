@@ -9,7 +9,7 @@
           :style="{ backgroundImage: `url(${buildPath(shark.path)})` }"
         >
           <div class="species-title">
-            {{ shark.name }}
+            {{ $t(`sharks.${shark.path}.name`) }}
           </div>
         </li>
       </ul>

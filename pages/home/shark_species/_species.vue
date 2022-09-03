@@ -9,10 +9,16 @@
           }"
         ></div>
         <div class="s-card-container-content-grid title">
-          <h2 class="title">{{ shark.name }}</h2>
+          <h2 class="title">{{ $t(`sharks.${shark.path}.name`) }}</h2>
           <h3>{{ shark.scientific_name }}</h3>
-          <span>Length (average)&nbsp;: {{ shark.length }}</span>
-          <span>Weight (average)&nbsp;: {{ shark.weight }}</span>
+          <span
+            >{{ $t("shark.length") }} ({{ $t("shark.av") }})&nbsp;:
+            {{ shark.length }}</span
+          >
+          <span
+            >{{ $t("shark.weight") }} ({{ $t("shark.av") }})&nbsp;:
+            {{ shark.weight }}</span
+          >
         </div>
         <div class="s-card-container-content-grid description">
           {{ shark.description }}
@@ -21,7 +27,7 @@
           <div class="iucn-status-container">
             <div class="iucn-status-container-content">
               <span class="section-title"
-                >Conservation status (<a
+                >{{ $t("shark.cs") }} (<a
                   href="https://www.iucn.org/fr"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -41,13 +47,13 @@
                   'iucn-cell',
                 ]"
               >
-                {{ value }}
+              {{ $t(`shark.iucnStatus.${key}`) }}
               </li>
             </ul>
           </div>
         </div>
         <div class="s-card-container-content-grid rangemap">
-          <span class="section-title"> rangemap </span>
+          <span class="section-title"> {{ $t("shark.dm") }} </span>
 
           <img
             v-if="`${require(`@/assets/svgs/${shark.path}.svg`)}`"

@@ -13,7 +13,7 @@
               @click.native="handle"
               to="/home/species"
               no-prefetch
-              >Sharks</nuxt-link
+              >{{ $t("header.1") }}</nuxt-link
             >
           </li>
           <li>
@@ -22,7 +22,7 @@
               @click.native="handle"
               to="/home/interactive"
               no-prefetch
-              >Quiz</nuxt-link
+              >{{ $t("header.2") }}</nuxt-link
             >
           </li>
           <li>
@@ -31,10 +31,13 @@
               @click.native="handle"
               to="/home/about"
               no-prefetch
-              >About</nuxt-link
+              >{{ $t("header.3") }}</nuxt-link
             >
           </li>
         </ul>
+        <div v-show="!mobile">
+          <LanguageInput />
+        </div>
         <div class="icon">
           <div
             class="container"
@@ -55,7 +58,7 @@
                 @click.native="handle"
                 to="/home/species"
                 no-prefetch
-                >Sharks</nuxt-link
+                >{{ $t("header.1") }}</nuxt-link
               >
             </li>
             <li>
@@ -64,7 +67,7 @@
                 @click.native="handle"
                 to="/home/interactive"
                 no-prefetch
-                >Quiz</nuxt-link
+                >{{ $t("header.2") }}</nuxt-link
               >
             </li>
             <li>
@@ -73,8 +76,11 @@
                 @click.native="handle"
                 to="/home/about"
                 no-prefetch
-                >About</nuxt-link
+                >{{ $t("header.3") }}</nuxt-link
               >
+            </li>
+            <li>
+              <LanguageInput @click.native="handle" />
             </li>
           </ul>
         </transition>

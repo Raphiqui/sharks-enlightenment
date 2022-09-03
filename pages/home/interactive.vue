@@ -2,14 +2,14 @@
   <div class="question-box">
     <div class="question-box-inside">
       <div class="question-container-header">
-        <h1 class="title is-6">Quiz</h1>
+        <h1 class="title">Quiz</h1>
       </div>
 
       <div class="question-container" v-if="questionIndex < questions.length">
         <div class="title-container title">
           <transition name="fade">
             <h2 v-if="showQuestion">
-              {{ questions[questionIndex].text }}
+              {{ $t(`quiz.${questions[questionIndex].id}.text`) }}&nbsp;?
             </h2>
           </transition>
         </div>
@@ -23,18 +23,29 @@
                 @click="selectOption(index)"
                 :key="index"
               >
-                {{ index | charIndex }}. {{ response.text }}
+                {{ index | charIndex }}.
+                {{
+                  $t(
+                    `quiz.${questions[questionIndex].id}.responses.${response.id}`
+                  )
+                }}
               </div>
             </div>
             <div v-if="showCorrectAnswer" class="correct-answer">
               <div class="correct-answer-container">
                 <div class="correct-response-label-container">
-                  Correct response&nbsp;: {{ correctResponse }}
+                  {{ $t("correct") }}&nbsp;:
+                  {{
+                    $t(
+                      `quiz.${questions[questionIndex].id}.responses.${correctResponse}`
+                    )
+                  }}
                 </div>
-
-                {{ questions[questionIndex].answer }}
+                {{ $t(`quiz.${questions[questionIndex].id}.answer`) }}
               </div>
-              <div class="next-button button" @click="next()">Next</div>
+              <div class="next-button button" @click="next()">
+                {{ $t("next") }}
+              </div>
             </div>
           </transition>
         </div>
@@ -50,11 +61,11 @@
             :score="(score / questions.length) * 100"
           ></CircleRating>
           <div class="quiz-completed-score-text">
-            {{ scoreMessage }}
+            {{ $t(`quiz.${scoreMessage}`) }}
           </div>
         </div>
 
-        <div class="button" @click="restart()">restart</div>
+        <div class="button" @click="restart()">{{ $t("restart") }}</div>
       </div>
     </div>
   </div>
@@ -131,15 +142,14 @@ export default {
     correctResponse() {
       return this.questions[this.questionIndex].responses.filter(
         (resp) => resp.correct === true
-      )[0].text;
+      )[0].id;
     },
     scoreMessage() {
       const percentageScore = (this.score / this.questions.length) * 100;
 
-      if (percentageScore > 75) return "You're well aware about sharks ! ";
-      if (percentageScore > 50)
-        return "You've knowledge for sure but you could learn more !";
-      return "It seems you should interest yourself a little bit more, don't worry you'll discover a lot of amazing things !";
+      if (percentageScore > 75) return "contextual1";
+      if (percentageScore > 50) return "contextual2";
+      return "contextual3";
     },
   },
 };
@@ -285,7 +295,7 @@ export default {
     }
 
     & > .button {
-      width: 100px;
+      min-width: 100px;
     }
   }
   .question-container {
