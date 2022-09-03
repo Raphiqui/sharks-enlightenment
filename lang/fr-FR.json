@@ -10,7 +10,7 @@
   "shark": {
     "dm": "carte de répartition",
     "cs": "Statut de conservation",
-    "height": "taille",
+    "length": "taille",
     "weight": "poids",
     "av": "moyenne",
     "iucnStatus": {
