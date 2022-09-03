@@ -39,6 +39,20 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'fr', iso: 'fr-FR', file: 'fr-FR.json', name: 'FR' },
+          { code: 'en', iso: 'en-EN', file: 'en-EN.json', name: 'EN' }
+        ],
+        defaultLocale: 'fr',
+        langDir: 'lang/',
+        lazy: true,
+        strategy: 'no_prefix',
+        seo: true,
+      }
+    ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
