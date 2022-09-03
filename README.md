@@ -1,9 +1,6 @@
 # shark-website
 
-## Purpose
-
-I wanted to create a static website with nuxt and deploy it with [versel](https://vercel.com/)
-
+Static, cross-platform, responsive, interactive and multi-language app.
 
 ## Build Setup
 
