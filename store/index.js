@@ -155,56 +155,63 @@ export const state = () => ({
   },
   questions: [
     {
+      id: "1",
       text: "Are sharks in danger ?",
       responses: [
-        { text: "Yes", correct: true },
-        { text: "No" },
-        { text: "Maybe" },
+        { id: "1", text: "Yes", correct: true },
+        { id: "2", text: "No" },
+        { id: "3", text: "Maybe" },
       ],
       answer:
-        "Definitly. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger.",
+        "Definitely. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger.",
     },
     {
+      id: "2",
       text: "Are sharks killers like in the movies ?",
       responses: [
-        { text: "Yes, absolutly" },
-        { text: "Not at all", correct: true },
-        { text: "Sometimes they can kill for pleasure" },
+        { id: "1", text: "Yes, absolutely" },
+        { id: "2", text: "Not at all", correct: true },
+        { id: "3", text: "Sometimes they can kill for pleasure" },
       ],
       answer: "No, they're not killers. That's not because they're shown acting like killers that this is true. In fact sharks are rarely hunting because they're not eating much. Also, to them human flesh is not a very tasty meal. Finally, this notion of 'killer' is really human and shouldn't be applied to shark's behaviors.",
     },
     {
+      id: "3",
       text: "What is shark finning ?",
       responses: [
-        { text: "A movment made by associations to save and protect sharks" },
+        { id: "1", text: "A movement made by associations to save and protect sharks" },
         {
+          id: "2",
           text: "Some barbaric practice",
           correct: true,
         },
         {
-          text: "A specific behavior which occurs only when sharks are eating",
+          id: "3", text: "A specific behavior which occurs only when sharks are eating",
         },
       ],
       answer:
         "Shark finning is the act of removing fins from sharks and discarding the rest of the shark back into the ocean. This act is prohibited in many countries. The sharks are often still alive when discarded, but without their fins. Unable to swim effectively, they sink to the bottom of the ocean and die of suffocation or are eaten by other predators.",
     },
     {
+      id: "4",
       text: "Can we observe great white sharks in captivity ?",
       responses: [
         {
+          id: "1",
           text: "Yes"
         },
-        { text: "No", correct: true, },
-        { text: "Sometimes" },
+        { id: "2", text: "No", correct: true, },
+        { id: "3", text: "Sometimes" },
       ],
-      answer: "It seems that they're incapable to survive in captivity. During the past some tries have been made such as the one in 2016 at Okanawa island in the south of Japan, Churaumi aquarium tried to conserve a male victim of unfortunate fishing. He died 3 days after being captured. Studies showed that he refused to eat. In fact great white sharks travel hundreds of kilometers, we can't image the size of the aquarium to contain such space. Moreover, they can develop psycological deseas being separeted from their natural environment.",
+      answer: "It seems that they're incapable to survive in captivity. During the past some tries have been made such as the one in 2016 at Okinawa island in the south of Japan, Churaumi aquarium tried to conserve a male victim of unfortunate fishing. He died 3 days after being captured. Studies showed that he refused to eat. In fact great white sharks travel hundreds of kilometers, we can't image the size of the aquarium to contain such space. Moreover, they can develop psychological diseases being separated from their natural environment.",
     },
     {
+      id: "5",
       text: "Why can't we see skeleton of sharks ?",
       responses: [
-        { text: "Strictly speaking, they've no skeleton", correct: true },
-        { text: "It's very difficult to get them because they're drowning deeply to the abysses" },
-        { text: "Nobody mind about shark skeletons" }
+        { id: "1", text: "Strictly speaking, they've no skeleton", correct: true },
+        { id: "2", text: "It's very difficult to get them because they're drowning deeply to the abysses" },
+        { id: "3", text: "Nobody mind about shark skeletons" }
       ],
       answer: "Sharks have cartilage skeleton, they don't have bones covering their body like a fish you can buy at the supermarket. As so, when they die, everything can be eaten by their relatives into the ocean.",
     },
