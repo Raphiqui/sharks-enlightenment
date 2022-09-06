@@ -8,8 +8,11 @@
           @click="$router.push(`/home/shark_species/${shark.path}`)"
           :style="{ backgroundImage: `url(${buildPath(shark.path)})` }"
         >
-          <div class="species-title">
-            {{ $t(`sharks.${shark.path}.name`) }}
+          <div class="species-content-container">
+            <span class="species-title">
+              {{ $t(`sharks.${shark.path}.name`) }}
+            </span>
+            <span class="species-see-more">{{ $t("see_more") }}</span>
           </div>
         </li>
       </ul>
@@ -49,9 +52,39 @@ export default {
 
   margin-top: 100px;
 
+  &-content {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0;
+      height: 56px;
+
+      backdrop-filter: blur(4px);
+      width: 100%;
+      align-items: center;
+    }
+  }
   &-title {
-    backdrop-filter: blur(4px);
+    font-size: 20px;
+  }
+
+  &-see-more {
+    font-size: 14px;
     width: fit-content;
+
+    &::after {
+      content: "";
+      width: 0px;
+      height: 1px;
+      display: block;
+      background: white;
+      transition: 300ms;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   &-container {
@@ -76,6 +109,7 @@ export default {
         justify-content: center;
         display: flex;
         align-items: flex-end;
+        position: relative;
 
         color: #ffffff;
         font-size: 24px;
