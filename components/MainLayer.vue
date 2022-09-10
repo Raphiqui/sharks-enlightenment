@@ -10,9 +10,7 @@
 </template>
 
 <script>
-import CircleRating from "./CircleRating.vue";
 export default {
   name: "MainLayer",
-  components: { CircleRating },
 };
 </script>
