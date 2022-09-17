@@ -17,27 +17,25 @@ body {
 }
 
 .iucn-status-container {
+
+  width: 100%;
+
   .iucn-status-container-content {
     text-align: center;
   }
 
   & > ul {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
+    width: 100%;
 
     & > li {
       text-transform: capitalize;
       font-weight: bold;
       padding: 5px;
       border: 2px solid white;
-      border-radius: 50%;
+      border-radius: 50px;
 
-      width: 13%;
-      height: 110px;
+      width: 100%;
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,6 +49,8 @@ body {
       color: black;
 
       font-size: 14px;
+
+      display: none;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -69,44 +69,51 @@ body {
 
       &.ex {
         border-color: black;
-        background-color: black;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(0, 0, 0) 40%);
         color: darkred;
+        display: flex;
       }
 
       &.ew {
         border-color: black;
-        background-color: black;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(0, 0, 0) 40%);
         color: white;
+        display: flex;
       }
 
       &.cr {
         border-color: darkred;
-        background-color: darkred;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(139, 0, 0) 40%);
         color: white;
+        display: flex;
       }
 
       &.en {
         border-color: white;
-        background-color: orangered;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(255, 69, 0) 40%);
         color: white;
+        display: flex;
       }
 
       &.vu {
         border-color: white;
-        background-color: darkgoldenrod;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(184, 134, 11) 40%);
         color: white;
+        display: flex;
       }
 
       &.nt {
         border-color: lightseagreen;
-        background-color: lightseagreen;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(32,178,170,1) 40%);
         color: white;
+        display: flex;
       }
 
       &.lc {
         border-color: lightskyblue;
-        background-color: lightskyblue;
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(135, 206, 250) 40%);
         color: white;
+        display: flex;
       }
     }
   }
