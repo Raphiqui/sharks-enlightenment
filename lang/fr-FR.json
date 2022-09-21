@@ -96,6 +96,7 @@
       "name": "Requin cuivre",
       "path": "bronze_whale_shark",
       "scientific_name": "Carcharhinus brachyurus",
+      "description": "Le Requin cuivre est une espèce de requins de la famille des Carcharhinidae, et le seul membre de son genre que l'on trouve à des latitudes correspondant à un climat tempéré.",
       "length": "3.3 m",
       "weight": "305 kg",
       "uicn_status": "NT"
@@ -104,7 +105,8 @@
       "name": "Requin bouledogue",
       "scientific_name": "Carcharhinus leucas",
       "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": ""
     },
     "dusty_shark": {
       "name": "Requin sombre",

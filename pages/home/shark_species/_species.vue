@@ -73,8 +73,7 @@
           <div class="separator"></div>
 
           <span>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean m
+            {{ shark.distribution }}
           </span>
         </div>
       </div>
