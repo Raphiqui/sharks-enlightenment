@@ -34,7 +34,39 @@
             <div v-if="showCorrectAnswer" class="correct-answer">
               <div class="correct-answer-container">
                 <div class="correct-response-label-container">
-                  {{ $t("correct") }}&nbsp;:
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="green"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin: 0 auto 20px auto; width: 30px; height: 30px"
+                    v-if="isCorrect"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="red"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin: 0 auto 20px auto; width: 30px; height: 30px"
+                    v-else
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>{{ $t("correct") }}&nbsp;:
                   {{
                     $t(
                       `quiz.${questions[questionIndex].id}.responses.${correctResponse}`
@@ -89,6 +121,7 @@ export default {
       showQuestion: true,
       showCorrectAnswer: false,
       score: 0,
+      isCorrect: false,
     };
   },
   mounted() {
@@ -123,6 +156,7 @@ export default {
     next: function () {
       this.showCorrectAnswer = false;
       this.showQuestion = false;
+      this.isCorrect = false;
 
       setTimeout(() => {
         if (this.questionIndex < this.questions.length) this.questionIndex++;
@@ -150,6 +184,11 @@ export default {
       if (percentageScore > 75) return "contextual1";
       if (percentageScore > 50) return "contextual2";
       return "contextual3";
+    },
+  },
+  watch: {
+    score(newValue, oldValue) {
+      this.isCorrect = newValue > oldValue;
     },
   },
 };
@@ -206,6 +245,9 @@ export default {
   border-radius: 12px;
 
   color: white;
+  max-width: 1100px;
+  width: 100%;
+
   max-width: 1100px;
   width: 100%;
 
@@ -302,7 +344,8 @@ export default {
     white-space: normal;
     width: 100%;
 
-    height: 350px;
+    min-height: 350px;
+    height: auto;
 
     @media (max-width: 768px) {
       height: auto;
