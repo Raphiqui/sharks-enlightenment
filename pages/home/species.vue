@@ -6,8 +6,21 @@
           v-for="shark in sharksTable"
           :key="shark.name"
           @click="$router.push(`/home/shark_species/${shark.path}`)"
-          :style="{ backgroundImage: `url(${buildPath(shark.path)})` }"
         >
+          <picture>
+            <source
+              :srcSet="`${require(`@/assets/images/species/${shark.path}.jpg?webp`)}`"
+              type="image/webp"
+            />
+            <source
+              :srcSet="`${require(`@/assets/images/species/${shark.path}.jpg`)}`"
+              type="image/jpeg"
+            />
+            <img
+              :src="`${require(`@/assets/images/species/${shark.path}.jpg`)}`"
+            />
+          </picture>
+
           <div class="species-content-container">
             <span class="species-title">
               {{ $t(`sharks.${shark.path}.name`) }}
@@ -45,12 +58,31 @@ export default {
 </script>
 
 <style scoped lang="scss">
+li {
+  &:hover {
+    picture {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  }
+}
+
+picture {
+  height: 100%;
+  transition: 0.25s all ease-in-out;
+  display: flex;
+
+  img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}
+
 .species {
   width: 100%;
   position: relative;
   padding: 0 20px;
-
-  margin-top: 100px;
 
   &-content {
     &-container {
@@ -88,9 +120,8 @@ export default {
   }
 
   &-container {
-    margin: 0 auto;
+    margin: 100px auto;
     max-width: 1100px;
-    padding: 2rem 0;
 
     & > ul {
       --auto-grid-min-size: 16rem;
@@ -114,7 +145,7 @@ export default {
         color: #ffffff;
         font-size: 24px;
         list-style-type: none;
-        padding: 10px 16px;
+        // padding: 10px 16px;
         text-align: center;
         text-transform: capitalize;
         font-weight: 600;
