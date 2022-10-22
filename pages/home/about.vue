@@ -1,17 +1,19 @@
 <template>
   <div class="about">
-    <div class="about-content">
-      <span>{{ $t("about.1") }}</span>
+    <div class="about-container">
+      <div class="about-content">
+        <span>{{ $t("about.1") }}</span>
 
-      <span>{{ $t("about.2") }}</span>
+        <span>{{ $t("about.2") }}</span>
 
-      <span>{{ $t("about.3") }}</span>
+        <span>{{ $t("about.3") }}</span>
 
-      <span>{{ $t("about.4") }}</span>
+        <span>{{ $t("about.4") }}</span>
 
-      <span>{{ $t("about.5") }}</span>
+        <span>{{ $t("about.5") }}</span>
 
-      <span>{{ $t("about.6") }}</span>
+        <span>{{ $t("about.6") }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -28,16 +30,25 @@ export default {
 
 <style scoped lang="scss">
 .about {
-  background-color: rgba(58, 56, 56, 0.5);
-  backdrop-filter: blur(12px);
+  min-height: 100vh;
+  display: flex;
 
-  font-size: 18px;
+  &-container {
+    background-color: rgba(58, 56, 56, 0.5);
+    backdrop-filter: blur(12px);
 
-  border-radius: 12px;
+    font-size: 18px;
 
-  margin: 100px auto;
-  max-width: 1100px;
-  padding: 32px;
+    border-radius: 12px;
+
+    margin: 100px auto auto;
+    max-width: 1100px;
+    padding: 32px;
+
+    @media (max-width: 768px) {
+      margin: 100px auto;
+    }
+  }
 
   &-content {
     color: white;
@@ -46,11 +57,11 @@ export default {
     flex-direction: column;
     height: 100%;
 
-    margin: -20px 0;
-
     span {
       display: block;
       padding: 20px 0;
+
+      box-sizing: border-box;
     }
   }
 }
