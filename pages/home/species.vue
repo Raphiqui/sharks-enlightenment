@@ -71,6 +71,7 @@ picture {
   height: 100%;
   transition: 0.25s all ease-in-out;
   display: flex;
+  width: 100%;
 
   img {
     object-fit: cover;
