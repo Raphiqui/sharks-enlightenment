@@ -76,6 +76,44 @@
             {{ shark.distribution }}
           </span>
         </div>
+        <div 
+          class="s-card-container-content-grid pagination"  
+        >
+          <div v-if="previous" @click="$router.push(previous)" style="margin-right: auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="arrow-left"
+            >
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </div>
+          <div v-if="next" @click="$router.push(next)" style="margin-left: auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="arrow-right"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -91,7 +129,39 @@ export default {
   data() {
     return {
       iucnStatus: this.$store.state.iucnStatus,
+      previous: null,
+      next: null,
     };
+  },
+  mounted() {
+    const paths = this.$store.state.sharksTable.map((item) => {
+      return item.path;
+    });
+
+    const targetIndex = paths.indexOf(this.shark.path);
+
+    if (targetIndex !== 0) {
+      this.previous = `/home/shark_species/${
+        paths[paths.indexOf(this.shark.path) - 1]
+      }`;
+      this.next = `/home/shark_species/${
+        paths[paths.indexOf(this.shark.path) + 1]
+      }`;
+    }
+
+    if (targetIndex === 0) {
+      this.previous = null;
+      this.next = `/home/shark_species/${
+        paths[paths.indexOf(this.shark.path) + 1]
+      }`;
+    }
+
+    if (targetIndex === paths.length - 1) {
+      this.previous = `/home/shark_species/${
+        paths[paths.indexOf(this.shark.path) - 1]
+      }`;
+      this.next = null;
+    }
   },
   computed: {
     shark() {
@@ -102,7 +172,6 @@ export default {
       return sharkObjectMatch[0];
     },
   },
-  prop: {},
 };
 </script>
 
@@ -133,7 +202,7 @@ export default {
 
       grid-gap: 20px;
 
-      margin-top: 200px;
+      margin-top: 100px;
 
       & > div {
         border: 2px solid white;
@@ -209,7 +278,7 @@ export default {
           }
 
           & > svg {
-            width: 110px;
+            width: 60px;
           }
 
           @media (max-width: 768px) {
@@ -243,6 +312,29 @@ export default {
           }
         }
 
+        &.pagination {
+          grid-area: 5/4/5/1;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          border: unset;  
+
+          @media (max-width: 768px) {
+            grid-area: 7/1/7/5;
+          }
+
+          .arrow {
+            display: flex;
+
+            &-left,
+            &-right {
+              cursor: pointer;
+            }
+          }
+        }
+
         &:not(:first-child) {
           padding: 10px;
         }
@@ -261,6 +353,10 @@ export default {
   font-weight: 700;
   margin-bottom: 20px;
   display: block;
+
+  & > a {
+    text-decoration: underline;
+  }
 }
 
 .separator {
