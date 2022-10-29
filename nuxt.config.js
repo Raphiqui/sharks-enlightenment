@@ -57,7 +57,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/dotenv',
+    '@nuxt/image',
+    '@nuxtjs/cloudinary',
   ],
+
+  cloudinary: {
+    cloudName: process.env.CLOUDNAME,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
