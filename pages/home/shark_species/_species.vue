@@ -7,7 +7,7 @@
           <h3>{{ shark.scientific_name }}</h3>
         </div>
         <div class="s-card-container-content-grid img">
-          <nuxt-img :src="src" format="webp" />
+          <nuxt-img preload :src="src" format="webp" />
         </div>
         <div class="s-card-container-content-grid size">
           <span class="section-title">Size</span>
