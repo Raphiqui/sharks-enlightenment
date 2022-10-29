@@ -6,12 +6,9 @@
           <h2 class="title">{{ $t(`sharks.${shark.path}.name`) }}</h2>
           <h3>{{ shark.scientific_name }}</h3>
         </div>
-        <div
-          class="s-card-container-content-grid img"
-          :style="{
-            backgroundImage: `url(${require(`@/assets/images/species/${shark.path}.jpg`)})`,
-          }"
-        ></div>
+        <div class="s-card-container-content-grid img">
+          <nuxt-img :src="src" format="webp" />
+        </div>
         <div class="s-card-container-content-grid size">
           <span class="section-title">Size</span>
           <span class="size">{{ shark.length }}</span>
@@ -64,7 +61,6 @@
         </div>
         <div class="s-card-container-content-grid rangemap">
           <span class="section-title"> {{ $t("shark.dm") }} </span>
-
           <img
             v-if="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
             :src="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
@@ -76,10 +72,12 @@
             {{ shark.distribution }}
           </span>
         </div>
-        <div 
-          class="s-card-container-content-grid pagination"  
-        >
-          <div v-if="previous" @click="$router.push(previous)" style="margin-right: auto">
+        <div class="s-card-container-content-grid pagination">
+          <div
+            v-if="previous"
+            @click="$router.push(previous)"
+            style="margin-right: auto"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -96,7 +94,11 @@
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
           </div>
-          <div v-if="next" @click="$router.push(next)" style="margin-left: auto">
+          <div
+            v-if="next"
+            @click="$router.push(next)"
+            style="margin-left: auto"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -131,7 +133,24 @@ export default {
       iucnStatus: this.$store.state.iucnStatus,
       previous: null,
       next: null,
+      src: null,
     };
+  },
+  async asyncData({ context, store, route, $cloudinary }) {
+    let shark = store.state.sharksTable.filter((shark) => {
+      return shark.path === route.params.species;
+    });
+
+    shark = shark[0];
+
+    const src = $cloudinary.image.url(
+      `sharks-enlightenment/${shark.cloudinary_object_id}`,
+      {
+        height: "1920",
+        width: "1414",
+      }
+    );
+    return { src, shark };
   },
   mounted() {
     const paths = this.$store.state.sharksTable.map((item) => {
@@ -162,15 +181,6 @@ export default {
       }`;
       this.next = null;
     }
-  },
-  computed: {
-    shark() {
-      const sharkObjectMatch = this.$store.state.sharksTable.filter((shark) => {
-        return shark.path === this.$route.params.species;
-      });
-
-      return sharkObjectMatch[0];
-    },
   },
 };
 </script>
@@ -220,16 +230,20 @@ export default {
         align-items: center;
 
         &.img {
+          padding: unset !important;
+
           height: 500px;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
 
           grid-area: 2 / 1 / 3 / 4;
 
           @media (max-width: 768px) {
             grid-area: 2 / 1 / 2 / 5;
-            height: 350px;
+            height: unset;
           }
         }
 
@@ -319,7 +333,7 @@ export default {
           flex-direction: row;
           justify-content: space-between;
 
-          border: unset;  
+          border: unset;
 
           @media (max-width: 768px) {
             grid-area: 7/1/7/5;
