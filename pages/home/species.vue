@@ -41,9 +41,6 @@ export default {
   },
   prop: {},
   methods: {
-    buildPath(name) {
-      return require("@/assets/images/species/" + name + ".jpg");
-    },
     generateSrc(id) {
       return this.$cloudinary.image.url(`sharks-enlightenment/${id}`);
     },
