@@ -28,7 +28,7 @@ export const state = () => ({
         "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
       uicn_status: "NT",
       distribution: "Cosmopolitan distribution in tropical and sub-tropical nearshore environments.",
-      cloudinary_object_id: "bull_shark_ogvsk5.jpg",
+      cloudinary_object_id: "bull_shark_jtxo6z.jpg",
     },
     {
       name: "Dusty shark",
@@ -57,7 +57,7 @@ export const state = () => ({
       description:
         "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
       uicn_status: "VU",
-      cloudinary_object_id: "hammerhead_shark_rajnnj.jpg",
+      cloudinary_object_id: "hammerhead_shark_uow3b3.webp",
     },
     {
       name: "Tiger shark",
@@ -97,7 +97,7 @@ export const state = () => ({
       description:
         "The basking shark is the second largest fish in the world, and like the largest fish (the whale shark) and the largest animal (the great whales), basking sharks are filter feeders that eat tiny, planktonic prey. Reaching lengths of 40 feet (12 m) and resembling predatory sharks in appearance, the basking shark can give an intimidating impression, but they are quite harmless. They spend most of their time near the surface, swimming with their extraordinarily large mouths open, filtering out their preferred prey, but they may also make deeper, feeding dives.",
       uicn_status: "EN",
-      cloudinary_object_id: "basking_shark_xatmwm.jpg",
+      cloudinary_object_id: "basking_shark_hxcaaj.jpg",
     },
     {
       name: "Spiny dogfish",
@@ -107,7 +107,7 @@ export const state = () => ({
       description:
         "The spiny dogfish may go by many names, including piked dogfish, rock salmon and spiky dog, but only one truly represents this shark’s unique defense strategy. Using sharp, venomous spines in the front of each dorsal fin, the spiny dogfish is a small but mighty predator that isn’t afraid to take a jab at passing fish. They are considered one of the most abundant living shark species in the ocean, but are harmless to humans.",
       uicn_status: "VU",
-      cloudinary_object_id: "spiny_dogfish_zlgstx.jpg",
+      cloudinary_object_id: "spiny_dogfish_t5kjmf.jpg",
     },
     {
       name: "Shortfin mako shark",
@@ -117,7 +117,7 @@ export const state = () => ({
       description:
         "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
       uicn_status: "EN",
-      cloudinary_object_id: "shortfin_mako_shark_lga1ek.jpg",
+      cloudinary_object_id: "shortfin_mako_shark_1_qud3zh.jpg",
     },
     {
       name: "Grey shark",
@@ -126,7 +126,7 @@ export const state = () => ({
       description: "The grey reef shark (Carcharhinus amblyrhynchos, sometimes misspelled amblyrhynchus or amblyrhinchos)[2] is a species of requiem shark, in the family Carcharhinidae. One of the most common reef sharks in the Indo-Pacific, it is found as far east as Easter Island and as far west as South Africa. This species is most often seen in shallow water near the drop-offs of coral reefs. It has the typical 'reef shark' shape, with a broad, round snout and large eyes.",
       length: "2.6 m", weight: "33.7 kg",
       uicn_status: "NT",
-      cloudinary_object_id: "grey_shark_wqtrwr.jpg",
+      cloudinary_object_id: "grey_shark_pvrpjo.webp",
     },
     {
       name: "Thresher shark",
@@ -146,7 +146,7 @@ export const state = () => ({
       description:
         "The porbeagle shark is a wide-ranging shark that’s recognized by its conical snout, white underbelly and dark gray top. Scholars have proposed that the porbeagle shark’s name originates from the combination of “porpoise” and “beagle” – referencing the shark’s rounded body and dogged hunting methods.",
       uicn_status: "VU",
-      cloudinary_object_id: "porbeagle_qkaxly.jpg",
+      cloudinary_object_id: "porbeagle_idpimn.jpg",
     },
     {
       name: "Smalltooth sand tiger",
@@ -155,7 +155,7 @@ export const state = () => ({
       description: "The smalltooth sand tiger or bumpytail ragged-tooth (Odontaspis ferox) is a species of mackerel shark in the family Odontaspididae, with a patchy but worldwide distribution in tropical and warm temperate waters. They usually inhabit deepwater rocky habitats, though they are occasionally encountered in shallow water, and have been known to return to the same location year after year.",
       length: "4.1 m", weight: "289 kg",
       uicn_status: "NT",
-      cloudinary_object_id: "smalltooth_sand_tiger_ucn5lt.jpg",
+      cloudinary_object_id: "smalltooth_sand_tiger_1_ddcmgq.jpg",
     },
     {
       name: "Bluntnose sixgill shark",
@@ -164,7 +164,7 @@ export const state = () => ({
       description: "The bluntnose sixgill shark (Hexanchus griseus), often simply called the cow shark, is the largest hexanchoid shark, growing to 20 ft (6.1 m) in length.[2] It is found in tropical and temperate waters worldwide and its diet is widely varied by region.",
       length: "3.5-4.2 m", weight: "500 kg",
       uicn_status: "NT",
-      cloudinary_object_id: "bluntnose_sixgill_shark_zawvuh.jpg",
+      cloudinary_object_id: "bluntnose_sixgill_shark_1_dde1nc.jpg",
     },
   ],
   iucnStatus: {

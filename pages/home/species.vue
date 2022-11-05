@@ -7,20 +7,11 @@
           :key="shark.name"
           @click="$router.push(`/home/shark_species/${shark.path}`)"
         >
-          <picture>
-            <source
-              :srcSet="`${require(`@/assets/images/species/${shark.path}.jpg?webp`)}`"
-              type="image/webp"
-            />
-            <source
-              :srcSet="`${require(`@/assets/images/species/${shark.path}.jpg`)}`"
-              type="image/jpeg"
-            />
-            <img
-              :src="`${require(`@/assets/images/species/${shark.path}.jpg`)}`"
-            />
-          </picture>
-
+          <nuxt-img
+            preload
+            :src="generateSrc(shark.cloudinary_object_id)"
+            format="webp"
+          />
           <div class="species-content-container">
             <span class="species-title">
               {{ $t(`sharks.${shark.path}.name`) }}
@@ -53,6 +44,9 @@ export default {
     buildPath(name) {
       return require("@/assets/images/species/" + name + ".jpg");
     },
+    generateSrc(id) {
+      return this.$cloudinary.image.url(`sharks-enlightenment/${id}`);
+    },
   },
 };
 </script>
@@ -60,24 +54,17 @@ export default {
 <style scoped lang="scss">
 li {
   &:hover {
-    picture {
+    img {
       -webkit-transform: scale(1.3);
       transform: scale(1.3);
     }
   }
 }
 
-picture {
-  height: 100%;
+img {
+  height: auto;
   transition: 0.25s all ease-in-out;
-  display: flex;
   width: 100%;
-
-  img {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-  }
 }
 
 .species {
@@ -140,7 +127,7 @@ picture {
         overflow: hidden;
         justify-content: center;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         position: relative;
 
         color: #ffffff;
