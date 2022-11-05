@@ -12,23 +12,6 @@
         <div class="s-card-container-content-grid size">
           <span class="section-title">Size</span>
           <span class="size">{{ shark.length }}</span>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 122.88 41.04"
-            style="enable-background: new 0 0 122.88 41.04"
-            xml:space="preserve"
-            fill="white"
-          >
-            <path
-              d="M115.39 6.09c0-2.07 1.68-3.75 3.75-3.75 2.07 0 3.75 1.68 3.75 3.75v28.86c0 2.07-1.68 3.75-3.75 3.75-2.07 0-3.75-1.68-3.75-3.75V6.09zM0 6.09c0-2.07 1.68-3.75 3.75-3.75 2.07 0 3.75 1.68 3.75 3.75v28.86c0 2.07-1.68 3.75-3.75 3.75C1.68 38.69 0 37.02 0 34.95V6.09zm13.27 15.94c-.18-.41-.29-.85-.31-1.29V20.29c.03-.44.13-.88.31-1.29v-.01l.01-.01.03-.07.01-.01.03-.07.01-.02.01-.01c.12-.24.27-.47.45-.68L27.33 1.4c1.29-1.61 3.65-1.86 5.25-.57 1.61 1.29 1.86 3.65.57 5.25l-8.67 10.73 71-.02-8.64-10.71c-1.29-1.61-1.04-3.96.57-5.25 1.61-1.29 3.96-1.04 5.25.57l13.52 16.72c.18.21.33.44.45.68l.01.01.01.02.03.07.01.01.03.07.01.01V19c.18.41.29.85.31 1.29V20.74c-.03.44-.13.88-.31 1.29v.01l-.01.01-.03.07-.01.01-.03.07-.01.02-.01.01c-.12.24-.27.47-.45.68L92.66 39.64c-1.29 1.61-3.65 1.86-5.25.57-1.61-1.29-1.86-3.65-.57-5.25l8.65-10.7-70.97.02 8.63 10.68c1.29 1.61 1.04 3.96-.57 5.25-1.61 1.29-3.96 1.04-5.25-.57L13.82 22.92c-.18-.21-.33-.44-.45-.68l-.01-.01-.01-.02-.03-.07-.01-.01-.03-.07-.01-.01v-.02z"
-            />
-          </svg>
-        </div>
-        <div class="s-card-container-content-grid description">
-          <span class="section-title">Description</span>
-
-          {{ shark.description }}
         </div>
         <div class="s-card-container-content-grid iucn">
           <div class="iucn-status-container">
@@ -58,6 +41,11 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="s-card-container-content-grid description">
+          <span class="section-title">Description</span>
+
+          {{ shark.description }}
         </div>
         <div class="s-card-container-content-grid rangemap">
           <span class="section-title"> {{ $t("shark.dm") }} </span>
@@ -232,7 +220,8 @@ export default {
         &.img {
           padding: unset !important;
 
-          height: 500px;
+          max-height: 500px;
+          height: 100%;
 
           position: relative;
           overflow: hidden;
@@ -248,6 +237,7 @@ export default {
         }
 
         &.title {
+          text-align: center;
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -287,7 +277,7 @@ export default {
             font-size: 25px;
 
             @media (max-width: 768px) {
-              margin: 10px 0;
+              margin-top: 10px 0;
             }
           }
 
@@ -301,16 +291,16 @@ export default {
         }
 
         &.description {
-          grid-area: 3 / 2 / 4 / 3;
+          grid-area: 4 / 1 / 5 / 3;
           @media (max-width: 768px) {
-            grid-area: 4 / 1 / 4 / 5;
+            grid-area: 5 /1 / 5 / 5;
           }
         }
 
         &.iucn {
-          grid-area: 4 / 1 / 5 / 3;
+          grid-area: 3 / 2 / 4 / 3;
           @media (max-width: 768px) {
-            grid-area: 5 /1 / 5 / 5;
+            grid-area: 4 / 1 / 4 / 5;
           }
         }
 
