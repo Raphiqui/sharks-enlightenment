@@ -53,10 +53,18 @@ export default {
         cursor: pointer;
 
         &.active {
-          color: darkblue;
+          color: cadetblue;
           font-weight: 700;
           &::after {
-            background: darkblue;
+            background:cadetblue;
+          }
+
+          @media (max-width: 768px) {
+            color: darkblue;
+            font-weight: 700;
+            &::after {
+              background: darkblue;
+            }
           }
         }
 
