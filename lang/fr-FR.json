@@ -187,6 +187,11 @@
       "name": "Requin griset",
       "scientific_name": "Hexanchus griseus",
       "uicn_status": "NT"
+    },
+    "salmon_shark": {
+      "name": "Salmon shark",
+      "scientific_name": "Lamna ditropis",
+      "uicn_status": "NT"
     }
   }
 }
