@@ -44,7 +44,8 @@ export default {
       {
         locales: [
           { code: 'fr', iso: 'fr-FR', file: 'fr-FR.json', name: 'FR' },
-          { code: 'en', iso: 'en-EN', file: 'en-EN.json', name: 'EN' }
+          { code: 'en', iso: 'en-EN', file: 'en-EN.json', name: 'EN' },
+          { code: 'es', iso: 'es-ES', file: 'es-ES.json', name: 'ES' },
         ],
         defaultLocale: 'fr',
         langDir: 'lang/',
