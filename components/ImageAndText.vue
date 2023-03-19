@@ -1,14 +1,13 @@
 <template>
   <div class="image-and-text-container">
-    <div
-      class="image-and-text-container-content"
-      :style="{ backgroundImage: `url(${imagePath})`, height: `${height}px` }"
-    >
+    <div class="image-and-text-container-content">
+      <div class="image-and-text-container-content-img">
+        <nuxt-img preload :src="src" format="webp" :height="height" />
+      </div>
       <div class="image-and-text-container-content-text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        One movie is let's say "responsible" for this fear of shark (even if
+        it's a great movie and one of my favorite). This movie was so well made
+        that it still inspires our fear of sharks.
       </div>
     </div>
   </div>
@@ -21,7 +20,7 @@ export default {
   props: {
     imagePath: {
       type: String,
-      require: true,
+      require: false,
     },
     height: {
       type: Number,
@@ -32,35 +31,58 @@ export default {
       default: false,
     },
   },
+  computed: {
+    src() {
+      const firstShark = this.$store.state.sharksTable[0];
+
+      const src = this.$cloudinary.image.url(
+        `sharks-enlightenment/${this.imagePath}`
+      );
+
+      return src;
+    },
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .image-and-text-container {
-  display: flex;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
-  }
+  max-width: 1100px;
+  margin: 0 auto;
 
   &-content {
     width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    padding: 20px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &-img {
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      & > img {
+        border-radius: 50px;
+      }
+    }
 
     &-text {
-      position: absolute;
-      bottom: 0;
-      background-color: rgba(58, 56, 56, 0.5);
+      width: 50%;
       min-height: 100px;
       text-align: center;
       vertical-align: ce;
       display: flex;
       justify-content: center;
-      align-content: center;
       align-items: center;
       padding: 20px;
       font-size: 16px;
