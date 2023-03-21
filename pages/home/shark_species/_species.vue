@@ -305,7 +305,7 @@ export default {
         }
 
         &.rangemap {
-          grid-area: 3 / 3 / 5 / 4;
+          grid-area: 3 / 3 / 6 / 4;
 
           & > img {
             width: 100%;
@@ -317,7 +317,7 @@ export default {
         }
 
         &.pagination {
-          grid-area: 5/4/5/1;
+          grid-area: 6/4/6/1;
 
           display: flex;
           flex-direction: row;
