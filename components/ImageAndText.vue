@@ -5,9 +5,10 @@
         <nuxt-img preload :src="src" format="webp" :height="height" />
       </div>
       <div class="image-and-text-container-content-text">
-        One movie is let's say "responsible" for this fear of shark (even if
-        it's a great movie and one of my favorite). This movie was so well made
-        that it still inspires our fear of sharks.
+        When talking about sharks many people think about a specific movie. 
+        This movie is considered as <i>"responsible"</i> responsible for having frighten an entire generation (even if
+        it's a great movie and one of my favorite).
+        It was so well made that it still inspires our fear of sharks.
       </div>
     </div>
   </div>
@@ -33,8 +34,6 @@ export default {
   },
   computed: {
     src() {
-      const firstShark = this.$store.state.sharksTable[0];
-
       const src = this.$cloudinary.image.url(
         `sharks-enlightenment/${this.imagePath}`
       );
@@ -80,10 +79,6 @@ export default {
       width: 50%;
       min-height: 100px;
       text-align: center;
-      vertical-align: ce;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       padding: 20px;
       font-size: 16px;
       color: white;
