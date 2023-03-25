@@ -4,6 +4,7 @@
       id="text-container"
       viewBox="0 0 1000 200"
       xmlns="http://www.w3.org/2000/svg"
+      v-show="!isMobile"
     >
       <path
         id="text-curve"
@@ -21,6 +22,9 @@
         </textPath>
       </text>
     </svg>
+    <span v-show="isMobile" class="text-mobile">
+      {{ text }}
+    </span>
   </div>
 </template>
 
@@ -38,6 +42,7 @@ export default {
       textContainer: null,
       path: null,
       pathLength: null,
+      isMobile: true,
     };
   },
   mounted() {
@@ -46,9 +51,13 @@ export default {
     this.path = this.$el.querySelector(this.textPath.getAttribute("href"));
     this.pathLength = this.path.getTotalLength();
 
-    window.addEventListener("scroll", this.onScroll);
+    if (this.$el.clientWidth > 768) {
+      window.addEventListener("scroll", this.onScroll);
 
-    this.updateTextPathOffset(this.pathLength);
+      this.updateTextPathOffset(this.pathLength);
+
+      this.isMobile = false;
+    }
   },
 
   methods: {
@@ -75,5 +84,12 @@ export default {
   @media (max-width: 768px) {
     font-size: 50px;
   }
+}
+
+.text-mobile {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  display: flex;
 }
 </style>
