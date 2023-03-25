@@ -70,7 +70,13 @@ export default {
 <style lang="scss">
 
 .bar {
-  overflow-x: hidden;
+  @media (max-width: 768px) {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 .shark-svg {
