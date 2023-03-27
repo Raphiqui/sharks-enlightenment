@@ -11,8 +11,6 @@
         <span>{{ $t("about.4") }}</span>
 
         <span>{{ $t("about.5") }}</span>
-
-        <span>{{ $t("about.6") }}</span>
       </div>
     </div>
   </div>
