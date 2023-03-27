@@ -1,6 +1,9 @@
 <template>
   <div class="bar">
-    <FullImage ref="fullImg" :image-path="require('@/assets/images/shark1.jpg')" />
+    <FullImage
+      ref="fullImg"
+      :image-path="require('@/assets/images/shark1.jpg')"
+    />
     <GridLayout />
     <Parallax text="Those numbers make our fear irrational" />
     <ImageAndText :imageAlignLeft="true" imagePath="jaws_xm9up8.jpg" />
@@ -46,7 +49,7 @@ export default {
       this.$el.appendChild(imgRight.cloneNode());
     });
 
-    const fullImgHeight = this.$refs.fullImg.$el.clientHeight
+    const fullImgHeight = this.$refs.fullImg.$el.clientHeight;
 
     this.$el.querySelectorAll(".shark-svg.-left").forEach((shark) => {
       shark.width = Math.random() * 200;
@@ -54,7 +57,9 @@ export default {
       shark.style.left =
         Math.random() * (this.$el.clientWidth - shark.clientWidth) + "px";
       shark.style.top =
-        Math.random() * (this.$el.clientHeight - shark.clientHeight + fullImgHeight) + "px";
+        Math.random() *
+          (this.$el.clientHeight - shark.clientHeight + fullImgHeight) +
+        "px";
     });
 
     this.$el.querySelectorAll(".shark-svg.-right").forEach((shark) => {
@@ -63,7 +68,9 @@ export default {
       shark.style.right =
         Math.random() * (this.$el.clientWidth - shark.clientWidth) + "px";
       shark.style.top =
-        Math.random() * (this.$el.clientHeight - shark.clientHeight + fullImgHeight) + "px";
+        Math.random() *
+          (this.$el.clientHeight - shark.clientHeight + fullImgHeight) +
+        "px";
     });
   },
 };
