@@ -84,28 +84,21 @@
   "sharks": {
     "blue_shark": {
       "name": "Requin bleu",
-      "path": "blue_shark",
       "scientific_name": "Prionace glauca",
-      "length": "3.8 m",
-      "weight": "200 kg",
-      "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
+      "description": "Les requins bleus sont des prédateurs curieux et pélagiques qui vivent dans les océans du monde entier, des tropiques aux eaux tempérées froides. Ils passent la majeure partie de leur vie loin des côtes et sont véritablement une espèce pélagique. Leur nom commun vient de la couleur bleue de leur peau, unique parmi les requins.",
       "uicn_status": "NT"
     },
     "bronze_whale_shark": {
       "name": "Requin cuivre",
-      "path": "bronze_whale_shark",
       "scientific_name": "Carcharhinus brachyurus",
       "description": "Le Requin cuivre est une espèce de requins de la famille des Carcharhinidae, et le seul membre de son genre que l'on trouve à des latitudes correspondant à un climat tempéré.",
-      "length": "3.3 m",
-      "weight": "305 kg",
       "uicn_status": "NT"
     },
     "bull_shark": {
       "name": "Requin bouledogue",
       "scientific_name": "Carcharhinus leucas",
-      "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
-      "uicn_status": "NT",
-      "distribution": ""
+      "description": "Le requin bouledogue est une espèce prédatrice qui vit dans les mers côtières et est le requin ayant la meilleure capacité à se déplacer dans les eaux douces - en particulier les grands fleuves côtiers et les lacs. Ils peuvent se déplacer facilement entre l'eau salée et l'eau douce. Ce comportement les amène à entrer en contact avec les humains plus que la plupart des espèces de requins, et ils sont donc responsables de mordre mortellement plus de personnes que toute autre espèce.",
+      "uicn_status": "NT"
     },
     "dusty_shark": {
       "name": "Requin sombre",
@@ -115,25 +108,25 @@
     "gray_nurse_shark": {
       "name": "Requin taureau",
       "scientific_name": "Carcharias taurus",
-      "description": "The sand tiger shark, also known as the gray nurse shark, is a slow-moving coastal predator distinguished by its flattened, conical snout and spiked, protruding teeth similar to the tiger shark. It has small eyes and light brown skin that resembles sand, helping the shark blend into its surroundings when looked at from above.",
+      "description": "Le Requin taureau, également connu sous le nom de requin gris de récif, est un prédateur côtier à déplacement lent caractérisé par son museau conique aplati et ses dents pointues et saillantes similaires à celles du requin tigre. Il a de petits yeux et une peau brun clair qui ressemble au sable, aidant le requin à se fondre dans son environnement lorsqu'il est observé depuis le dessus.",
       "uicn_status": "CR"
     },
     "hammerhead_shark": {
       "name": "Requin marteau",
       "scientific_name": "Sphyrna zygaena",
-      "description": "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
+      "description": "Le grand requin-marteau est le plus grand de toutes les espèces de requins-marteaux, atteignant une longueur maximale connue de 20 pieds (6,1 m) et un poids de 991 livres (450 kg). L'espèce se distingue des autres requins-marteaux par sa tête (céphalofoil) en forme de marteau presque droite qui a une indentation proéminente au milieu.",
       "uicn_status": "VU"
     },
     "tiger_shark": {
       "name": "Requin tigre",
       "scientific_name": "Galeocerdo cuvier",
-      "description": "The tiger shark gets its name from the characteristic vertical bars that cover the sides of its body. Though these bars fade slightly as individuals reach adulthood, they are very noticeable in juveniles and at least party visible throughout the lifetime. Reaching lengths of at least 18 feet (5.5 m) and 2000 pounds (nearly a metric tonne), the tiger shark is the fourth largest shark and second largest predatory shark, behind only the great white.",
+      "description": "Le requin tigre tire son nom des barres verticales caractéristiques qui recouvrent les côtés de son corps. Bien que ces barres s'estompent légèrement lorsque les individus atteignent l'âge adulte, elles sont très visibles chez les jeunes et au moins partiellement visibles tout au long de leur vie. Atteignant des longueurs d'au moins 18 pieds (5,5 m) et un poids de 2000 livres (près d'une tonne métrique), le requin tigre est le quatrième plus grand requin et le deuxième plus grand requin prédateur, derrière seulement le grand blanc.",
       "uicn_status": "NT"
     },
     "whale_shark": {
       "name": "Requin baleine",
       "scientific_name": "Rhincodon typus",
-      "description": "The largest fish in the world is the graceful, harmless whale shark. Though they reach the size of a school bus, whale sharks eat tiny plankton and fish eggs, which they filter feed as they swim slowly along with their giant mouths wide open. They are one of only three species of filter feeding sharks.",
+      "description": "Le plus grand poisson du monde est le gracieux et inoffensif requin baleine. Bien qu'ils atteignent la taille d'un bus scolaire, les requins baleines mangent de petits planctons et des œufs de poissons, qu'ils filtrent pendant qu'ils nagent lentement avec leur bouche géante grande ouverte. Ils sont l'une des seules trois espèces de requins filtreurs.",
       "uicn_status": "EN"
     },
     "white_shark": {
@@ -145,7 +138,7 @@
     "basking_shark": {
       "name": "Requin pèlerin",
       "scientific_name": "Cetorhinus maximus",
-      "description": "The basking shark is the second largest fish in the world, and like the largest fish (the whale shark) and the largest animal (the great whales), basking sharks are filter feeders that eat tiny, planktonic prey. Reaching lengths of 40 feet (12 m) and resembling predatory sharks in appearance, the basking shark can give an intimidating impression, but they are quite harmless. They spend most of their time near the surface, swimming with their extraordinarily large mouths open, filtering out their preferred prey, but they may also make deeper, feeding dives.",
+      "description": "Le requin pèlerin est le deuxième plus grand poisson du monde et, comme le plus grand poisson (le requin baleine) et le plus grand animal (les grandes baleines), il se nourrit de plancton. Mesurant jusqu'à 40 pieds (12 m) et ressemblant à des requins prédateurs en apparence, le requin pèlerin peut donner une impression intimidante, mais il est totalement inoffensif. Il passe la plupart de son temps près de la surface, nageant la bouche grande ouverte pour filtrer sa nourriture préférée, mais il peut également faire des plongées plus profondes pour se nourrir.",
       "uicn_status": "EN"
     },
     "spiny_dogfish": {
@@ -155,9 +148,9 @@
       "uicn_status": "VU"
     },
     "shortfin_mako_shark": {
-      "name": "requin mako",
+      "name": "Requin mako",
       "scientific_name": "Isurus oxyrinchus",
-      "description": "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
+      "description": "Le requin mako est un grand prédateur vivant en haute mer, atteignant une longueur de 12 pieds (3,8 m) et un poids d'au moins 1200 livres (545 kg). Avec une vitesse maximale de 45 miles par heure (74 kilomètres par heure), le requin mako est le plus rapide des requins et l'un des poissons les plus rapides de la planète. L'athlétisme de cette espèce ne se limite pas à sa vitesse de nage. Il est connu pour son incroyable capacité de saut et peut être observé sautant à des hauteurs extrêmes (hors de l'eau) lorsqu'il chasse.",
       "uicn_status": "EN"
     },
     "grey_shark": {
@@ -168,13 +161,13 @@
     "thresher_shark": {
       "name": "Requin renard commun",
       "scientific_name": "Alopias vulpinus",
-      "description": "The pelagic thresher shark is one of three thresher sharks, all three known for their extremely long tails. Adult pelagic threshers’ tails are longer than the rest of the body. Scientists believe that they are highly migratory, but there have not been sufficient tagging studies to confirm that suspicion. Little is known about the ecology of pelagic thresher sharks, as they are difficult to study in their natural habitat (the open ocean).",
+      "description": "Le requin-renard pélagique est l'un des trois requins-renards, tous connus pour leur queue extrêmement longue. La queue des requins-renards pélagiques adultes est plus longue que le reste du corps. Les scientifiques estiment qu'ils sont très migrateurs, mais il n'y a pas eu suffisamment d'études de marquage pour confirmer cette suspicion. On en sait peu sur l'écologie des requins-renards pélagiques, car ils sont difficiles à étudier dans leur habitat naturel (l'océan ouvert).",
       "uicn_status": "VU"
     },
     "porbeagle": {
-      "name": "Requin taupe commun",
+      "name": "Porbeagle",
       "scientific_name": "Lamna nasus",
-      "description": "The porbeagle shark is a wide-ranging shark that’s recognized by its conical snout, white underbelly and dark gray top. Scholars have proposed that the porbeagle shark’s name originates from the combination of “porpoise” and “beagle” – referencing the shark’s rounded body and dogged hunting methods.",
+      "description": "Le requin-taupe commun est un requin à grande portée qui est reconnaissable à son museau conique, son ventre blanc et son dos gris foncé. Les chercheurs ont proposé que le nom du requin-taupe commun vienne de la combinaison de 'marsouin' et de 'beagle' - faisant référence à la forme arrondie de son corps et à ses méthodes de chasse opiniâtres.",
       "uicn_status": "VU"
     },
     "smalltooth_sand_tiger": {
@@ -188,7 +181,7 @@
       "uicn_status": "NT"
     },
     "salmon_shark": {
-      "name": "Salmon shark",
+      "name": "Requin saumon",
       "scientific_name": "Lamna ditropis",
       "uicn_status": "NT"
     }

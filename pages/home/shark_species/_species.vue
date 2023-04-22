@@ -45,7 +45,7 @@
         <div class="s-card-container-content-grid description">
           <span class="section-title">Description</span>
 
-          {{ shark.description }}
+          {{ $t(`sharks.${shark.path}.description`) }}
         </div>
         <div class="s-card-container-content-grid rangemap">
           <span class="section-title"> {{ $t("shark.dm") }} </span>
@@ -57,7 +57,7 @@
           <div class="separator"></div>
 
           <span>
-            {{ shark.distribution }}
+            {{ $t(`sharks.${shark.path}.distribution`) }}
           </span>
         </div>
         <div class="s-card-container-content-grid pagination">
