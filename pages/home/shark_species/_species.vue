@@ -10,7 +10,7 @@
           <nuxt-img preload :src="src" format="webp" />
         </div>
         <div class="s-card-container-content-grid size">
-          <span class="section-title">Size</span>
+          <span class="section-title">{{ $t(`shark.length`) }}</span>
           <span class="size">{{ shark.length }}</span>
         </div>
         <div class="s-card-container-content-grid iucn">
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="s-card-container-content-grid description">
-          <span class="section-title">Description</span>
+          <span class="section-title">{{ $t(`shark.ds`) }}</span>
 
           {{ $t(`sharks.${shark.path}.description`) }}
         </div>

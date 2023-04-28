@@ -11,7 +11,8 @@
   "shark": {
     "dm": "distribution map",
     "cs": "Conservation status",
-    "length": "length",
+    "ds": "description",
+    "length": "Size",
     "weight": "weight",
     "av": "average",
     "iucnStatus": {

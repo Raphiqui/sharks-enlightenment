@@ -11,7 +11,8 @@
   "shark": {
     "dm": "mapa de distribución",
     "cs": "Estado de conservación",
-    "length": "longitud",
+    "ds": "Descripción",
+    "length": "Tamaño",
     "weight": "peso",
     "av": "promedio",
     "iucnStatus": {
@@ -75,11 +76,11 @@
     }
   },
   "about": {
-    "1": "Work of a passionate about oceanography and everything related to it.",
-    "2": "Working as software engineer, swimmer, sportsman in general.",
-    "3": "Enthusiast since I was born about everything bounded to ocean and especially about sharks I dedicated free time to study and learn about them as much as possible alongside other passions I have.",
-    "4": "Sharks have always been fascinating creatures to me.",
-    "5": "If one day I can work alongside them, I'd have accomplished the biggest dream of my life."
+    "1": "Trabajo de un apasionado de la oceanografía y todo lo relacionado con ella.",
+    "2": "Trabajo como ingeniero de software, nadador y deportista en general.",
+    "3": "Soy un entusiasta desde que nací de todo lo relacionado con el océano, y especialmente de los tiburones. Dedico mi tiempo libre a estudiar y aprender sobre ellos tanto como sea posible, junto con otras pasiones que tengo.",
+    "4": "Los tiburones siempre han sido criaturas fascinantes para mí.",
+    "5": "Si algún día puedo trabajar junto a ellos, habré cumplido el mayor sueño de mi vida."
   },
   "sharks": {
     "blue_shark": {
@@ -170,12 +171,12 @@
       "uicn_status": "VU"
     },
     "smalltooth_sand_tiger": {
-      "name": "Pequeño tiburón tigre de dientes de arena",
+      "name": "Tigre de dientes de arena",
       "scientific_name": "Odontaspis ferox",
       "uicn_status": "NT"
     },
     "bluntnose_sixgill_shark": {
-      "name": "Tiburón de seis branquias de hocico roma",
+      "name": "Bluntnose sixgill tiburón",
       "scientific_name": "Hexanchus griseus",
       "uicn_status": "NT"
     },

@@ -2,7 +2,7 @@
   <div class="question-box">
     <div class="question-box-inside">
       <div class="question-container-header">
-        <h1 class="title">Quiz</h1>
+        <h1 class="title">{{ $t("header.2") }}</h1>
       </div>
 
       <div class="question-container" v-if="questionIndex < questions.length">

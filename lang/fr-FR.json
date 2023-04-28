@@ -5,12 +5,13 @@
   "see_more": "voir plus",
   "header": {
     "1": "requins",
-    "2": "quiz",
+    "2": "Quiz",
     "3": "à propos"
   },
   "shark": {
     "dm": "carte de répartition",
     "cs": "Statut de conservation",
+    "ds": "description",
     "length": "taille",
     "weight": "poids",
     "av": "moyenne",
