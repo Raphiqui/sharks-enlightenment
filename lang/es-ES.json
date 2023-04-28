@@ -86,13 +86,16 @@
     "blue_shark": {
       "name": "Blue shark",
       "scientific_name": "Prionace glauca",
-      "descripcion": "Los tiburones azules son depredadores curiosos de alta mar que viven en todo el océano global, desde los trópicos hasta las aguas templadas frías. Pasan la mayor parte de sus vidas lejos de la costa y son verdaderamente una especie pelágica. El nombre común proviene del color azul de la piel, único entre los tiburones.",
-      "uicn_status": "NT"
+      "description": "Los tiburones azules son depredadores curiosos de alta mar que viven en todo el océano global, desde los trópicos hasta las aguas templadas frías. Pasan la mayor parte de sus vidas lejos de la costa y son verdaderamente una especie pelágica. El nombre común proviene del color azul de la piel, único entre los tiburones.",
+      "uicn_status": "NT",
+      "distribution": "El tiburón azul habita en todos los océanos y mares del mundo. Este tiburón es pelágico, pero ocasionalmente puede permanecer cerca del cinturón continental. A veces se observan tiburones azules jóvenes cerca de la costa."
     },
     "bronze_whale_shark": {
       "name": "Bronze whale shark",
       "scientific_name": "Carcharhinus brachyurus",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "description": "El tiburón cobre es una especie de tiburón de la familia Carcharhinidae, y el único miembro de su género que se encuentra en latitudes correspondientes a un clima templado.",
+      "distribution": "Le Requin cuivre est le seul membre de son genre que l'on rencontre largement dans les eaux tempérées plutôt que tropicales. Il est assez largement distribué mais son aire de répartition est fragmentée, avec peu ou pas d’interactions entre elles."
     },
     "bull_shark": {
       "name": "Bull shark",

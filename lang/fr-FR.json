@@ -87,7 +87,8 @@
       "name": "Requin bleu",
       "scientific_name": "Prionace glauca",
       "description": "Les requins bleus sont des prédateurs curieux et pélagiques qui vivent dans les océans du monde entier, des tropiques aux eaux tempérées froides. Ils passent la majeure partie de leur vie loin des côtes et sont véritablement une espèce pélagique. Leur nom commun vient de la couleur bleue de leur peau, unique parmi les requins.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "Le Requin bleu habite tous les océans et mers du monde. Ce requin est pélagique mais peut occasionnellement rester à proximité de la ceinture continentale. De jeunes requins bleu sont parfois observés près des côtes."
     },
     "bronze_whale_shark": {
       "name": "Requin cuivre",

@@ -3,8 +3,12 @@
     <div class="s-card-container">
       <div class="s-card-container-content">
         <div class="s-card-container-content-grid title">
-          <h2 class="title">{{ $t(`sharks.${shark.path}.name`) }}</h2>
-          <h3>{{ shark.scientific_name }}</h3>
+          <h2 class="title">
+            {{ $t(`sharks.${shark.path}.name`) }}
+          </h2>
+          <h3>
+            {{ shark.scientific_name }}
+          </h3>
         </div>
         <div class="s-card-container-content-grid img">
           <nuxt-img preload :src="src" format="webp" />
@@ -48,7 +52,9 @@
           {{ $t(`sharks.${shark.path}.description`) }}
         </div>
         <div class="s-card-container-content-grid rangemap">
-          <span class="section-title"> {{ $t("shark.dm") }} </span>
+          <span class="section-title">
+            {{ $t("shark.dm") }}
+          </span>
           <img
             v-if="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
             :src="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
@@ -138,7 +144,10 @@ export default {
         width: "1414",
       }
     );
-    return { src, shark };
+    return {
+      src,
+      shark,
+    };
   },
   mounted() {
     const paths = this.$store.state.sharksTable.map((item) => {

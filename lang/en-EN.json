@@ -87,12 +87,14 @@
       "name": "Blue shark",
       "scientific_name": "Prionace glauca",
       "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "The blue shark inhabits all the oceans and seas of the world. This shark is pelagic but may occasionally stay close to the continental belt. Young blue sharks are sometimes observed near the coast."
     },
     "bronze_whale_shark": {
       "name": "Bronze whale shark",
       "scientific_name": "Carcharhinus brachyurus",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "description": "The copper shark is a species of shark in the family Carcharhinidae, and the only member of its genus found at latitudes corresponding to a temperate climate."
     },
     "bull_shark": {
       "name": "Bull shark",
