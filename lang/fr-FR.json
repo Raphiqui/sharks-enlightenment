@@ -94,98 +94,120 @@
       "name": "Requin cuivre",
       "scientific_name": "Carcharhinus brachyurus",
       "description": "Le Requin cuivre est une espèce de requins de la famille des Carcharhinidae, et le seul membre de son genre que l'on trouve à des latitudes correspondant à un climat tempéré.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "Le Requin cuivre est le seul membre de son genre que l'on rencontre largement dans les eaux tempérées plutôt que tropicales."
     },
     "bull_shark": {
       "name": "Requin bouledogue",
       "scientific_name": "Carcharhinus leucas",
       "description": "Le requin bouledogue est une espèce prédatrice qui vit dans les mers côtières et est le requin ayant la meilleure capacité à se déplacer dans les eaux douces - en particulier les grands fleuves côtiers et les lacs. Ils peuvent se déplacer facilement entre l'eau salée et l'eau douce. Ce comportement les amène à entrer en contact avec les humains plus que la plupart des espèces de requins, et ils sont donc responsables de mordre mortellement plus de personnes que toute autre espèce.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "Le requin-bouledogue se rencontre sur les côtes de toutes les mers tropicales et subtropicales du monde. Il est fréquent dans l'Atlantique et l'Indo-Pacifique, mais beaucoup plus rare en mer Rouge. Dans l'océan Pacifique, on le trouve de la Basse Californie à l'Équateur. Il est à la fois côtier et semi-pélagique selon les régions et les stades de vie, affectionnant des profondeurs comprises entre la surface et jusqu'à potentiellement plus de 250 mètres, mais généralement autour de 30m. Il apprécie plus particulièrement les eaux boueuses ou à forte turbidité, par exemple à embouchure d'un fleuve après un cyclone tropical."
     },
     "dusty_shark": {
       "name": "Requin sombre",
       "scientific_name": "Carcharhinus obscurus",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "description": "Le requin de sable est un requin assez massif pouvant atteindre 4 m et peser plus de 300 kg mais la plupart des individus observés mesurent autour de 2,5 m et pèsent 200 kg. C'est une espèce ayant de grands yeux verts/jaunes et pouvant être confondue avec le requin bouledogue.Comme son nom l'indique, il possède un dos sombre, gris-sombre chez les juvéniles et gris plus clair pour les adultes.",
+      "distribution": "Il est présent dans les trois grands océans (Indien, Atlantique et Pacifique) mais préfère les eaux chaudes (au-dessus de 25 degrés) ainsi que saumâtres. Cette espèce est également présente en Méditerranée, plus particulièrement en Méditerranée orientale."
     },
     "gray_nurse_shark": {
       "name": "Requin taureau",
       "scientific_name": "Carcharias taurus",
       "description": "Le Requin taureau, également connu sous le nom de requin gris de récif, est un prédateur côtier à déplacement lent caractérisé par son museau conique aplati et ses dents pointues et saillantes similaires à celles du requin tigre. Il a de petits yeux et une peau brun clair qui ressemble au sable, aidant le requin à se fondre dans son environnement lorsqu'il est observé depuis le dessus.",
-      "uicn_status": "CR"
+      "uicn_status": "CR",
+      "distribution": "Le requin-taureau vit au large des côtes australiennes, américaines et sud-africaines, et plus largement dans l'océan Atlantique, l'océan Indien, l'océan Pacifique, la mer Rouge et la Méditerranée (plus précisément Méditerranée occidentale). C'est un migrateur, et on le retrouve dans de nombreuses zones tempérées."
     },
     "hammerhead_shark": {
       "name": "Requin marteau",
       "scientific_name": "Sphyrna zygaena",
       "description": "Le grand requin-marteau est le plus grand de toutes les espèces de requins-marteaux, atteignant une longueur maximale connue de 20 pieds (6,1 m) et un poids de 991 livres (450 kg). L'espèce se distingue des autres requins-marteaux par sa tête (céphalofoil) en forme de marteau presque droite qui a une indentation proéminente au milieu.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "C’est un requin cosmopolite, largement répandu dans les mers tempérées, tropicales et subtropicales du globe. On le retrouve généralement dans des profondeurs variant de 0 à 200 m. Il s’observe plus facilement dans le Golfe de Guinée durant la saison froide (décembre à mai) et notamment vers le Sénégal. Au contraire, il migre vers le nord en été."
     },
     "tiger_shark": {
       "name": "Requin tigre",
       "scientific_name": "Galeocerdo cuvier",
       "description": "Le requin tigre tire son nom des barres verticales caractéristiques qui recouvrent les côtés de son corps. Bien que ces barres s'estompent légèrement lorsque les individus atteignent l'âge adulte, elles sont très visibles chez les jeunes et au moins partiellement visibles tout au long de leur vie. Atteignant des longueurs d'au moins 18 pieds (5,5 m) et un poids de 2000 livres (près d'une tonne métrique), le requin tigre est le quatrième plus grand requin et le deuxième plus grand requin prédateur, derrière seulement le grand blanc.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "Son habitat est côtier et pélagique. Il est présent dans toutes les mers tropicales et subtropicales, avec une préférence pour les eaux à forte turbidité estuaires, lagons, de la surface à - 350 mètres. Il est très présent dans les Caraïbes, dans l'océan Indien et dans tout le Pacifique. Il est solitaire et résident ou semi-résident autour de certaines îles volcaniques, évoluant néanmoins parfois en petits groupes. Bien que non océanique, il lui arrive d'opérer de grandes traversées entre les îles, notamment dans le Pacifique. Son activité est principalement nocturne. Le jour, il rejoint les eaux profondes et n'en sort que quand la nuit tombe pour chasser."
     },
     "whale_shark": {
       "name": "Requin baleine",
       "scientific_name": "Rhincodon typus",
       "description": "Le plus grand poisson du monde est le gracieux et inoffensif requin baleine. Bien qu'ils atteignent la taille d'un bus scolaire, les requins baleines mangent de petits planctons et des œufs de poissons, qu'ils filtrent pendant qu'ils nagent lentement avec leur bouche géante grande ouverte. Ils sont l'une des seules trois espèces de requins filtreurs.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "On rencontre le requin-baleine dans les eaux tropicales et tempérées à chaudes de l'Atlantique, du Pacifique et de l'océan Indien. En hiver, de jeunes requins-baleines viennent se nourrir de plancton dans les eaux riches en nutriments du golfe de Tadjourah, au large de Djibouti. Le requin-baleine vit dans une bande autour de l'équateur jusqu'à 30° de latitude Nord et 35° de latitude Sud. C'est une espèce essentiellement pélagique vivant au large en eau très profonde."
     },
     "white_shark": {
       "name": "Grand requin blanc",
       "scientific_name": "Carcharodon carcharias",
-      "description": " Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
-      "uicn_status": "VU"
+      "description": "Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
+      "uicn_status": "VU",
+      "distribution": "L'habitat du grand requin blanc est principalement côtier dans les eaux tempérées, mais il a aussi été observé en zones épipélagiques dans l'océan. C'est un amateur des eaux peu profondes, mais un spécimen a cependant été pêché sur une longue ligne de 1 280 m."
     },
     "basking_shark": {
       "name": "Requin pèlerin",
       "scientific_name": "Cetorhinus maximus",
       "description": "Le requin pèlerin est le deuxième plus grand poisson du monde et, comme le plus grand poisson (le requin baleine) et le plus grand animal (les grandes baleines), il se nourrit de plancton. Mesurant jusqu'à 40 pieds (12 m) et ressemblant à des requins prédateurs en apparence, le requin pèlerin peut donner une impression intimidante, mais il est totalement inoffensif. Il passe la plupart de son temps près de la surface, nageant la bouche grande ouverte pour filtrer sa nourriture préférée, mais il peut également faire des plongées plus profondes pour se nourrir.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "Le Pèlerin préfère les secteurs où se concentre le zooplancton. Il s'agit des fronts où les masses d'eau se rencontrent ou des caps et des zones de fortes marées autour des îles et dans les baies. Une étude de 2008 montre que ce requin utilise peut-être également des habitats de plus de 1 000 m de profondeur."
     },
     "spiny_dogfish": {
       "name": "Aiguillat commun",
       "scientific_name": "Squalus acanthias",
       "description": "The spiny dogfish may go by many names, including piked dogfish, rock salmon and spiky dog, but only one truly represents this shark’s unique defense strategy. Using sharp, venomous spines in the front of each dorsal fin, the spiny dogfish is a small but mighty predator that isn’t afraid to take a jab at passing fish. They are considered one of the most abundant living shark species in the ocean, but are harmless to humans.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "L'aiguillat se retrouve entre les eaux fraîches et peu profondes des zones tempérées et subarctiques de l'hémisphère nord, dans les océans Atlantique et Pacifique1. Il vit à des profondeurs de 10 à 200 m, mais a déjà été observé à 960 m de profondeur. C'est un poisson migrant au rythme des saisons, se tenant dans des eaux dont la température oscille entre 5 et 16 °C et qui se reproduit au large."
     },
     "shortfin_mako_shark": {
       "name": "Requin mako",
       "scientific_name": "Isurus oxyrinchus",
       "description": "Le requin mako est un grand prédateur vivant en haute mer, atteignant une longueur de 12 pieds (3,8 m) et un poids d'au moins 1200 livres (545 kg). Avec une vitesse maximale de 45 miles par heure (74 kilomètres par heure), le requin mako est le plus rapide des requins et l'un des poissons les plus rapides de la planète. L'athlétisme de cette espèce ne se limite pas à sa vitesse de nage. Il est connu pour son incroyable capacité de saut et peut être observé sautant à des hauteurs extrêmes (hors de l'eau) lorsqu'il chasse.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "Pélagique et parfois côtier en eaux tropicales et tempérées. Évolue de la surface à 740 mètres de profondeur"
     },
     "grey_shark": {
       "name": "Requin gris",
       "scientific_name": "Carcharhinus amblyrhynchos",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "description": "Attention, deux espèces de requins sont nommées « requin gris » : Carcharhinus amblyrhynchos mais aussi Carcharhinus plumbeus. Pour cette raison, il est préférable de préciser « Requin gris de récif » pour Carcharhinus amblyrhynchos. Le Requin gris de récif a un corps élancé modérément corpulent et un long et large museau émoussé. Les yeux sont presque circulaires.",
+      "distribution": "Le Requin gris de récif est originaire de l'océan Indien et de l'océan Pacifique. Dans l'océan indien, on le rencontre de l'Afrique du Sud à l'Inde, en passant par Madagascar et les îles situées à proximité, la mer Rouge et les Maldives. Dans l'océan Pacifique, il vit du sud de la Chine au nord de l'Australie et de la Nouvelle-Zélande en passant par le golfe de Thaïlande, les Philippines et l'Indonésie. Cette espèce a également été observée au large de très nombreuses îles du Pacifique."
     },
     "thresher_shark": {
       "name": "Requin renard commun",
       "scientific_name": "Alopias vulpinus",
       "description": "Le requin-renard pélagique est l'un des trois requins-renards, tous connus pour leur queue extrêmement longue. La queue des requins-renards pélagiques adultes est plus longue que le reste du corps. Les scientifiques estiment qu'ils sont très migrateurs, mais il n'y a pas eu suffisamment d'études de marquage pour confirmer cette suspicion. On en sait peu sur l'écologie des requins-renards pélagiques, car ils sont difficiles à étudier dans leur habitat naturel (l'océan ouvert).",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "La répartition du Requin-renard commun englobe toutes les eaux tropicales et tempérées froides."
     },
     "porbeagle": {
       "name": "Porbeagle",
       "scientific_name": "Lamna nasus",
       "description": "Le requin-taupe commun est un requin à grande portée qui est reconnaissable à son museau conique, son ventre blanc et son dos gris foncé. Les chercheurs ont proposé que le nom du requin-taupe commun vienne de la combinaison de 'marsouin' et de 'beagle' - faisant référence à la forme arrondie de son corps et à ses méthodes de chasse opiniâtres.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "Ce requin fréquente le littoral et la zone épipélagique (0 à 370 m) est absent des eaux équatoriales; il préfère les eaux froides inférieures à 18 °C. Principalement présent dans l'Atlantique nord, on le trouve aussi en Australie, au Brésil et au Chili."
     },
     "smalltooth_sand_tiger": {
       "name": "Requin féroce",
       "scientific_name": "Odontaspis ferox",
-      "uicn_status": "NT"
+      "description": "Le requin féroce est une espèce de requin de la famille des Odontaspididae, qui vit jusqu'à 1 000 mètres de fond et peut atteindre cinq mètres de long. Il est nommé « féroce » à cause de sa denture proéminente et menaçante, mais ne semble pas agressif envers l'homme - qu'il a de toute manière peu de chances de rencontrer vu sa profondeur habituelle.",
+      "uicn_status": "NT",
+      "distribution": "C'est un requin de grande profondeur, signalé ponctuellement dans le monde entier. On le rencontre par exemple dans les eaux colombiennes de l'île de Malpelo. À une certaine période de l'année, on peut parfois l'observer car il remonte à moindre profondeur quand les eaux de surface sont froides (à cause du courant de Humboldt)."
     },
     "bluntnose_sixgill_shark": {
       "name": "Requin griset",
       "scientific_name": "Hexanchus griseus",
-      "uicn_status": "NT"
+      "description": "Le requin griset est un requin massif, possédant une large tête arrondie ou pointue. Il possède 6 paires de fentes branchiales et une seule nageoire dorsale à l'arrière du corps, caractères souvent décrits comme primitifs dans la littérature, ainsi que de petits yeux verts fluorescents et rétractables. La bouche est placée sur la face ventrale et contient 6 rangées de dents en forme de peigne. La queue est courte et trapue. Il ne voit qu'en monochrome.",
+      "uicn_status": "NT",
+      "distribution": "Le requin griset est l'un des requins les plus largement réparti au monde puisqu'il est présent dans les mers tempérées ou tropicales de l'Atlantique Est et Ouest, du Pacifique Occidental, Central et Oriental, ainsi qu'en Mer Méditerranée, bien que ses populations ne soient jamais très abondantes dans les zones d’observation."
     },
     "salmon_shark": {
       "name": "Requin saumon",
       "scientific_name": "Lamna ditropis",
-      "uicn_status": "NT"
+      "description": "Le requin saumon ou requin-taupe du Pacifique (Lamna ditropis) est une espèce de requin de la famille des Lamnidés. C'est un prédateur du saumon dont il tire son nom. Il peut atteindre 3 mètres de long, il est capable de nager à plus de 50km/h. Le requin saumon a la faculté de supporter des températures très froides comme celles de l'Alaska où, en hiver, la température de l'eau varie entre 2 et 8 °C. Cette faculté résulte d'un système vasculaire spécifique.",
+      "uicn_status": "NT",
+      "distribution": "Il vit dans l'océan Pacifique nord, surtout en Alaska, mais peut migrer jusque dans des zones subtropicales, une étude par balisage ayant montré qu'il pouvait descendre jusqu'à Hawaii et parcourir plus de 18 000 km en 640 jours. Les femelles sont plus fréquentes au niveau des côtes d'Alaska, alors que les mâles se concentrent du côté sibérien. On le trouve de la surface à 650 mètres de fond."
     }
   }
 }
