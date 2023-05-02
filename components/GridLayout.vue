@@ -2,29 +2,31 @@
   <div>
     <div class="gl-container">
       <div class="gl-title">
-        Little summary of causes of deaths made by the
+        {{ $t(`home.study_table.title`) }}
         <a
           href="https://www.floridamuseum.ufl.edu/shark-attacks/odds/compare-risk/death/"
-          >university of Florida</a
+          >{{ $t(`home.study_table.title_link`) }}</a
         >
       </div>
       <div class="gl-column-container">
         <div class="gl-column">
           <div class="gl-text -header">
-            disease and accidental causes of deaths
+            {{ $t(`home.study_table.tab1.title`) }}
           </div>
-          <div class="gl-text">Heart disease</div>
-          <div class="gl-text">Cancer</div>
-          <div class="gl-text">Flu</div>
-          <div class="gl-text">Car accidents</div>
-          <div class="gl-text">Drowning</div>
-          <div class="gl-text">Air/space accident</div>
-          <div class="gl-text">Lightning</div>
-          <div class="gl-text">Shark related fatalities</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line1`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line2`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line3`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line4`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line5`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line6`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line7`) }}</div>
+          <div class="gl-text">{{ $t(`home.study_table.tab1.line8`) }}</div>
         </div>
 
         <div class="gl-column">
-          <div class="gl-text -header">annual deaths</div>
+          <div class="gl-text -header">
+            {{ $t(`home.study_table.tab2.title`) }}
+          </div>
           <div class="gl-text">652,486</div>
           <div class="gl-text">553,888</div>
           <div class="gl-text">59,664</div>
@@ -36,15 +38,33 @@
         </div>
 
         <div class="gl-column">
-          <div class="gl-text -header">death risk during one's lifetime</div>
-          <div class="gl-text">1 in 5</div>
-          <div class="gl-text">1 in 7</div>
-          <div class="gl-text">1 in 63</div>
-          <div class="gl-text">1 in 84</div>
-          <div class="gl-text">1 in 1,134</div>
-          <div class="gl-text">1 in 5,051</div>
-          <div class="gl-text">1 in 79,746</div>
-          <div class="gl-text">1 in 4,332,817</div>
+          <div class="gl-text -header">
+            {{ $t(`home.study_table.tab3.title`) }}
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 5
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 7
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 63
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 84
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 1,134
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 5,051
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 79,746
+          </div>
+          <div class="gl-text">
+            1 {{ $t(`home.study_table.preposition_in`) }} 4,332,817
+          </div>
         </div>
       </div>
     </div>

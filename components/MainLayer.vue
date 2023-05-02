@@ -5,7 +5,7 @@
       :image-path="require('@/assets/images/shark1.jpg')"
     />
     <GridLayout />
-    <Parallax text="Those numbers make our fear irrational" />
+    <Parallax :text="$t(`home.parallax.msg`)" />
     <ImageAndText :imageAlignLeft="true" imagePath="jaws_xm9up8.jpg" />
   </div>
 </template>

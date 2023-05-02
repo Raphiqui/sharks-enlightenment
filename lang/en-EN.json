@@ -82,6 +82,38 @@
     "4": "Sharks have always been fascinating creatures to me.",
     "5": "If one day I can work alongside them, I'd have accomplished the biggest dream of my life."
   },
+  "home": {
+    "study_table": {
+      "title": "Little summary of causes of deaths made by the ",
+      "title_link": "university of Florida",
+      "preposition_in": "in",
+      "tab1": {
+        "title": "disease and accidental causes of deaths",
+        "line1": "heart disease",
+        "line2": "cancer",
+        "line3": "flu",
+        "line4": "car accidents",
+        "line5": "drowning",
+        "line6": "air/space accident",
+        "line7": "lightning",
+        "line8": "shark related fatalities"
+      },
+      "tab2": {
+        "title": "annual deaths"
+      },
+      "tab3": {
+        "title": "death risk during one's lifetime"
+      }
+    },
+    "parallax": {
+      "msg": "Those numbers make our fear irrational"
+    },
+    "ingAndtxt": {
+      "text1": "When talking about sharks many people think about a specific movie. This movie is considered as",
+      "text2": "for having frighten an entire generation (even if it's a great movie and one of my favorite). It was so well made that it still inspires our fear of sharks.",
+      "text_italic": "responsible"
+    }
+  },
   "sharks": {
     "blue_shark": {
       "name": "Blue shark",

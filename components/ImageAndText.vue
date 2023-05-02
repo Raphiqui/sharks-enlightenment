@@ -5,10 +5,7 @@
         <nuxt-img preload :src="src" format="webp" :height="height" />
       </div>
       <div class="image-and-text-container-content-text">
-        When talking about sharks many people think about a specific movie. 
-        This movie is considered as <i>"responsible"</i> responsible for having frighten an entire generation (even if
-        it's a great movie and one of my favorite).
-        It was so well made that it still inspires our fear of sharks.
+        {{$t(`home.ingAndtxt.text1`)}} <i>"{{$t(`home.ingAndtxt.text_italic`)}}"</i> {{$t(`home.ingAndtxt.text2`)}}
       </div>
     </div>
   </div>

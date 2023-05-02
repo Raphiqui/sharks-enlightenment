@@ -82,6 +82,38 @@
     "4": "Les requins ont toujours été des créatures fascinantes pour moi.",
     "5": "Si un jour je peux travailler à leurs côtés, j'aurais réalisé le plus grand rêve de ma vie."
   },
+  "home": {
+    "study_table": {
+      "title": "Résumé de différentes causes de décès fait par l'",
+      "title_link": "université de Floride",
+      "preposition_in": "sur",
+      "tab1": {
+        "title": "maladies et accidents entrennants la mort",
+        "line1": "crise cardiaque",
+        "line2": "cancer",
+        "line3": "rhume",
+        "line4": "accidents de voiture",
+        "line5": "noyade",
+        "line6": "accidents d'avion/spatial",
+        "line7": "frapper par la foudre",
+        "line8": "accident en lien avec des requins"
+      },
+      "tab2": {
+        "title": "décès annuels"
+      },
+      "tab3": {
+        "title": "risques de décès durant l'existance"
+      }
+    },
+    "parallax": {
+      "msg": "Ces chiffres rendent notre peur irrationnelle"
+    },
+    "ingAndtxt": {
+      "text1": "Quand on parle de requins, beaucoup de gens pensent à un film en particulier. Ce film est considéré comme",
+      "text2": "d'avoir effrayé toute une génération (même si c'est un grand film et un de mes préférés). Il était si bien fait qu'il inspire encore notre peur des requins.",
+      "text_italic": "responsable"
+    }
+  },
   "sharks": {
     "blue_shark": {
       "name": "Requin bleu",
