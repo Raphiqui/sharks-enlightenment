@@ -2,187 +2,244 @@
   "next": "siguiente",
   "restart": "reiniciar",
   "correct": "Respuesta correcta",
-  "see_more": "Ver más",
+  "see_more": "ver más",
   "header": {
     "1": "Tiburones",
-    "2": "Quiz",
-    "3": "About"
+    "2": "Cuestionario",
+    "3": "Acerca de"
   },
   "shark": {
-    "dm": "mapa de distribucion",
+    "dm": "mapa de distribución",
     "cs": "Estado de conservación",
-    "length": "longitud",
+    "ds": "Descripción",
+    "length": "Tamaño",
     "weight": "peso",
     "av": "promedio",
     "iucnStatus": {
-      "EX": "extinguido",
+      "EX": "extinto",
       "EW": "extinto en la naturaleza",
-      "CR": "crítico en peligro",
-      "EN": "en peligro de extinción",
+      "CR": "en peligro crítico",
+      "EN": "en peligro",
       "VU": "vulnerable",
       "NT": "casi amenazado",
-      "LT": "menor preocupación"
+      "LT": "preocupación menor"
     }
   },
   "quiz": {
-    "contextual1": "You're well aware about sharks !",
-    "contextual2": "You've knowledge for sure but you could learn more !",
-    "contextual3": "It seems you should interest yourself a little bit more, don't worry you'll discover a lot of amazing things !",
+    "contextual1": "¡Sabes mucho sobre tiburones!",
+    "contextual2": "¡Tienes conocimientos, pero podrías aprender más!",
+    "contextual3": "Parece que deberías interesarte un poco más, ¡no te preocupes, descubrirás muchas cosas increíbles!",
     "1": {
-      "text": "Are sharks in danger",
+      "text": "¿Están los tiburones en peligro?",
       "responses": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "3": "Maybe"
+        "3": "Quizás"
       },
-      "answer": "Definitely. Even if some of the species are not categorized by the iucn as 'in danger', that's not when it's too late that we'd change something. It should be done way before. Global warming, intensive fishing, destruction of their environments are some of the reasons why all type of sharks are actually in danger."
+      "answer": "Definitivamente sí. Incluso si algunas de las especies no están categorizadas por la IUCN como 'en peligro', eso no significa que debamos esperar a que sea demasiado tarde para hacer algo. Deberíamos actuar mucho antes. El calentamiento global, la pesca intensiva y la destrucción de sus hábitats son algunas de las razones por las que todos los tipos de tiburones están en peligro."
     },
     "2": {
-      "text": "Are sharks killers like in the movies",
+      "text": "¿Los tiburones son asesinos como en las películas?",
       "responses": {
-        "1": "Yes, absolutely",
-        "2": "Not at all",
-        "3": "Sometimes they can kill for pleasure"
+        "1": "Sí, absolutamente",
+        "2": "Para nada",
+        "3": "A veces pueden matar por placer"
       },
-      "answer": "No, they're not killers. That's not because they're shown acting like killers that this is true. In fact sharks are rarely hunting because they're not eating much. Also, to them human flesh is not a very tasty meal. Finally, this notion of 'killer' is really human and shouldn't be applied to shark's behaviors."
+      "answer": "No, no son asesinos. El hecho de que se les muestre actuando como asesinos no significa que sea cierto. De hecho, los tiburones raramente cazan porque no comen mucho. Además, para ellos la carne humana no es una comida muy sabrosa. Finalmente, esta noción de 'asesino' es realmente humana y no debería aplicarse al comportamiento de los tiburones."
     },
     "3": {
-      "text": "What is shark finning",
+      "text": "¿Qué es el aleteo de tiburón?",
       "responses": {
-        "1": "A movement made by associations to save and protect sharks",
-        "2": "Some barbaric practice",
-        "3": "A specific behavior which occurs only when sharks are eating"
+        "1": "Un movimiento realizado por asociaciones para salvar y proteger a los tiburones",
+        "2": "Una práctica bárbara",
+        "3": "Un comportamiento específico que ocurre solo cuando los tiburones están comiendo"
       },
-      "answer": "Shark finning is the act of removing fins from sharks and discarding the rest of the shark back into the ocean. This act is prohibited in many countries. The sharks are often still alive when discarded, but without their fins. Unable to swim effectively, they sink to the bottom of the ocean and die of suffocation or are eaten by other predators."
+      "answer": "El aleteo de tiburón es el acto de quitar las aletas de los tiburones y descartar el resto del tiburón de vuelta al océano. Este acto está prohibido en muchos países. A menudo, los tiburones aún están vivos cuando se descartan, pero sin sus aletas. Incapaces de nadar eficazmente, se hunden en el fondo del océano y mueren por asfixia o son comidos por otros depredadores."
     },
     "4": {
-      "text": "Can we observe great white sharks in captivity",
+      "text": "¿Podemos observar tiburones blancos en cautiverio?",
       "responses": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "3": "Sometimes"
+        "3": "A veces"
       },
-      "answer": "It seems that they're incapable to survive in captivity. During the past some tries have been made such as the one in 2016 at Okinawa island in the south of Japan, Churaumi aquarium tried to conserve a male victim of unfortunate fishing. He died 3 days after being captured. Studies showed that he refused to eat. In fact great white sharks travel hundreds of kilometers, we can't image the size of the aquarium to contain such space. Moreover, they can develop psychological diseases being separated from their natural environment."
+      "answer": "Parece que son incapaces de sobrevivir en cautiverio. En el pasado se han realizado algunos intentos, como el de 2016 en la isla de Okinawa, en el sur de Japón, donde el acuario Churaumi intentó conservar a un macho víctima de una pesca desafortunada. Murió 3 días después de ser capturado. Los estudios mostraron que se negó a comer. De hecho, los tiburones blancos viajan cientos de kilómetros, no podemos imaginar el tamaño del acuario necesario para contener ese espacio. Además, pueden desarrollar enfermedades psicológicas al ser separados de su entorno natural."
     },
     "5": {
-      "text": "Why can't we see skeleton of sharks",
+      "text": "¿Por qué no podemos ver el esqueleto de los tiburones?",
       "responses": {
-        "1": "Strictly speaking, they've no skeleton",
-        "2": "It's very difficult to get them because they're drowning deeply to the abysses",
-        "3": "Nobody mind about shark skeletons"
+        "1": "Estrictamente hablando, no tienen un esqueleto",
+        "2": "Es muy difícil obtenerlos porque se ahogan profundamente en las profundidades",
+        "3": "A nadie le importa el esqueleto de los tiburones"
       },
-      "answer": "Sharks have cartilage skeleton, they don't have bones covering their body like a fish you can buy at the supermarket. As so, when they die, everything can be eaten by their relatives into the ocean."
+      "answer": "Los tiburones tienen un esqueleto de cartílago, no tienen huesos que cubran su cuerpo como un pez que se puede comprar en el supermercado. Por lo tanto, cuando mueren, todo puede ser comido por sus parientes en el océano."
     }
   },
   "about": {
-    "1": "Work of a passionate about oceanography and everything related to it.",
-    "2": "Working as software engineer, swimmer, sportsman in general.",
-    "3": "Enthusiast since I was born about everything bounded to ocean and especially about sharks I dedicated free time to study and learn about them as much as possible alongside other passions I have.",
-    "4": "Sharks have always been fascinating creatures to me.",
-    "5": "If one day I can work alongside them, I'd have accomplished the biggest dream of my life."
+    "1": "Trabajo de un apasionado de la oceanografía y todo lo relacionado con ella.",
+    "2": "Trabajo como ingeniero de software, nadador y deportista en general.",
+    "3": "Soy un entusiasta desde que nací de todo lo relacionado con el océano, y especialmente de los tiburones. Dedico mi tiempo libre a estudiar y aprender sobre ellos tanto como sea posible, junto con otras pasiones que tengo.",
+    "4": "Los tiburones siempre han sido criaturas fascinantes para mí.",
+    "5": "Si algún día puedo trabajar junto a ellos, habré cumplido el mayor sueño de mi vida."
+  },
+  "home": {
+    "study_table": {
+      "title": "Pequeño resumen de causas de muertes realizado por la ",
+      "title_link": "universidad de Florida",
+      "preposition_in": "sobre",
+      "tab1": {
+        "title": "enfermedades y causas accidentales de muerte",
+        "line1": "cardiopatía",
+        "line2": "cáncer",
+        "line3": "gripe",
+        "line4": "accidentes automovilísticos",
+        "line5": "ahogo",
+        "line6": "accidente aereo/espacial",
+        "line7": "iluminación",
+        "line8": "muertes relacionadas con tiburones"
+      },
+      "tab2": {
+        "title": "muertes anuales"
+      },
+      "tab3": {
+        "title": "riesgo de muerte durante la vida"
+      }
+    },
+    "parallax": {
+      "msg": "Esos números hacen que nuestro miedo sea irracional"
+    },
+    "ingAndtxt": {
+      "text1": "Cuando se habla de tiburones mucha gente piensa en una película en concreto. Esta película es considerada como la",
+      "text2": "de haber asustado a toda una generación (aunque sea una gran película y una de mis favoritas). Estaba tan bien hecho que todavía inspira nuestro miedo a los tiburones.",
+      "text_italic": "responsable"
+    }
   },
   "sharks": {
     "blue_shark": {
       "name": "Blue shark",
       "scientific_name": "Prionace glauca",
-      "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
-      "uicn_status": "NT"
+      "description": "Los tiburones azules son depredadores curiosos de alta mar que viven en todo el océano global, desde los trópicos hasta las aguas templadas frías. Pasan la mayor parte de sus vidas lejos de la costa y son verdaderamente una especie pelágica. El nombre común proviene del color azul de la piel, único entre los tiburones.",
+      "uicn_status": "NT",
+      "distribution": "El tiburón azul habita en todos los océanos y mares del mundo. Este tiburón es pelágico, pero ocasionalmente puede permanecer cerca del cinturón continental. A veces se observan tiburones azules jóvenes cerca de la costa."
     },
     "bronze_whale_shark": {
       "name": "Bronze whale shark",
       "scientific_name": "Carcharhinus brachyurus",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "description": "El tiburón cobre es una especie de tiburón de la familia Carcharhinidae, y el único miembro de su género que se encuentra en latitudes correspondientes a un clima templado.",
+      "distribution": "El tiburón cobre es el único miembro de su género que se encuentra ampliamente en aguas templadas en lugar de tropicales. Tiene una distribución bastante amplia, pero su rango está fragmentado, con poca o ninguna interacción entre ellos."
     },
     "bull_shark": {
       "name": "Bull shark",
       "scientific_name": "Carcharhinus leucas",
-      "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
-      "uicn_status": "NT"
+      "description": "El tiburón toro es una especie depredadora que vive en los mares costeros y es el tiburón con mejor capacidad para moverse en aguas dulces, especialmente en los grandes ríos y lagos costeros. Pueden moverse fácilmente entre el agua salada y el agua dulce. Este comportamiento hace que entren en contacto con humanos más que la mayoría de las especies de tiburones, por lo que son responsables de morder fatalmente a más personas que cualquier otra especie.",
+      "uicn_status": "NT",
+      "distribution": "El tiburón toro se encuentra en las costas de todos los mares tropicales y subtropicales del mundo. Es común en el Atlántico y el Indo-Pacífico, pero mucho más raro en el Mar Rojo. En el Océano Pacífico, se encuentra desde Baja California hasta el Ecuador. Es tanto costero como semipelágico según las regiones y etapas de vida, aficionado a las profundidades entre la superficie y hasta potencialmente más de 250 metros, pero generalmente alrededor de los 30 m. Aprecia especialmente el agua fangosa o muy turbia, por ejemplo en la desembocadura de un río después de un ciclón tropical."
     },
     "dusty_shark": {
       "name": "Dusty shark",
       "scientific_name": "Carcharhinus obscurus",
-      "uicn_status": "EN"
+      "description": "El tiburón arena es un tiburón bastante masivo que puede alcanzar los 4 m y pesar más de 300 kg, pero la mayoría de los individuos observados miden alrededor de 2,5 m y pesan 200 kg. Es una especie de grandes ojos verdes/amarillos que se puede confundir con el tiburón bulldog, como su nombre indica tiene el dorso oscuro, gris oscuro en los juveniles y gris más claro en los adultos.",
+      "uicn_status": "EN",
+      "distribution": "Está presente en los tres grandes océanos (Índico, Atlántico y Pacífico) pero prefiere aguas cálidas (por encima de los 25 grados) así como salobres. Esta especie también está presente en el Mediterráneo, más concretamente en el Mediterráneo oriental."
     },
     "gray_nurse_shark": {
       "name": "Gray nurse shark",
       "scientific_name": "Carcharias taurus",
-      "description": "The sand tiger shark, also known as the gray nurse shark, is a slow-moving coastal predator distinguished by its flattened, conical snout and spiked, protruding teeth similar to the tiger shark. It has small eyes and light brown skin that resembles sand, helping the shark blend into its surroundings when looked at from above.",
-      "uicn_status": "CR"
+      "description": "El tiburón toro, también conocido como tiburón gris de arrecife, es un depredador costero de movimiento lento que se caracteriza por su hocico cónico aplanado y dientes afilados y sobresalientes similares a los del tiburón tigre. Tiene ojos pequeños y una piel de color marrón claro que se asemeja a la arena, lo que ayuda a que el tiburón se mezcle con su entorno cuando se ve desde arriba.",
+      "uicn_status": "CR",
+      "distribution": "El tiburón toro vive frente a las costas de Australia, Estados Unidos y Sudáfrica, y más ampliamente en el Océano Atlántico, el Océano Índico, el Océano Pacífico, el Mar Rojo y el Mediterráneo (específicamente el Mediterráneo Occidental). Es un migrante, y se encuentra en muchas zonas templadas."
     },
     "hammerhead_shark": {
       "name": "Great Hammerhead shark",
       "scientific_name": "Sphyrna zygaena",
-      "description": "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
-      "uicn_status": "VU"
+      "description": "El gran tiburón martillo es la más grande de todas las especies de tiburones martillo, alcanzando una longitud máxima conocida de 20 pies (6,1 m) y un peso de 991 libras (450 kg). La especie se puede distinguir de otros tiburones martillo por su cabeza casi recta en forma de martillo (cefalofoil) que tiene una hendidura prominente en el medio.",
+      "uicn_status": "VU",
+      "distribution": "Es un tiburón cosmopolita, ampliamente distribuido en los mares templados, tropicales y subtropicales de todo el mundo. Generalmente se encuentra en profundidades que van de 0 a 200 m. Se observa más fácilmente en el Golfo de Guinea durante la estación fría (diciembre a mayo) y especialmente hacia Senegal. Por el contrario, migra al norte en verano."
     },
     "tiger_shark": {
       "name": "Tiger shark",
       "scientific_name": "Galeocerdo cuvier",
-      "description": "The tiger shark gets its name from the characteristic vertical bars that cover the sides of its body. Though these bars fade slightly as individuals reach adulthood, they are very noticeable in juveniles and at least party visible throughout the lifetime. Reaching lengths of at least 18 feet (5.5 m) and 2000 pounds (nearly a metric tonne), the tiger shark is the fourth largest shark and second largest predatory shark, behind only the great white.",
-      "uicn_status": "NT"
+      "description": "El tiburón tigre recibe su nombre de las características barras verticales que recubren los costados de su cuerpo. Aunque estas barras se desvanecen ligeramente a medida que los individuos alcanzan la edad adulta, son muy notorias en los jóvenes y al menos parcialmente visibles a lo largo de la vida. Alcanzando longitudes de al menos 18 pies (5,5 m) y un peso de 2000 libras (casi una tonelada métrica), el tiburón tigre es el cuarto tiburón más grande y el segundo tiburón depredador más grande, solo detrás del gran tiburón blanco.",
+      "uicn_status": "NT",
+      "distribution": "Su hábitat es costero y pelágico. Está presente en todos los mares tropicales y subtropicales, con preferencia por aguas con alta turbidez, estuarios, lagunas, desde la superficie hasta - 350 metros. Está muy presente en el Caribe, en el Océano Índico y en todo el Pacífico. Es solitario y residente o semi-residente alrededor de ciertas islas volcánicas, aunque a veces evoluciona en pequeños grupos. Aunque no es oceánica, pasa a operar largas travesías entre islas, especialmente en el Pacífico. Su actividad es principalmente nocturna. Durante el día se incorpora a las aguas profundas y sólo sale cuando cae la noche para cazar."
     },
     "whale_shark": {
       "name": "Whale shark",
       "scientific_name": "Rhincodon typus",
-      "description": "The largest fish in the world is the graceful, harmless whale shark. Though they reach the size of a school bus, whale sharks eat tiny plankton and fish eggs, which they filter feed as they swim slowly along with their giant mouths wide open. They are one of only three species of filter feeding sharks.",
-      "uicn_status": "EN"
+      "description": "El pez más grande del mundo es el elegante e inofensivo tiburón ballena. Aunque alcanzan el tamaño de un autobús escolar, los tiburones ballena comen pequeños plancton y huevos de peces, que filtran mientras nadan lentamente con sus gigantescas bocas bien abiertas. Son una de las tres únicas especies de tiburones que se alimentan por filtración.",
+      "uicn_status": "EN",
+      "distribution": "El tiburón ballena se encuentra en aguas tropicales y templadas a cálidas de los océanos Atlántico, Pacífico e Índico. En invierno, los tiburones ballena jóvenes vienen a alimentarse de plancton en las aguas ricas en nutrientes del golfo de Tadjourah, frente a la costa de Yibuti. El tiburón ballena vive en una banda alrededor del ecuador hasta los 30° de latitud norte y los 35° de latitud sur. Es una especie esencialmente pelágica que vive mar adentro en aguas muy profundas."
     },
     "white_shark": {
       "name": "Great White shark",
       "scientific_name": "Carcharodon carcharias",
-      "description": " Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
-      "uicn_status": "VU"
+      "description": "El tiburón blanco es un tiburón excepcionalmente grande que mide en promedio entre 4 y 6 m para un peso de alrededor de 2 toneladas. Oficialmente, el ejemplar más grande capturado y reconocido por los científicos medía 6,40 my pesaba 3.220 kg. Tiene un hocico cónico bastante largo. Sus dientes, afilados como hojas de afeitar, son planos, triangulares y aserrados y pueden medir siete centímetros de largo de los cuales seis centímetros sobresalen de las encías. Su impresionante mandíbula tiene entre cuatro y seis filas de dientes, de los cuales solo las dos primeras son funcionales. Cuando pierde un diente, otro de la última fila viene a ocupar su lugar. La mandíbula de este tiburón tiene entre cuarenta y cuatro a cincuenta y dos dientes. Si las hendiduras branquiales son muy largas, no rodean completamente la cabeza. Estas branquias preceden a las aletas pectorales en forma de hoz bien desarrolladas. La aleta caudal es corta, casi simétrica en forma de media luna. Súper depredador de los océanos, el tiburón blanco tiene sin embargo su punto débil. De hecho, para sobrevivir, debe estar en constante movimiento para poder oxigenarse permanentemente.",
+      "uicn_status": "VU",
+      "distribution": "El hábitat del gran tiburón blanco es principalmente costero en aguas templadas, pero también se ha observado en áreas epipelágicas en el océano. Es un amante de las aguas poco profundas, sin embargo, un espécimen fue capturado en una línea de 1280 m de largo."
     },
     "basking_shark": {
       "name": "Basking shark",
       "scientific_name": "Cetorhinus maximus",
-      "description": "The basking shark is the second largest fish in the world, and like the largest fish (the whale shark) and the largest animal (the great whales), basking sharks are filter feeders that eat tiny, planktonic prey. Reaching lengths of 40 feet (12 m) and resembling predatory sharks in appearance, the basking shark can give an intimidating impression, but they are quite harmless. They spend most of their time near the surface, swimming with their extraordinarily large mouths open, filtering out their preferred prey, but they may also make deeper, feeding dives.",
-      "uicn_status": "EN"
+      "description": "El tiburón peregrino es el segundo pez más grande del mundo y, al igual que el pez más grande (el tiburón ballena) y el animal más grande (las grandes ballenas), se alimenta de plancton. Mide hasta 40 pies (12 m) y se parece a los tiburones depredadores en apariencia, el tiburón peregrino puede dar una impresión intimidante, pero es completamente inofensivo. Pasa la mayor parte de su tiempo cerca de la superficie, nadando con la boca bien abierta para filtrar su comida favorita, pero también puede sumergirse más profundo para alimentarse.",
+      "uicn_status": "EN",
+      "distribution": "El halcón peregrino prefiere las zonas donde se concentra el zooplancton. Son frentes de encuentro de masas de agua o cabos y zonas de fuerte marea alrededor de islas y bahías. Un estudio de 2008 muestra que este tiburón también puede utilizar hábitats a más de 1000 m de profundidad."
     },
     "spiny_dogfish": {
       "name": "Spiny dogfish",
       "scientific_name": "Squalus acanthias",
-      "description": "The spiny dogfish may go by many names, including piked dogfish, rock salmon and spiky dog, but only one truly represents this shark’s unique defense strategy. Using sharp, venomous spines in the front of each dorsal fin, the spiny dogfish is a small but mighty predator that isn’t afraid to take a jab at passing fish. They are considered one of the most abundant living shark species in the ocean, but are harmless to humans.",
-      "uicn_status": "VU"
+      "description": "La mielga puede tener muchos nombres, como la mielga, el salmón de roca y el perro puntiagudo, pero solo uno representa verdaderamente la estrategia de defensa única de este tiburón. Con espinas afiladas y venenosas en la parte delantera de cada aleta dorsal, la mielga es un depredador pequeño pero poderoso que no teme atacar a los peces que pasan. Se les considera una de las especies de tiburones vivos más abundantes en el océano, pero son inofensivos para los humanos.",
+      "uicn_status": "VU",
+      "distribution": "La mielga se encuentra entre las aguas frías y poco profundas de las zonas templadas y subárticas del hemisferio norte, en los océanos Atlántico y Pacífico1. Vive a profundidades de 10 a 200 m, pero ya se ha observado a 960 m de profundidad. Es un pez migratorio estacional, que vive en aguas cuya temperatura fluctúa entre 5 y 16°C y que se reproduce mar adentro."
     },
     "shortfin_mako_shark": {
       "name": "Shortfin mako shark",
       "scientific_name": "Isurus oxyrinchus",
-      "description": "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
-      "uicn_status": "EN"
+      "description": "El tiburón mako es un gran depredador que habita en aguas profundas, alcanzando una longitud de 12 pies (3,8 m) y un peso de al menos 1200 libras (545 kg). Con una velocidad máxima de 45 millas por hora (74 kilómetros por hora), el tiburón mako es el tiburón más rápido y uno de los peces más rápidos del planeta. El atletismo de esta especie no se limita a su velocidad de nado. Es conocido por su increíble capacidad de salto y se le puede observar saltando a alturas extremas (fuera del agua) cuando caza.",
+      "uicn_status": "EN",
+      "distribution": "Pelágico ya veces costero en aguas tropicales y templadas. Evoluciona desde la superficie hasta los 740 metros de profundidad."
     },
     "grey_shark": {
       "name": "Grey shark",
       "scientific_name": "Carcharhinus amblyrhynchos",
-      "uicn_status": "NT"
+      "description": "Tenga cuidado, dos especies de tiburones se llaman 'tiburones grises': Carcharhinus amblyrhynchos pero también Carcharhinus plumbeus. Por esta razón, es preferible especificar “Tiburón gris de arrecife” para Carcharhinus amblyrhynchos. El tiburón gris de arrecife tiene un cuerpo moderadamente delgado y un hocico largo, ancho y romo. Los ojos son casi circulares.",
+      "uicn_status": "NT",
+      "distribution": "El tiburón gris de arrecife es nativo del Océano Índico y el Océano Pacífico. En el Océano Índico se encuentra desde Sudáfrica hasta la India, pasando por Madagascar y las islas cercanas, el Mar Rojo y las Maldivas. En el Océano Pacífico, vive desde el sur de China hasta el norte de Australia y Nueva Zelanda a través del Golfo de Tailandia, Filipinas e Indonesia. Esta especie también se ha observado en muchas islas del Pacífico."
     },
     "thresher_shark": {
       "name": "Thresher shark",
       "scientific_name": "Alopias vulpinus",
-      "description": "The pelagic thresher shark is one of three thresher sharks, all three known for their extremely long tails. Adult pelagic threshers’ tails are longer than the rest of the body. Scientists believe that they are highly migratory, but there have not been sufficient tagging studies to confirm that suspicion. Little is known about the ecology of pelagic thresher sharks, as they are difficult to study in their natural habitat (the open ocean).",
-      "uicn_status": "VU"
+      "description": "El tiburón zorro pelágico es uno de los tres tiburones zorro, todos conocidos por sus colas extremadamente largas. La cola de los tiburones zorro pelágicos adultos es más larga que el resto del cuerpo. Los científicos creen que son altamente migratorios, pero no se han realizado suficientes estudios de marcado para confirmar esta sospecha. Poco se sabe sobre la ecología de los tiburones zorro pelágicos, ya que son difíciles de estudiar en su hábitat natural (el mar abierto).",
+      "uicn_status": "VU",
+      "distribution": "La distribución del tiburón zorro común abarca todas las aguas tropicales y templadas frías."
     },
     "porbeagle": {
       "name": "Porbeagle",
       "scientific_name": "Lamna nasus",
-      "description": "The porbeagle shark is a wide-ranging shark that’s recognized by its conical snout, white underbelly and dark gray top. Scholars have proposed that the porbeagle shark’s name originates from the combination of “porpoise” and “beagle” – referencing the shark’s rounded body and dogged hunting methods.",
-      "uicn_status": "VU"
+      "description": "El marrajo sardinero es un tiburón de largo alcance que se reconoce por su hocico cónico, vientre blanco y dorso gris oscuro. Los investigadores han propuesto que el nombre del marrajo sardinero proviene de la combinación de 'marsopa' y 'beagle', en referencia a su forma de cuerpo redondeado y métodos de caza obstinados.",
+      "uicn_status": "VU",
+      "distribution": "Este tiburón frecuenta la costa y la zona epipelágica (0 a 370 m) está ausente de las aguas ecuatoriales; prefiere aguas frías por debajo de 18°C. Presente principalmente en el Atlántico Norte, también se encuentra en Australia, Brasil y Chile."
     },
     "smalltooth_sand_tiger": {
-      "name": "Smalltooth sand tiger",
+      "name": "Tigre de dientes de arena",
       "scientific_name": "Odontaspis ferox",
-      "uicn_status": "NT"
+      "description": "El tiburón feroz es una especie de tiburón de la familia Odontaspididae, que vive hasta los 1.000 metros de profundidad y puede alcanzar los cinco metros de longitud. Se le llama 'feroz' debido a sus dientes prominentes y amenazantes, pero no parece agresivo con los humanos, a quienes es poco probable que conozca de todos modos dada su profundidad habitual.",
+      "uicn_status": "NT",
+      "distribution": "Es un tiburón de aguas profundas, reportado puntualmente en todo el mundo. Se encuentra, por ejemplo, en aguas colombianas frente a la isla de Malpelo. En una determinada época del año, a veces se puede observar porque sube a menor profundidad cuando las aguas superficiales están frías (debido a la corriente de Humboldt)."
     },
     "bluntnose_sixgill_shark": {
-      "name": "Bluntnose sixgill shark",
+      "name": "Bluntnose sixgill tiburón",
       "scientific_name": "Hexanchus griseus",
-      "uicn_status": "NT"
+      "description": "El tiburón nariz roma es un tiburón enorme, con una cabeza grande, redondeada o puntiaguda. Tiene 6 pares de hendiduras branquiales y una sola aleta dorsal en la parte posterior del cuerpo, caracteres a menudo descritos como primitivos en la literatura, así como pequeños ojos retráctiles de color verde fluorescente. La boca se coloca en el lado ventral y contiene 6 filas de dientes en forma de peine. La cola es corta y rechoncha. Solo ve en monocromo.",
+      "uicn_status": "NT",
+      "distribution": "El tiburón nariz roma es uno de los tiburones más ampliamente distribuidos en el mundo ya que está presente en los mares templados o tropicales del Atlántico Oriental y Occidental, el Pacífico Occidental, Central y Oriental, así como en el Mar Mediterráneo, además de que su las poblaciones nunca son muy abundantes en las áreas de observación."
     },
     "salmon_shark": {
-      "name": "Salmon shark",
+      "name": "Tiburón salmón",
       "scientific_name": "Lamna ditropis",
-      "uicn_status": "NT"
+      "description": "El tiburón salmón o marrajo sardinero (Lamna ditropis) es una especie de tiburón de la familia Lamnidae. Es un depredador del salmón del que toma su nombre. Puede alcanzar los 3 metros de longitud, es capaz de nadar a más de 50 km/h. El tiburón salmón tiene la capacidad de soportar temperaturas muy frías como las de Alaska donde, en invierno, la temperatura del agua varía entre 2 y 8°C. Esta facultad resulta de un sistema vascular específico.",
+      "uicn_status": "NT",
+      "distribution": "Vive en el Océano Pacífico Norte, especialmente en Alaska, pero puede migrar a zonas subtropicales, ya que un estudio de marcado ha demostrado que podría bajar a Hawái y recorrer más de 18.000 km en 640 días. Las hembras son más comunes a lo largo de la costa de Alaska, mientras que los machos se concentran en el lado siberiano. Se encuentra desde la superficie hasta los 650 metros de profundidad."
     }
   }
 }

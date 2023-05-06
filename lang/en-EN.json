@@ -11,7 +11,8 @@
   "shark": {
     "dm": "distribution map",
     "cs": "Conservation status",
-    "length": "length",
+    "ds": "description",
+    "length": "Size",
     "weight": "weight",
     "av": "average",
     "iucnStatus": {
@@ -81,108 +82,164 @@
     "4": "Sharks have always been fascinating creatures to me.",
     "5": "If one day I can work alongside them, I'd have accomplished the biggest dream of my life."
   },
+  "home": {
+    "study_table": {
+      "title": "Little summary of causes of deaths made by the ",
+      "title_link": "university of Florida",
+      "preposition_in": "in",
+      "tab1": {
+        "title": "disease and accidental causes of deaths",
+        "line1": "heart disease",
+        "line2": "cancer",
+        "line3": "flu",
+        "line4": "car accidents",
+        "line5": "drowning",
+        "line6": "air/space accident",
+        "line7": "lightning",
+        "line8": "shark related fatalities"
+      },
+      "tab2": {
+        "title": "annual deaths"
+      },
+      "tab3": {
+        "title": "death risk during one's lifetime"
+      }
+    },
+    "parallax": {
+      "msg": "Those numbers make our fear irrational"
+    },
+    "ingAndtxt": {
+      "text1": "When talking about sharks many people think about a specific movie. This movie is considered as",
+      "text2": "for having frighten an entire generation (even if it's a great movie and one of my favorite). It was so well made that it still inspires our fear of sharks.",
+      "text_italic": "responsible"
+    }
+  },
   "sharks": {
     "blue_shark": {
       "name": "Blue shark",
       "scientific_name": "Prionace glauca",
       "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "The blue shark inhabits all the oceans and seas of the world. This shark is pelagic but may occasionally stay close to the continental belt. Young blue sharks are sometimes observed near the coast."
     },
     "bronze_whale_shark": {
       "name": "Bronze whale shark",
       "scientific_name": "Carcharhinus brachyurus",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "description": "The copper shark is a species of shark in the family Carcharhinidae, and the only member of its genus found at latitudes corresponding to a temperate climate.",
+      "distribution": "The copper shark is the only member of its genus found widely in temperate rather than tropical waters."
     },
     "bull_shark": {
       "name": "Bull shark",
       "scientific_name": "Carcharhinus leucas",
       "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "The bull shark is found on the coasts of all the tropical and subtropical seas of the world. It is common in the Atlantic and Indo-Pacific, but much rarer in the Red Sea. In the Pacific Ocean, it is found from Baja California to the Equator. It is both coastal and semi-pelagic depending on the regions and life stages, fond of depths between the surface and up to potentially more than 250 meters, but generally around 30m. It particularly appreciates muddy or highly turbid water, for example at the mouth of a river after a tropical cyclone."
     },
     "dusty_shark": {
       "name": "Dusty shark",
       "scientific_name": "Carcharhinus obscurus",
-      "uicn_status": "EN"
+      "description": "The sand shark is a fairly massive shark that can reach 4 m and weigh more than 300 kg, but most individuals observed measure around 2.5 m and weigh 200 kg. It is a species with large green/yellow eyes and can be confused with the bulldog shark. As its name suggests, it has a dark back, dark gray in juveniles and lighter gray in adults.",
+      "uicn_status": "EN",
+      "distribution": "It is present in the three large oceans (Indian, Atlantic and Pacific) but prefers warm waters (above 25 degrees) as well as brackish. This species is also present in the Mediterranean, more particularly in the Eastern Mediterranean."
     },
     "gray_nurse_shark": {
       "name": "Gray nurse shark",
       "scientific_name": "Carcharias taurus",
       "description": "The sand tiger shark, also known as the gray nurse shark, is a slow-moving coastal predator distinguished by its flattened, conical snout and spiked, protruding teeth similar to the tiger shark. It has small eyes and light brown skin that resembles sand, helping the shark blend into its surroundings when looked at from above.",
-      "uicn_status": "CR"
+      "uicn_status": "CR",
+      "distribution": "The gray nurse shark lives off the coasts of Australia, the United States and South Africa, and more widely in the Atlantic Ocean, the Indian Ocean, the Pacific Ocean, the Red Sea and the Mediterranean (specifically the Western Mediterranean). It is a migrant, and it is found in many temperate zones."
     },
     "hammerhead_shark": {
       "name": "Great Hammerhead shark",
       "scientific_name": "Sphyrna zygaena",
       "description": "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "It is a cosmopolitan shark, widely distributed in temperate, tropical and subtropical seas around the world. It is generally found in depths ranging from 0 to 200 m. It is more easily observed in the Gulf of Guinea during the cold season (December to May) and especially towards Senegal. On the contrary, it migrates north in summer."
     },
     "tiger_shark": {
       "name": "Tiger shark",
       "scientific_name": "Galeocerdo cuvier",
       "description": "The tiger shark gets its name from the characteristic vertical bars that cover the sides of its body. Though these bars fade slightly as individuals reach adulthood, they are very noticeable in juveniles and at least party visible throughout the lifetime. Reaching lengths of at least 18 feet (5.5 m) and 2000 pounds (nearly a metric tonne), the tiger shark is the fourth largest shark and second largest predatory shark, behind only the great white.",
-      "uicn_status": "NT"
+      "uicn_status": "NT",
+      "distribution": "Its habitat is coastal and pelagic. It is present in all tropical and subtropical seas, with a preference for waters with high turbidity, estuaries, lagoons, from the surface to - 350 meters. It is very present in the Caribbean, in the Indian Ocean and throughout the Pacific. It is solitary and resident or semi-resident around certain volcanic islands, however sometimes evolving in small groups. Although not oceanic, it happens to operate long crossings between islands, especially in the Pacific. Its activity is mainly nocturnal. During the day, it joins the deep waters and only comes out when night falls to hunt."
     },
     "whale_shark": {
       "name": "Whale shark",
       "scientific_name": "Rhincodon typus",
       "description": "The largest fish in the world is the graceful, harmless whale shark. Though they reach the size of a school bus, whale sharks eat tiny plankton and fish eggs, which they filter feed as they swim slowly along with their giant mouths wide open. They are one of only three species of filter feeding sharks.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "The whale shark is found in tropical and temperate to warm waters of the Atlantic, Pacific and Indian Oceans. In winter, young whale sharks come to feed on plankton in the nutrient-rich waters of the Gulf of Tadjourah, off the coast of Djibouti. The whale shark lives in a band around the equator up to 30° north latitude and 35° south latitude. It is an essentially pelagic species living offshore in very deep water."
     },
     "white_shark": {
       "name": "Great White shark",
       "scientific_name": "Carcharodon carcharias",
-      "description": " Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
-      "uicn_status": "VU"
+      "description": "The white shark is an exceptionally large shark measuring on average between 4 and 6 m for a weight of about 2 tons. Officially, the largest specimen caught and recognized by scientists measured 6.40 m and weighed 3,220 kg. It has a fairly long conical snout. Its teeth, sharp as razor blades, are flat, triangular and serrated and can measure seven centimeters in length of which six centimeters protrude from the gums. Its impressive jaw has between four and six rows of teeth, of which only the first two are functional. When he happens to lose a tooth, another from the back row comes to take its place. The jaw of this shark has between forty-four to fifty-two teeth. If the gill slits are very long, they do not completely encircle the head. These gills precede the well-developed sickle-shaped pectoral fins. The caudal fin is short, almost symmetrical in the shape of a crescent. Super-predator of the oceans, the white shark nevertheless has its weak point. Indeed, to survive, it must be in constant movement in order to be able to oxygenate itself permanently.",
+      "uicn_status": "VU",
+      "distribution": "The habitat of the great white shark is mainly coastal in temperate waters, but it has also been observed in epipelagic areas in the ocean. It is a shallow water lover, however one specimen was caught on a 1280m long line."
     },
     "basking_shark": {
       "name": "Basking shark",
       "scientific_name": "Cetorhinus maximus",
       "description": "The basking shark is the second largest fish in the world, and like the largest fish (the whale shark) and the largest animal (the great whales), basking sharks are filter feeders that eat tiny, planktonic prey. Reaching lengths of 40 feet (12 m) and resembling predatory sharks in appearance, the basking shark can give an intimidating impression, but they are quite harmless. They spend most of their time near the surface, swimming with their extraordinarily large mouths open, filtering out their preferred prey, but they may also make deeper, feeding dives.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "The Peregrine prefers areas where zooplankton are concentrated. These are fronts where water masses meet or headlands and areas of strong tides around islands and in bays. A 2008 study shows that this shark may also use habitats deeper than 1,000 m."
     },
     "spiny_dogfish": {
       "name": "Spiny dogfish",
       "scientific_name": "Squalus acanthias",
       "description": "The spiny dogfish may go by many names, including piked dogfish, rock salmon and spiky dog, but only one truly represents this shark’s unique defense strategy. Using sharp, venomous spines in the front of each dorsal fin, the spiny dogfish is a small but mighty predator that isn’t afraid to take a jab at passing fish. They are considered one of the most abundant living shark species in the ocean, but are harmless to humans.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "Dogfish are found between the cool, shallow waters of temperate and subarctic zones of the northern hemisphere, in the Atlantic and Pacific oceans1. It lives at depths of 10 to 200 m, but has already been observed at 960 m depth. It is a seasonally migrating fish, living in waters whose temperature fluctuates between 5 and 16°C and which reproduces offshore."
     },
     "shortfin_mako_shark": {
       "name": "Shortfin mako shark",
       "scientific_name": "Isurus oxyrinchus",
       "description": "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
-      "uicn_status": "EN"
+      "uicn_status": "EN",
+      "distribution": "Pelagic and sometimes coastal in tropical and temperate waters. Evolves from the surface to 740 meters deep."
     },
     "grey_shark": {
       "name": "Grey shark",
       "scientific_name": "Carcharhinus amblyrhynchos",
-      "uicn_status": "NT"
+      "description": "Caution, two species of sharks are called “grey sharks”: Carcharhinus amblyrhynchos but also Carcharhinus plumbeus. For this reason, it is preferable to specify “Grey reef shark” for Carcharhinus amblyrhynchos. The Gray Reef Shark has a moderately slender body and a long, broad, blunt snout. The eyes are almost circular.",
+      "uicn_status": "NT",
+      "distribution": "The gray reef shark is native to the Indian Ocean and the Pacific Ocean. In the Indian Ocean, it is found from South Africa to India, passing through Madagascar and the nearby islands, the Red Sea and the Maldives. In the Pacific Ocean, it lives from southern China to northern Australia and New Zealand through the Gulf of Thailand, the Philippines and Indonesia. This species has also been observed off many Pacific islands."
     },
     "thresher_shark": {
       "name": "Thresher shark",
       "scientific_name": "Alopias vulpinus",
       "description": "The pelagic thresher shark is one of three thresher sharks, all three known for their extremely long tails. Adult pelagic threshers’ tails are longer than the rest of the body. Scientists believe that they are highly migratory, but there have not been sufficient tagging studies to confirm that suspicion. Little is known about the ecology of pelagic thresher sharks, as they are difficult to study in their natural habitat (the open ocean).",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "The distribution of the common thresher shark encompasses all tropical and cold temperate waters."
     },
     "porbeagle": {
       "name": "Porbeagle",
       "scientific_name": "Lamna nasus",
       "description": "The porbeagle shark is a wide-ranging shark that’s recognized by its conical snout, white underbelly and dark gray top. Scholars have proposed that the porbeagle shark’s name originates from the combination of “porpoise” and “beagle” – referencing the shark’s rounded body and dogged hunting methods.",
-      "uicn_status": "VU"
+      "uicn_status": "VU",
+      "distribution": "This shark frequents the coast and the epipelagic zone (0 to 370 m) is absent from equatorial waters; it prefers cold waters below 18°C. Mainly present in the North Atlantic, it is also found in Australia, Brazil and Chile."
     },
     "smalltooth_sand_tiger": {
       "name": "Smalltooth sand tiger",
       "scientific_name": "Odontaspis ferox",
-      "uicn_status": "NT"
+      "description": "The fierce shark is a species of shark in the family Odontaspididae, which lives up to 1,000 meters deep and can reach five meters in length. He is called 'fierce' because of his prominent and threatening teeth, but does not seem aggressive towards humans - whom he is unlikely to meet anyway given his usual depth.",
+      "uicn_status": "NT",
+      "distribution": "It is a deep-sea shark, reported punctually throughout the world. It is found, for example, in Colombian waters off the island of Malpelo. At a certain time of the year, it can sometimes be observed because it rises at shallower depths when the surface waters are cold (due to the Humboldt current)."
     },
     "bluntnose_sixgill_shark": {
       "name": "Bluntnose sixgill shark",
       "scientific_name": "Hexanchus griseus",
-      "uicn_status": "NT"
+      "description": "The bluntnose shark is a massive shark, with a large rounded or pointed head. It has 6 pairs of gill slits and a single dorsal fin at the back of the body, characters often described as primitive in the literature, as well as small, fluorescent green, retractable eyes. The mouth is placed on the ventral side and contains 6 rows of comb-like teeth. The tail is short and stubby. He only sees in monochrome.",
+      "uicn_status": "NT",
+      "distribution": "The bluntnose shark is one of the most widely distributed sharks in the world since it is present in the temperate or tropical seas of the Eastern and Western Atlantic, the Western, Central and Eastern Pacific, as well as in the Mediterranean Sea, well that its populations are never very abundant in the observation areas."
     },
     "salmon_shark": {
       "name": "Salmon shark",
       "scientific_name": "Lamna ditropis",
-      "uicn_status": "NT"
+      "description": "The salmon shark or porbeagle shark (Lamna ditropis) is a species of shark in the family Lamnidae. It is a predator of the salmon from which it takes its name. It can reach 3 meters in length, it is able to swim at more than 50km/h. The salmon shark has the ability to withstand very cold temperatures like those in Alaska where, in winter, the water temperature varies between 2 and 8°C. This faculty results from a specific vascular system.",
+      "uicn_status": "NT",
+      "distribution": "It lives in the North Pacific Ocean, especially in Alaska, but can migrate to subtropical areas, a tagging study having shown that it could go down to Hawaii and travel more than 18,000 km in 640 days. Females are more common along the Alaskan coast, while males are concentrated on the Siberian side. It is found from the surface to 650 meters deep."
     }
   }
 }

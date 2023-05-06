@@ -3,52 +3,56 @@
     <div class="s-card-container">
       <div class="s-card-container-content">
         <div class="s-card-container-content-grid title">
-          <h2 class="title">{{ $t(`sharks.${shark.path}.name`) }}</h2>
-          <h3>{{ shark.scientific_name }}</h3>
+          <h2 class="title">
+            {{ $t(`sharks.${shark.path}.name`) }}
+          </h2>
+          <h3>
+            {{ shark.scientific_name }}
+          </h3>
         </div>
         <div class="s-card-container-content-grid img">
           <nuxt-img preload :src="src" format="webp" />
         </div>
         <div class="s-card-container-content-grid size">
-          <span class="section-title">Size</span>
+          <span class="section-title">{{ $t(`shark.length`) }}</span>
           <span class="size">{{ shark.length }}</span>
         </div>
         <div class="s-card-container-content-grid iucn">
           <div class="iucn-status-container">
             <div class="iucn-status-container-content">
-              <span class="section-title"
-                >{{ $t("shark.cs") }} (<a
-                  href="https://www.iucn.org/fr"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >IUCN</a
-                >)</span
-              >
+              <span class="section-title">{{ $t("shark.cs") }}</span>
             </div>
             <ul class="iucn-grid">
-              <li
-                v-for="(value, key) in iucnStatus"
-                :key="key"
-                :class="[
-                  {
-                    [key.toLowerCase()]:
-                      key === shark.uicn_status.toUpperCase(),
-                  },
-                  'iucn-cell',
-                ]"
+              <a
+                href="https://www.iucn.org/fr"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><li
+                  v-for="(value, key) in iucnStatus"
+                  :key="key"
+                  :class="[
+                    {
+                      [key.toLowerCase()]:
+                        key === shark.uicn_status.toUpperCase(),
+                    },
+                    'iucn-cell',
+                  ]"
+                >
+                  {{ $t(`shark.iucnStatus.${key}`) }}
+                </li></a
               >
-                {{ $t(`shark.iucnStatus.${key}`) }}
-              </li>
             </ul>
           </div>
         </div>
         <div class="s-card-container-content-grid description">
-          <span class="section-title">Description</span>
+          <span class="section-title">{{ $t(`shark.ds`) }}</span>
 
-          {{ shark.description }}
+          {{ $t(`sharks.${shark.path}.description`) }}
         </div>
         <div class="s-card-container-content-grid rangemap">
-          <span class="section-title"> {{ $t("shark.dm") }} </span>
+          <span class="section-title">
+            {{ $t("shark.dm") }}
+          </span>
           <img
             v-if="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
             :src="`${require(`@/assets/svgs/${shark.path}.svg`)}`"
@@ -57,7 +61,7 @@
           <div class="separator"></div>
 
           <span>
-            {{ shark.distribution }}
+            {{ $t(`sharks.${shark.path}.distribution`) }}
           </span>
         </div>
         <div class="s-card-container-content-grid pagination">
@@ -138,7 +142,10 @@ export default {
         width: "1414",
       }
     );
-    return { src, shark };
+    return {
+      src,
+      shark,
+    };
   },
   mounted() {
     const paths = this.$store.state.sharksTable.map((item) => {
