@@ -20,29 +20,27 @@
         <div class="s-card-container-content-grid iucn">
           <div class="iucn-status-container">
             <div class="iucn-status-container-content">
-              <span class="section-title"
-                >{{ $t("shark.cs") }} (<a
-                  href="https://www.iucn.org/fr"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >IUCN</a
-                >)</span
-              >
+              <span class="section-title">{{ $t("shark.cs") }}</span>
             </div>
             <ul class="iucn-grid">
-              <li
-                v-for="(value, key) in iucnStatus"
-                :key="key"
-                :class="[
-                  {
-                    [key.toLowerCase()]:
-                      key === shark.uicn_status.toUpperCase(),
-                  },
-                  'iucn-cell',
-                ]"
+              <a
+                href="https://www.iucn.org/fr"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><li
+                  v-for="(value, key) in iucnStatus"
+                  :key="key"
+                  :class="[
+                    {
+                      [key.toLowerCase()]:
+                        key === shark.uicn_status.toUpperCase(),
+                    },
+                    'iucn-cell',
+                  ]"
+                >
+                  {{ $t(`shark.iucnStatus.${key}`) }}
+                </li></a
               >
-                {{ $t(`shark.iucnStatus.${key}`) }}
-              </li>
             </ul>
           </div>
         </div>
