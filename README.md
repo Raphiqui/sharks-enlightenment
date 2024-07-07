@@ -25,6 +25,20 @@ For detailed explanation on how things work, check out the [documentation](https
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
+## Env 
+
+Don't forget to create a `.env` file with the cloudinary variables
+
+## Docker
+
+Project can be run with docker
+
+```
+cd sharks-enlightenment/
+docker build -t sharks-enlightenment .
+docker run -p 3000:3000 sharks-enlightenment
+```
+
 ### `assets`
 
 The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
