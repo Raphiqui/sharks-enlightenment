@@ -88,6 +88,10 @@
     </header>
 
     <nuxt />
+
+    <footer>
+      <Copyright />
+    </footer>
   </div>
 </template>
 
