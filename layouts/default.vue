@@ -2,49 +2,29 @@
   <div>
     <header :class="{ 'scrolled-nav': scrolledNav }">
       <nav>
-        <nuxt-link @click.native="handle" to="/" no-prefetch
-          ><div class="branding">
-            <img src="~/static/android-chrome-512x512.png" alt="" /></div
-        ></nuxt-link>
+        <nuxt-link @click.native="handle" to="/" no-prefetch>
+          <div class="branding">
+            <img src="~/static/android-chrome-512x512.png" alt="" />
+          </div>
+        </nuxt-link>
         <ul v-show="!mobile" class="navigation">
           <li>
-            <nuxt-link
-              class="link"
-              @click.native="handle"
-              to="/home/species"
-              no-prefetch
-              >{{ $t("header.1") }}</nuxt-link
-            >
+            <nuxt-link class="link" @click.native="handle" to="/home/species" no-prefetch>{{ $t("header.1")
+              }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              class="link"
-              @click.native="handle"
-              to="/home/interactive"
-              no-prefetch
-              >{{ $t("header.2") }}</nuxt-link
-            >
+            <nuxt-link class="link" @click.native="handle" to="/home/interactive" no-prefetch>{{ $t("header.2")
+              }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link
-              class="link"
-              @click.native="handle"
-              to="/home/about"
-              no-prefetch
-              >{{ $t("header.3") }}</nuxt-link
-            >
+            <nuxt-link class="link" @click.native="handle" to="/home/about" no-prefetch>{{ $t("header.3") }}</nuxt-link>
           </li>
         </ul>
         <div v-show="!mobile">
           <LanguageInput />
         </div>
         <div class="icon">
-          <div
-            class="container"
-            @click="toggleMobileNav"
-            v-show="mobile"
-            :class="mobileNav ? 'is-open' : 'is-closed'"
-          >
+          <div class="container" @click="toggleMobileNav" v-show="mobile" :class="mobileNav ? 'is-open' : 'is-closed'">
             <div class="line-top"></div>
             <div class="line-middle"></div>
             <div class="line-bottom"></div>
@@ -53,31 +33,16 @@
         <transition name="mobile-nav">
           <ul v-show="mobileNav" class="dropdown-nav">
             <li>
-              <nuxt-link
-                class="link"
-                @click.native="handle"
-                to="/home/species"
-                no-prefetch
-                >{{ $t("header.1") }}</nuxt-link
-              >
+              <nuxt-link class="link" @click.native="handle" to="/home/species" no-prefetch>{{ $t("header.1")
+                }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link
-                class="link"
-                @click.native="handle"
-                to="/home/interactive"
-                no-prefetch
-                >{{ $t("header.2") }}</nuxt-link
-              >
+              <nuxt-link class="link" @click.native="handle" to="/home/interactive" no-prefetch>{{ $t("header.2")
+                }}</nuxt-link>
             </li>
             <li>
-              <nuxt-link
-                class="link"
-                @click.native="handle"
-                to="/home/about"
-                no-prefetch
-                >{{ $t("header.3") }}</nuxt-link
-              >
+              <nuxt-link class="link" @click.native="handle" to="/home/about" no-prefetch>{{ $t("header.3")
+                }}</nuxt-link>
             </li>
             <li>
               <LanguageInput @click.native="handle" />
@@ -270,9 +235,11 @@ header {
             animation: line-top-out 600ms linear normal;
             animation-fill-mode: forwards;
           }
+
           .line-middle {
             opacity: 0;
           }
+
           .line-bottom {
             animation: line-bot-out 600ms linear normal;
             animation-fill-mode: forwards;
@@ -284,9 +251,11 @@ header {
             animation: line-top-in 600ms linear normal;
             animation-fill-mode: forwards;
           }
+
           .line-middle {
             transition-delay: 200ms;
           }
+
           .line-bottom {
             animation: line-bot-in 600ms linear normal;
             animation-fill-mode: forwards;
@@ -300,16 +269,19 @@ header {
           bot: 0;
           transform: rotate(-45deg);
         }
+
         20% {
           left: -5px;
           bot: 0;
           transform: rotate(-60deg);
         }
+
         80% {
           left: 0;
           bot: 0;
           transform: rotate(15deg);
         }
+
         100% {
           left: 0;
           bot: 1px;
@@ -323,16 +295,19 @@ header {
           top: 0;
           transform: rotate(0deg);
         }
+
         20% {
           left: 0;
           top: 0;
           transform: rotate(15deg);
         }
+
         80% {
           left: -5px;
           top: 0;
           transform: rotate(-60deg);
         }
+
         100% {
           left: -5px;
           top: 1px;
@@ -345,16 +320,19 @@ header {
           left: -5px;
           transform: rotate(45deg);
         }
+
         20% {
           left: -5px;
           bot: 0;
           transform: rotate(60deg);
         }
+
         80% {
           left: 0;
           bot: 0;
           transform: rotate(-15deg);
         }
+
         100% {
           left: 0;
           transform: rotate(0deg);
@@ -366,14 +344,17 @@ header {
           left: 0;
           transform: rotate(0deg);
         }
+
         20% {
           left: 0;
           transform: rotate(-15deg);
         }
+
         80% {
           left: -5px;
           transform: rotate(60deg);
         }
+
         100% {
           left: -5px;
           transform: rotate(45deg);
@@ -410,6 +391,7 @@ header {
           border-bottom: 1px solid white;
           padding-bottom: unset;
         }
+
         .link {
           color: white;
 
