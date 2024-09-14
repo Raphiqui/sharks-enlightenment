@@ -2,7 +2,7 @@
   <div class="main">
 
     <header class="header">
-      <h1>Shark Facts {{ bubbles.length }}</h1>
+      <h1>Shark Facts</h1>
       <p>Debunking myths and revealing the truth about sharks</p>
     </header>
 
@@ -97,6 +97,11 @@ export default {
     }
     setInterval(this.createBubble, 2000);
   },
+
+  beforeUnmount() {
+    clearInterval(this.createBubble);
+    this.bubbles = [];
+  }
 };
 </script>
 

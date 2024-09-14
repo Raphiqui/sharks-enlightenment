@@ -1,5 +1,6 @@
 <template>
-    <div class="bubble" :class="bubbleClass" :style="bubbleStyle" @animationiteration="handleAnimationIteration"></div>
+    <div class="bubble" :class="[bubbleClass, { 'reset': isResetting }]" :style="bubbleStyle"
+        @animationiteration="handleAnimationIteration"></div>
 </template>
 
 <script>
@@ -19,6 +20,11 @@ export default {
             required: true
         }
     },
+    data() {
+        return {
+            isResetting: false
+        };
+    },
     computed: {
         bubbleClass() {
             return this.size < 15 ? 'small' : this.size < 25 ? 'medium' : 'large';
@@ -34,7 +40,11 @@ export default {
     },
     methods: {
         handleAnimationIteration() {
+            this.isResetting = true;
             this.$emit('resetPosition');
+            setTimeout(() => {
+                this.isResetting = false;
+            }, 50);
         }
     }
 };
@@ -43,10 +53,15 @@ export default {
 <style scoped>
 .bubble {
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     animation: rise linear infinite;
+}
+
+.bubble.reset {
+    animation: none;
+    bottom: -40px;
 }
 
 .bubble.small {
