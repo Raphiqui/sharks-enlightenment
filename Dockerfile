@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 WORKDIR /app
 
@@ -10,4 +10,7 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["yarn", "dev", "--hostname", "0.0.0.0"]
+ENV NUXT_HOST=0.0.0.0
+ENV NUXT_PORT=3000
+
+CMD ["yarn", "dev"]
