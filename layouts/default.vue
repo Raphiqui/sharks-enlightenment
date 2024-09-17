@@ -4,7 +4,7 @@
       <nav>
         <nuxt-link @click.native="handle" to="/" no-prefetch>
           <div class="branding">
-            <img src="~/static/android-chrome-512x512.png" alt="" />
+            <img src="/android-chrome-512x512.png" alt="" />
           </div>
         </nuxt-link>
         <ul v-show="!mobile" class="navigation">
