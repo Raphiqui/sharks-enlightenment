@@ -1,18 +1,15 @@
 <template>
   <div class="lang-dropdown">
     <ul>
-      <li v-for="lang in $i18n.locales" :key="lang.code">
-        <span
-          :class="{
-            active: lang.code === $i18n.locale,
-          }"
-          @click="$i18n.setLocale(lang.code)"
-          >{{ lang.code }}</span
-        >
+      <li v-for="lang in locales" :key="lang.code">
+        <span :class="{
+          active: lang.code === locale,
+        }" @click="setLocale(lang.code)">{{ lang.code }}</span>
       </li>
     </ul>
   </div>
 </template>
+
 <script>
 export default {
   name: "LanguageInput",
@@ -23,6 +20,14 @@ export default {
     },
   },
 };
+</script>
+
+<script setup>
+import { computed } from 'vue';
+
+const { locales, locale, setLocale } = useI18n();
+
+const activeLanguageStyle = computed(() => 'active');
 </script>
 
 <style scoped lang="scss">
@@ -55,13 +60,15 @@ export default {
         &.active {
           color: cadetblue;
           font-weight: 700;
+
           &::after {
-            background:cadetblue;
+            background: cadetblue;
           }
 
           @media (max-width: 768px) {
             color: darkblue;
             font-weight: 700;
+
             &::after {
               background: darkblue;
             }
