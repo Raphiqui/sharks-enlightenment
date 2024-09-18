@@ -60,49 +60,42 @@
   </div>
 </template>
 
-<script>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import Bubble from './Bubble.vue';
 
-export default {
-  name: "MainLayer",
-  components: {
-    Bubble
-  },
-  data() {
-    return { bubbles: [] };
-  },
+const bubbles = ref([]);
 
-  methods: {
-    createBubble() {
-
-      if (this.bubbles.length < 30) {
-        const size = Math.random() * 30 + 10;
-        const bubble = {
-          size: size,
-          left: Math.random() * 100,
-          duration: Math.random() * 10 + 5
-        };
-        this.bubbles.push(bubble);
-      }
-    },
-    resetBubblePosition(index) {
-      this.bubbles[index].left = Math.random() * 100;
-      this.bubbles[index].duration = Math.random() * 10 + 5;
-    }
-  },
-
-  mounted() {
-    for (let i = 0; i < 30; i++) {
-      this.createBubble();
-    }
-    setInterval(this.createBubble, 2000);
-  },
-
-  beforeUnmount() {
-    clearInterval(this.createBubble);
-    this.bubbles = [];
+const createBubble = () => {
+  if (bubbles.value.length < 30) {
+    const size = Math.random() * 30 + 10;
+    const bubble = {
+      size: size,
+      left: Math.random() * 100,
+      duration: Math.random() * 10 + 5
+    };
+    bubbles.value.push(bubble);
   }
 };
+
+const resetBubblePosition = (index) => {
+  bubbles.value[index].left = Math.random() * 100;
+  bubbles.value[index].duration = Math.random() * 10 + 5;
+};
+
+onMounted(() => {
+  for (let i = 0; i < 30; i++) {
+    createBubble();
+  }
+  setInterval(createBubble, 2000);
+});
+
+onBeforeUnmount(() => {
+  clearInterval(createBubble);
+  bubbles.value = [];
+});
+
 </script>
 
 <style lang="scss">

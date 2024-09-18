@@ -52,7 +52,9 @@
       </nav>
     </header>
 
-    <nuxt />
+    <main>
+      <slot />
+    </main>
 
     <footer>
       <Copyright />
@@ -60,60 +62,37 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "default",
-  data() {
-    return {
-      scrolledNav: null,
-      mobile: false,
-      mobileNav: false,
-      windowWidth: null,
-    };
-  },
-  created() {
-    window.addEventListener("resize", this.checkScreen);
-    this.checkScreen();
-  },
-  mounted() {
-    window.addEventListener("scroll", this.updateScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.checkScreen);
-    window.removeEventListener("scroll", this.updateScroll);
-  },
-  methods: {
-    handle() {
-      this.mobileNav = false;
-    },
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-    toggleMobileNav() {
-      this.mobileNav = !this.mobileNav;
-    },
+const scrolledNav = ref(null);
+const mobile = ref(false);
+const mobileNav = ref(false);
+const windowWidth = ref(null);
 
-    updateScroll() {
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 50) {
-        this.scrolledNav = true;
-        return;
-      }
-      this.scrolledNav = false;
-    },
-
-    checkScreen() {
-      this.windowWidth = window.innerWidth;
-      if (this.windowWidth <= 750) {
-        this.mobile = true;
-        return;
-      }
-
-      this.mobile = false;
-      this.mobileNav = false;
-      return;
-    },
-  },
+const handle = () => {
+  mobileNav.value = false;
 };
+
+const checkScreen = () => {
+  windowWidth.value = window.innerWidth;
+  mobile.value = windowWidth.value <= 768;
+};
+
+const updateScroll = () => {
+  scrolledNav.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', checkScreen);
+  window.addEventListener('scroll', updateScroll);
+  checkScreen();
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkScreen);
+  window.removeEventListener('scroll', updateScroll);
+});
 </script>
 
 <style scoped lang="scss">

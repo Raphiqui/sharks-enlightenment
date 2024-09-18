@@ -3,50 +3,38 @@
         @animationiteration="handleAnimationIteration"></div>
 </template>
 
-<script>
-export default {
-    name: "Bubble",
-    props: {
-        size: {
-            type: Number,
-            required: true
-        },
-        left: {
-            type: Number,
-            required: true
-        },
-        duration: {
-            type: Number,
-            required: true
-        }
-    },
-    data() {
-        return {
-            isResetting: false
-        };
-    },
-    computed: {
-        bubbleClass() {
-            return this.size < 15 ? 'small' : this.size < 25 ? 'medium' : 'large';
-        },
-        bubbleStyle() {
-            return {
-                width: `${this.size}px`,
-                height: `${this.size}px`,
-                left: `${this.left}%`,
-                animationDuration: `${this.duration}s`
-            };
-        }
-    },
-    methods: {
-        handleAnimationIteration() {
-            this.isResetting = true;
-            this.$emit('resetPosition');
-            setTimeout(() => {
-                this.isResetting = false;
-            }, 50);
-        }
-    }
+<script setup>
+import { ref } from 'vue';
+
+const isResetting = ref(false);
+
+const emit = defineEmits(['resetPosition']);
+
+const props = defineProps({
+    size: Number,
+    left: Number,
+    duration: Number
+});
+
+const bubbleClass = computed(() => {
+    return props.size < 15 ? 'small' : props.size < 25 ? 'medium' : 'large';
+});
+
+const bubbleStyle = computed(() => {
+    return {
+        width: `${props.size}px`,
+        height: `${props.size}px`,
+        left: `${props.left}%`,
+        animationDuration: `${props.duration}s`
+    };
+});
+
+const handleAnimationIteration = () => {
+    isResetting.value = true;
+    emit('resetPosition');
+    setTimeout(() => {
+        isResetting.value = false;
+    }, 50);
 };
 </script>
 
