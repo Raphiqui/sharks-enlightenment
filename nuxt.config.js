@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/cloudinary',
     '@nuxtjs/i18n',
+    '@pinia/nuxt',
   ],
 
   i18n: {

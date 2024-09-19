@@ -24,7 +24,7 @@ const bubbleStyle = computed(() => {
     return {
         width: `${props.size}px`,
         height: `${props.size}px`,
-        left: `${props.left}%`,
+        left: `${props.left}%`, 
         animationDuration: `${props.duration}s`
     };
 });

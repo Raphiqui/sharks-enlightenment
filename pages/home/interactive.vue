@@ -7,91 +7,61 @@
 
       <div class="question-container" v-if="questionIndex < questions.length">
         <div class="title-container title">
-          <transition name="fade">
-            <h2 v-if="showQuestion">
-              {{ $t(`quiz.${questions[questionIndex].id}.text`) }}&nbsp;?
-            </h2>
-          </transition>
+          <!-- <transition name="fade"> -->
+          <h2 v-if="showQuestion">
+            {{ $t(`quiz.${questions[questionIndex].id}.text`) }}&nbsp;?
+          </h2>
+          <!-- </transition> -->
         </div>
 
         <div class="option-container">
-          <transition name="fade">
-            <div v-if="show" class="option-container-content">
-              <div
-                class="option"
-                v-for="(response, index) in questions[questionIndex].responses"
-                @click="selectOption(index)"
-                :key="index"
-              >
-                {{ index | charIndex }}.
+          <!-- <transition name="fade"> -->
+          <div v-if="show" class="option-container-content">
+            <div class="option" v-for="(response, index) in questions[questionIndex].responses"
+              @click="selectOption(index)" :key="index">
+              {{ index | charIndex }}.
+              {{
+                $t(
+                  `quiz.${questions[questionIndex].id}.responses.${response.id}`
+                )
+              }}
+            </div>
+          </div>
+          <div v-if="showCorrectAnswer" class="correct-answer">
+            <div class="correct-answer-container">
+              <div class="correct-response-label-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="margin: 0 auto 20px auto; width: 30px; height: 30px" v-if="isCorrect">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="margin: 0 auto 20px auto; width: 30px; height: 30px" v-else>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                </svg>{{ $t("correct") }}&nbsp;:
                 {{
                   $t(
-                    `quiz.${questions[questionIndex].id}.responses.${response.id}`
+                    `quiz.${questions[questionIndex].id}.responses.${correctResponse}`
                   )
                 }}
               </div>
+              {{ $t(`quiz.${questions[questionIndex].id}.answer`) }}
             </div>
-            <div v-if="showCorrectAnswer" class="correct-answer">
-              <div class="correct-answer-container">
-                <div class="correct-response-label-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="green"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    style="margin: 0 auto 20px auto; width: 30px; height: 30px"
-                    v-if="isCorrect"
-                  >
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="red"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    style="margin: 0 auto 20px auto; width: 30px; height: 30px"
-                    v-else
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                  </svg>{{ $t("correct") }}&nbsp;:
-                  {{
-                    $t(
-                      `quiz.${questions[questionIndex].id}.responses.${correctResponse}`
-                    )
-                  }}
-                </div>
-                {{ $t(`quiz.${questions[questionIndex].id}.answer`) }}
-              </div>
-              <div class="next-button button" @click="next()">
-                {{ $t("next") }}
-              </div>
+            <div class="next-button button" @click="next()">
+              {{ $t("next") }}
             </div>
-          </transition>
+          </div>
+          <!-- </transition> -->
         </div>
       </div>
 
-      <div
-        v-if="questionIndex >= questions.length"
-        v-bind:key="questionIndex"
-        class="quiz-completed"
-      >
+      <div v-if="questionIndex >= questions.length" v-bind:key="questionIndex" class="quiz-completed">
         <div class="quiz-completed-score-container">
-          <CircleRating
-            :score="(score / questions.length) * 100"
-          ></CircleRating>
+          <CircleRating :score="(score / questions.length) * 100"></CircleRating>
           <div class="quiz-completed-score-text">
             {{ $t(`quiz.${scoreMessage}`) }}
           </div>
@@ -103,95 +73,93 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "interactive",
+<script setup>
+
+import { useQuestionsStore } from '../../store';
+
+definePageMeta({
   transition: {
     name: "home",
     mode: "out-in",
   },
-  data() {
-    return {
-      questions: [],
-      userResponseSkeleton: null,
-      userResponses: null,
-      questionIndex: 0,
-      isActive: false,
-      show: true,
-      showQuestion: true,
-      showCorrectAnswer: false,
-      score: 0,
-      isCorrect: false,
-    };
-  },
-  mounted() {
-    this.questions = [...this.$store.state.questions].sort(
-      () => Math.random() - 0.5
-    );
-    (this.userResponseSkeleton = Array(this.questions.length).fill(null)),
-      (this.userResponses = this.userResponseSkeleton);
-  },
-  filters: {
-    charIndex: function (i) {
-      return String.fromCharCode(97 + i);
-    },
-  },
-  methods: {
-    restart: function () {
-      this.questionIndex = 0;
-      this.score = 0;
-      this.userResponses = Array(this.questions.length).fill(null);
-    },
-    selectOption: function (index) {
-      this.show = false;
+});
 
-      if ("correct" in this.questions[this.questionIndex].responses[index])
-        this.score++;
+const store = useQuestionsStore()
 
-      setTimeout(() => {
-        this.$set(this.userResponses, this.questionIndex, index);
-        this.showCorrectAnswer = true;
-      }, 1000);
-    },
-    next: function () {
-      this.showCorrectAnswer = false;
-      this.showQuestion = false;
-      this.isCorrect = false;
+const questions = ref([])
+const userResponseSkeleton = ref(null)
+const userResponses = ref(null)
+const questionIndex = ref(0)
+const isActive = ref(false)
+const show = ref(true)
+const showQuestion = ref(true)
+const showCorrectAnswer = ref(false)
+const score = ref(0)
+const isCorrect = ref(false)
 
-      setTimeout(() => {
-        if (this.questionIndex < this.questions.length) this.questionIndex++;
-      }, 1000);
+onMounted(() => {
+  questions.value = [...store.questions].sort(() => Math.random() - 0.5)
+  userResponseSkeleton.value = Array(questions.value.length).fill(null)
+  userResponses.value = userResponseSkeleton.value
+})
 
-      setTimeout(() => {
-        this.show = true;
-        this.showQuestion = true;
-      }, 1000);
-    },
+const restart = () => {
+  questionIndex.value = 0
+  score.value = 0
+  userResponses.value = userResponseSkeleton.value
+}
 
-    prev: function () {
-      if (this.questions.length > 0) this.questionIndex--;
-    },
-  },
-  computed: {
-    correctResponse() {
-      return this.questions[this.questionIndex].responses.filter(
-        (resp) => resp.correct === true
-      )[0].id;
-    },
-    scoreMessage() {
-      const percentageScore = (this.score / this.questions.length) * 100;
+const selectOption = (index) => {
+  show.value = false
 
-      if (percentageScore > 75) return "contextual1";
-      if (percentageScore > 50) return "contextual2";
-      return "contextual3";
-    },
-  },
-  watch: {
-    score(newValue, oldValue) {
-      this.isCorrect = newValue > oldValue;
-    },
-  },
-};
+  if ("correct" in questions.value[questionIndex.value].responses[index]) score.value++
+
+  setTimeout(() => {
+    userResponses.value[questionIndex.value] = index
+    showCorrectAnswer.value = true
+  }, 1000)
+}
+
+const next = () => {
+  showCorrectAnswer.value = false
+  showQuestion.value = false
+  isCorrect.value = false
+
+  setTimeout(() => {
+    if (questionIndex.value < questions.value.length) questionIndex.value++
+  }, 1000)
+
+  setTimeout(() => {
+    show.value = true
+    showQuestion.value = true
+  }, 1000)
+}
+
+const prev = () => {
+  if (questions.value.length > 0) questionIndex.value--
+}
+
+const correctResponse = computed(() => {
+  return questions.value[questionIndex.value].responses.filter(
+    (resp) => resp.correct === true
+  )[0].id
+})
+
+const scoreMessage = computed(() => {
+  const percentageScore = (score.value / questions.value.length) * 100
+
+  if (percentageScore > 75) return "contextual1"
+  if (percentageScore > 50) return "contextual2"
+  return "contextual3"
+})
+
+const charIndex = (i) => {
+  return String.fromCharCode(97 + i)
+}
+
+watch(() => score.value, (newValue, oldValue) => {
+  isCorrect.value = newValue > oldValue
+})
 </script>
 
 <style lang="scss" scoped>
@@ -213,6 +181,7 @@ export default {
 .fade-leave-active {
   transition: all 0.5s;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
@@ -227,6 +196,7 @@ export default {
 .subtitle {
   font-weight: normal;
 }
+
 .animated {
   transition-duration: 0.3/2;
 }
@@ -275,10 +245,12 @@ export default {
     padding: 1.5rem;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
     h1 {
       font-weight: bold;
     }
   }
+
   .title-container {
     text-align: center;
     margin: 0 auto;
@@ -315,6 +287,7 @@ export default {
       }
     }
   }
+
   .quiz-completed {
     width: 100%;
     padding: 1rem;
@@ -336,10 +309,11 @@ export default {
       }
     }
 
-    & > .button {
+    &>.button {
       min-width: 100px;
     }
   }
+
   .question-container {
     white-space: normal;
     width: 100%;
@@ -380,6 +354,7 @@ export default {
           border-color: rgba(black, 0.25);
           background-color: white;
         }
+
         &:hover {
           background-color: rgba(0, 0, 0, 0.6);
         }
