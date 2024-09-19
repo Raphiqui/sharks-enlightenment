@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <MainLayer />
-  </div>
+  <NuxtLayout>
+    <MainLayer/>
+  </NuxtLayout>
 </template>
 
-<script>
-export default {
-  name: "IndexPage",
-
+<script setup>
+import MainLayer from "@/components/MainLayer.vue";
+definePageMeta({
   transition: {
     name: "home",
     mode: "out-in",
   },
-};
+});
 </script>
