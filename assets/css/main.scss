@@ -17,7 +17,6 @@ body {
 }
 
 .iucn-status-container {
-
   width: 100%;
 
   .iucn-status-container-content {
@@ -69,49 +68,77 @@ body {
 
       &.ex {
         border-color: black;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(0, 0, 0) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(0, 0, 0) 40%
+        );
         color: darkred;
         display: flex;
       }
 
       &.ew {
         border-color: black;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(0, 0, 0) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(0, 0, 0) 40%
+        );
         color: white;
         display: flex;
       }
 
       &.cr {
         border-color: darkred;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(139, 0, 0) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(139, 0, 0) 40%
+        );
         color: white;
         display: flex;
       }
 
       &.en {
         border-color: white;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(255, 69, 0) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(255, 69, 0) 40%
+        );
         color: white;
         display: flex;
       }
 
       &.vu {
         border-color: white;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(184, 134, 11) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(184, 134, 11) 40%
+        );
         color: white;
         display: flex;
       }
 
       &.nt {
         border-color: lightseagreen;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(32,178,170,1) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgba(32, 178, 170, 1) 40%
+        );
         color: white;
         display: flex;
       }
 
       &.lc {
         border-color: lightskyblue;
-        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgb(135, 206, 250) 40%);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 238, 238, 1) 0%,
+          rgb(135, 206, 250) 40%
+        );
         color: white;
         display: flex;
       }
