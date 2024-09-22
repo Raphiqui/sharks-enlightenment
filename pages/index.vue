@@ -1,7 +1,5 @@
 <template>
-  <NuxtLayout>
-    <MainLayer/>
-  </NuxtLayout>
+  <MainLayer />
 </template>
 
 <script setup>
