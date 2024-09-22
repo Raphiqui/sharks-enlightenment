@@ -9,22 +9,43 @@
         </nuxt-link>
         <ul v-show="!mobile" class="navigation">
           <li>
-            <nuxt-link class="link" @click.native="handle" to="/home/species" no-prefetch>{{ $t("header.1")
-              }}</nuxt-link>
+            <nuxt-link
+              class="link"
+              @click.native="handle"
+              to="/home/species"
+              no-prefetch
+              >{{ $t("header.1") }}</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link class="link" @click.native="handle" to="/home/interactive" no-prefetch>{{ $t("header.2")
-              }}</nuxt-link>
+            <nuxt-link
+              class="link"
+              @click.native="handle"
+              to="/home/interactive"
+              no-prefetch
+              >{{ $t("header.2") }}</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link class="link" @click.native="handle" to="/home/about" no-prefetch>{{ $t("header.3") }}</nuxt-link>
+            <nuxt-link
+              class="link"
+              @click.native="handle"
+              to="/home/about"
+              no-prefetch
+              >{{ $t("header.3") }}</nuxt-link
+            >
           </li>
         </ul>
         <div v-show="!mobile">
           <LanguageInput />
         </div>
         <div class="icon">
-          <div class="container" @click="toggleMobileNav" v-show="mobile" :class="mobileNav ? 'is-open' : 'is-closed'">
+          <div
+            class="container"
+            @click="toggleMobileNav"
+            v-show="mobile"
+            :class="mobileNav ? 'is-open' : 'is-closed'"
+          >
             <div class="line-top"></div>
             <div class="line-middle"></div>
             <div class="line-bottom"></div>
@@ -33,16 +54,31 @@
         <transition name="mobile-nav">
           <ul v-show="mobileNav" class="dropdown-nav">
             <li>
-              <nuxt-link class="link" @click.native="handle" to="/home/species" no-prefetch>{{ $t("header.1")
-                }}</nuxt-link>
+              <nuxt-link
+                class="link"
+                @click.native="handle"
+                to="/home/species"
+                no-prefetch
+                >{{ $t("header.1") }}</nuxt-link
+              >
             </li>
             <li>
-              <nuxt-link class="link" @click.native="handle" to="/home/interactive" no-prefetch>{{ $t("header.2")
-                }}</nuxt-link>
+              <nuxt-link
+                class="link"
+                @click.native="handle"
+                to="/home/interactive"
+                no-prefetch
+                >{{ $t("header.2") }}</nuxt-link
+              >
             </li>
             <li>
-              <nuxt-link class="link" @click.native="handle" to="/home/about" no-prefetch>{{ $t("header.3")
-                }}</nuxt-link>
+              <nuxt-link
+                class="link"
+                @click.native="handle"
+                to="/home/about"
+                no-prefetch
+                >{{ $t("header.3") }}</nuxt-link
+              >
             </li>
             <li>
               <LanguageInput @click.native="handle" />
@@ -56,14 +92,14 @@
       <slot />
     </main>
 
-    <footer>
+    <div>
       <Copyright />
-    </footer>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const scrolledNav = ref(null);
 const mobile = ref(false);
@@ -84,14 +120,14 @@ const updateScroll = () => {
 };
 
 onMounted(() => {
-  window.addEventListener('resize', checkScreen);
-  window.addEventListener('scroll', updateScroll);
+  window.addEventListener("resize", checkScreen);
+  window.addEventListener("scroll", updateScroll);
   checkScreen();
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', checkScreen);
-  window.removeEventListener('scroll', updateScroll);
+  window.removeEventListener("resize", checkScreen);
+  window.removeEventListener("scroll", updateScroll);
 });
 </script>
 
