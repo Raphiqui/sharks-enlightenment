@@ -2,8 +2,16 @@
   <div class="species">
     <div class="species-container">
       <ul>
-        <li v-for="shark in sharksTable" :key="shark.name" @click="$router.push(`/home/shark_species/${shark.path}`)">
-          <nuxt-img preload :src="generateSrc(shark.cloudinary_object_id)" format="webp" />
+        <li
+          v-for="shark in sharksTable"
+          :key="shark.name"
+          @click="$router.push(`/home/shark_species/${shark.path}`)"
+        >
+          <nuxt-img
+            preload
+            :src="generateSrc(shark.cloudinary_object_id)"
+            format="webp"
+          />
           <div class="species-content-container">
             <span class="species-title">
               {{ $t(`sharks.${shark.path}.name`) }}
@@ -17,15 +25,7 @@
 </template>
 
 <script setup>
-
-import { useSharkTableStore } from '../../store';
-
-definePageMeta({
-  transition: {
-    name: "home",
-    mode: "out-in",
-  },
-});
+import { useSharkTableStore } from "../../store";
 
 const sharksTable = useSharkTableStore().sharksTable;
 
@@ -38,7 +38,6 @@ const generateSrc = (id) => {
 
   return url;
 };
-
 </script>
 
 <style scoped lang="scss">
@@ -102,17 +101,19 @@ img {
     margin: 100px auto;
     max-width: 1100px;
 
-    &>ul {
+    & > ul {
       --auto-grid-min-size: 16rem;
       display: grid;
       grid-gap: 60px;
-      grid-template-columns: repeat(auto-fill,
-          minmax(var(--auto-grid-min-size), 1fr));
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size), 1fr)
+      );
       margin: 0;
       padding: 0;
       box-sizing: border-box;
 
-      &>li {
+      & > li {
         overflow: hidden;
         justify-content: center;
         display: flex;

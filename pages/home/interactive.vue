@@ -106,13 +106,6 @@
 <script setup>
 import { useQuestionsStore } from "../../store";
 
-definePageMeta({
-  transition: {
-    name: "home",
-    mode: "out-in",
-  },
-});
-
 const store = useQuestionsStore();
 
 const questions = ref([]);

@@ -113,13 +113,6 @@
 <script setup>
 import { useSharkTableStore, useIUCNStatusStore } from "../../store";
 
-definePageMeta({
-  transition: {
-    name: "home",
-    mode: "out-in",
-  },
-});
-
 const sharksTableStore = useSharkTableStore();
 const iucnStore = useIUCNStatusStore();
 
