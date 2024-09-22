@@ -120,6 +120,7 @@ const shark = ref(null);
 const url = ref(null);
 const previous = ref(null);
 const next = ref(null);
+const iucnStatus = iucnStore.iucnStatus;
 const route = useRoute();
 
 const { data, status, error, refresh, clear } = await useAsyncData(
@@ -354,6 +355,14 @@ onMounted(() => {
         border-radius: unset;
       }
     }
+  }
+}
+
+.iucn-grid {
+  padding: 0;
+
+  a {
+    display: flex;
   }
 }
 
