@@ -154,18 +154,6 @@ const { data, status, error, refresh, clear } = await useAsyncData(
 shark.value = data.value.shark;
 url.value = data.value.url;
 
-const generateSrc = (id) => {
-  const { url } = useCldImageUrl({
-    options: {
-      src: `sharks-enlightenment/${id}`,
-      height: "1920",
-      width: "1414",
-    },
-  });
-
-  return url;
-};
-
 onMounted(() => {
   const paths = sharksTableStore.sharksTable.map((item) => {
     return item.path;
