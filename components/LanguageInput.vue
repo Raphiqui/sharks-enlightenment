@@ -2,9 +2,13 @@
   <div class="lang-dropdown">
     <ul>
       <li v-for="lang in locales" :key="lang.code">
-        <span :class="{
-          active: lang.code === locale,
-        }" @click="setLocale(lang.code)">{{ lang.code }}</span>
+        <span
+          :class="{
+            active: lang.code === locale,
+          }"
+          @click="setLocale(lang.code)"
+          >{{ lang.code }}</span
+        >
       </li>
     </ul>
   </div>
@@ -23,11 +27,11 @@ export default {
 </script>
 
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const { locales, locale, setLocale } = useI18n();
 
-const activeLanguageStyle = computed(() => 'active');
+const activeLanguageStyle = computed(() => "active");
 </script>
 
 <style scoped lang="scss">
@@ -43,7 +47,6 @@ const activeLanguageStyle = computed(() => 'active');
     margin-left: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-transform: capitalize;
     height: 100%;
 
