@@ -7,25 +7,34 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test:cucumber": "cucumber-js"
+    "ensure-report-file": "node ensure-report-file.js",
+    "test:cucumber": "cucumber-js test/features/ -f json:test/report/cucumber_report.json",
+    "report:cucumber": "node generate-report.js",
+    "test": "npm run ensure-report-file && npm run test:cucumber; npm run report:cucumber"
   },
   "dependencies": {
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/cloudinary": "^3.1.0",
+    "@nuxtjs/i18n": "^8.5.3",
+    "@pinia/nuxt": "0.5.4",
     "core-js": "^3.19.3",
     "nuxt": "^3.13.1",
-    "@nuxtjs/i18n": "^8.5.3",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "sass-loader": "^10.3.1",
+    "table": "^6.8.2",
     "vue": "^3.5.5",
     "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "@pinia/nuxt": "0.5.4"
+    "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@playwright/test": "^1.47.2",
     "@vue/test-utils": "^2.4.6",
     "babel-core": "7.0.0-bridge.0",
+    "cucumber-html-reporter": "^5.5.0",
+    "playwright": "^1.15.0",
     "postcss": "^8.4.4"
-  }
+  },
+  "packageManager": "yarn@4.5.0"
 }

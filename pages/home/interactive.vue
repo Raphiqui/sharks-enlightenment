@@ -106,6 +106,10 @@
 <script setup>
 import { useQuestionsStore } from "../../store";
 
+useSeoMeta({
+  title: "Interactive Quiz",
+});
+
 const store = useQuestionsStore();
 
 const questions = ref([]);
@@ -288,6 +292,7 @@ watch(
 
     @media (max-width: 768px) {
       width: 100% !important;
+      box-sizing: border-box;
     }
   }
 
