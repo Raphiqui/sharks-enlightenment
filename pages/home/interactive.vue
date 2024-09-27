@@ -23,7 +23,7 @@
                 @click="selectOption(index)"
                 :key="index"
               >
-                {{ index | charIndex }}.
+                {{ charIndex(index) }}.
                 {{
                   $t(
                     `quiz.${questions[questionIndex].id}.responses.${response.id}`
@@ -106,6 +106,7 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useQuestionsStore } from "../../store";
 
 useSeoMeta({
@@ -202,6 +203,9 @@ watch(
   margin-bottom: 20px;
   font-size: 20px;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .fade-enter-active,
