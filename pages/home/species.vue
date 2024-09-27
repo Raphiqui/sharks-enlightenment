@@ -60,6 +60,7 @@ img {
   width: 100%;
   position: relative;
   padding: 0 20px;
+  box-sizing: border-box;
 
   &-content {
     &-container {
