@@ -12,7 +12,7 @@
     "dm": "distribution map",
     "cs": "Conservation status",
     "ds": "description",
-    "length": "Size",
+    "length": "max size",
     "weight": "weight",
     "av": "average",
     "iucnStatus": {
@@ -118,7 +118,7 @@
     "blue_shark": {
       "name": "Blue shark",
       "scientific_name": "Prionace glauca",
-      "description": "Blue sharks are curious, open-ocean predators that live throughout the global ocean, from the tropics to cold temperate waters. They spend most of their lives far from the coast and are truly a pelagic species. The common name comes from the blue color of the skin, unique among the sharks.",
+      "description": "Slender shark with an iridescent blue coloration. Found worldwide in temperate and tropical oceanic waters, often in large aggregations segregated by size and sex, and feeds mostly on fish and squid. Most heavily fished shark in the world.",
       "uicn_status": "NT",
       "distribution": "The blue shark inhabits all the oceans and seas of the world. This shark is pelagic but may occasionally stay close to the continental belt. Young blue sharks are sometimes observed near the coast."
     },

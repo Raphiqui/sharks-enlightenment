@@ -12,7 +12,7 @@
     "dm": "mapa de distribución",
     "cs": "Estado de conservación",
     "ds": "Descripción",
-    "length": "Tamaño",
+    "length": "tamaño máximo",
     "weight": "peso",
     "av": "promedio",
     "iucnStatus": {
@@ -116,9 +116,9 @@
   },
   "sharks": {
     "blue_shark": {
-      "name": "Blue shark",
+      "name": "Tiburón azul",
       "scientific_name": "Prionace glauca",
-      "description": "Los tiburones azules son depredadores curiosos de alta mar que viven en todo el océano global, desde los trópicos hasta las aguas templadas frías. Pasan la mayor parte de sus vidas lejos de la costa y son verdaderamente una especie pelágica. El nombre común proviene del color azul de la piel, único entre los tiburones.",
+      "description": "Tiburón esbelto con una coloración azul iridiscente. Se encuentra en todo el mundo en aguas oceánicas templadas y tropicales, a menudo en grandes agregaciones segregadas por tamaño y sexo, y se alimenta principalmente de peces y calamares. El tiburón más pescado del mundo.",
       "uicn_status": "NT",
       "distribution": "El tiburón azul habita en todos los océanos y mares del mundo. Este tiburón es pelágico, pero ocasionalmente puede permanecer cerca del cinturón continental. A veces se observan tiburones azules jóvenes cerca de la costa."
     },
