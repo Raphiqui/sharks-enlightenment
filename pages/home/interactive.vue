@@ -2,13 +2,15 @@
   <div class="question-box">
     <div class="question-box-inside">
       <div class="question-container-header">
-        <h1 class="title">{{ $t("header.2") }}</h1>
+        <h1 class="title">
+          {{ $t("header.2") }}
+        </h1>
       </div>
 
       <div class="question-container" v-if="questionIndex < questions.length">
         <div class="title-container title">
           <transition name="fade">
-            <h2 v-if="showQuestion">
+            <h2 v-if="showQuestion" data-test-id="question">
               {{ $t(`quiz.${questions[questionIndex].id}.text`) }}&nbsp;?
             </h2>
           </transition>
@@ -22,6 +24,7 @@
                 v-for="(response, index) in questions[questionIndex].responses"
                 @click="selectOption(index)"
                 :key="index"
+                :data-test-id="response.correct ? 'correct' : ''"
               >
                 {{ charIndex(index) }}.
                 {{
@@ -67,8 +70,9 @@
                   >
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="15" y1="9" x2="9" y2="15"></line>
-                    <line x1="9" y1="9" x2="15" y2="15"></line></svg
-                  >{{ $t("correct") }}&nbsp;:
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  {{ $t("correct") }}&nbsp;:
                   {{
                     $t(
                       `quiz.${questions[questionIndex].id}.responses.${correctResponse}`
@@ -77,7 +81,11 @@
                 </div>
                 {{ $t(`quiz.${questions[questionIndex].id}.answer`) }}
               </div>
-              <div class="next-button button" @click="next()">
+              <div
+                class="next-button button"
+                data-test-id="next"
+                @click="next()"
+              >
                 {{ $t("next") }}
               </div>
             </div>
@@ -99,7 +107,9 @@
           </div>
         </div>
 
-        <div class="button" @click="restart()">{{ $t("restart") }}</div>
+        <div class="button" @click="restart()">
+          {{ $t("restart") }}
+        </div>
       </div>
     </div>
   </div>
@@ -114,6 +124,7 @@ useSeoMeta({
 });
 
 const store = useQuestionsStore();
+const route = useRoute();
 
 const questions = ref([]);
 const userResponseSkeleton = ref(null);
@@ -126,7 +137,13 @@ const score = ref(0);
 const isCorrect = ref(false);
 
 onMounted(() => {
-  questions.value = [...store.questions].sort(() => Math.random() - 0.5);
+  // If the query parameter "e2e" is present, the questions are not shuffled for end-to-end testing
+  if (route.query.hasOwnProperty("e2e")) {
+    questions.value = [...store.questions];
+  } else {
+    questions.value = [...store.questions].sort(() => Math.random() - 0.5);
+  }
+
   userResponseSkeleton.value = Array(questions.value.length).fill(null);
   userResponses.value = userResponseSkeleton.value;
 });
