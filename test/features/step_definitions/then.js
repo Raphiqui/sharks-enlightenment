@@ -6,3 +6,8 @@ Then("I should see the home page", async function () {
   expect(title).toBe("My Amazing Site");
   await this.browser.close();
 });
+
+Then("I should see question {string}", async function (expectedQuestion) {
+  const question = await this.page.locator(`[data-test-id="question"]`);
+  expect(question).toBeTruthy();
+});
