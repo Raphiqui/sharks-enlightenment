@@ -11,3 +11,9 @@ Then("I should see question {string}", async function (expectedQuestion) {
   const question = await this.page.locator(`[data-test-id="question"]`);
   expect(question).toBeTruthy();
 });
+
+Then("I can see my final score", { timeout: 10000 }, async function () {
+  const score = await this.page.locator(`[data-test-id="score"]`);
+  expect(score).toBeTruthy();
+  const scoreText = await score.textContent();
+});
