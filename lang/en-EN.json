@@ -132,7 +132,7 @@
     "bull_shark": {
       "name": "Bull shark",
       "scientific_name": "Carcharhinus leucas",
-      "description": "The bull shark is a predatory species that lives in coastal seas and is the shark with the best ability to move into freshwaters – particularly large, coastal rivers and lakes. They are able to move back and forth between saltwater and freshwater with ease. This behavior brings them into more contact with humans than most species of sharks, and they are therefore responsible for fatally biting more people than any other species.",
+      "description": "A large, stocky shark. Lives worldwide in tropical and subtropical seas. One of the few sharks capable of swimming in freshwater. Active in turbid waters along coasts and upstream rivers. Feeds mainly on fish and seabirds. Responsible for most bites.",
       "uicn_status": "NT",
       "distribution": "The bull shark is found on the coasts of all the tropical and subtropical seas of the world. It is common in the Atlantic and Indo-Pacific, but much rarer in the Red Sea. In the Pacific Ocean, it is found from Baja California to the Equator. It is both coastal and semi-pelagic depending on the regions and life stages, fond of depths between the surface and up to potentially more than 250 meters, but generally around 30m. It particularly appreciates muddy or highly turbid water, for example at the mouth of a river after a tropical cyclone."
     },
@@ -174,7 +174,7 @@
     "white_shark": {
       "name": "Great White shark",
       "scientific_name": "Carcharodon carcharias",
-      "description": "The white shark is an exceptionally large shark measuring on average between 4 and 6 m for a weight of about 2 tons. Officially, the largest specimen caught and recognized by scientists measured 6.40 m and weighed 3,220 kg. It has a fairly long conical snout. Its teeth, sharp as razor blades, are flat, triangular and serrated and can measure seven centimeters in length of which six centimeters protrude from the gums. Its impressive jaw has between four and six rows of teeth, of which only the first two are functional. When he happens to lose a tooth, another from the back row comes to take its place. The jaw of this shark has between forty-four to fifty-two teeth. If the gill slits are very long, they do not completely encircle the head. These gills precede the well-developed sickle-shaped pectoral fins. The caudal fin is short, almost symmetrical in the shape of a crescent. Super-predator of the oceans, the white shark nevertheless has its weak point. Indeed, to survive, it must be in constant movement in order to be able to oxygenate itself permanently.",
+      "description": "Largest of the predatory sharks, most iconic due to media. Found worldwide with the widest range of any shark and can be found in most oceans. Breaches up to 10 ft (3 m) into the air. Investigates humans, involved in shark bites.",
       "uicn_status": "VU",
       "distribution": "The habitat of the great white shark is mainly coastal in temperate waters, but it has also been observed in epipelagic areas in the ocean. It is a shallow water lover, however one specimen was caught on a 1280m long line."
     },
@@ -195,7 +195,7 @@
     "shortfin_mako_shark": {
       "name": "Shortfin mako shark",
       "scientific_name": "Isurus oxyrinchus",
-      "description": "The shortfin mako shark is a large, predatory shark that lives in the open ocean and reaches lengths of 12 feet (3.8 m) and weights of at least 1200 pounds (545 kg). With top speeds of 45 miles per hour (74 kilometers per hour), the shortfin mako is the fastest shark and is one of the fastest fishes on the planet. This species’ athleticism is not restricted to its swimming speeds. It is known for its incredible leaping ability and can be observed jumping to extreme heights (out of the water) when hunting.",
+      "description": "The fastest shark of all, reaching up to 40 mph. Found worldwide in temperate and tropical seas. Brilliant blue coloration. Highly prized for its meat and fins.",
       "uicn_status": "EN",
       "distribution": "Pelagic and sometimes coastal in tropical and temperate waters. Evolves from the surface to 740 meters deep."
     },

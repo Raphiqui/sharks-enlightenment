@@ -132,7 +132,7 @@
     "bull_shark": {
       "name": "Requin bouledogue",
       "scientific_name": "Carcharhinus leucas",
-      "description": "Le requin bouledogue est une espèce prédatrice qui vit dans les mers côtières et est le requin ayant la meilleure capacité à se déplacer dans les eaux douces - en particulier les grands fleuves côtiers et les lacs. Ils peuvent se déplacer facilement entre l'eau salée et l'eau douce. Ce comportement les amène à entrer en contact avec les humains plus que la plupart des espèces de requins, et ils sont donc responsables de mordre mortellement plus de personnes que toute autre espèce.",
+      "description": "Grand requin trapu. Présent dans les mers tropicales et subtropicales. Un des rares requins capables de nager dans les eaux douces. Actif dans les eaux troubles près des côtes et en amont des rivières. Se nourrit principalement de poissons et d'oiseaux marins. Responsable de la plupart des morsures.",
       "uicn_status": "NT",
       "distribution": "Le requin-bouledogue se rencontre sur les côtes de toutes les mers tropicales et subtropicales du monde. Il est fréquent dans l'Atlantique et l'Indo-Pacifique, mais beaucoup plus rare en mer Rouge. Dans l'océan Pacifique, on le trouve de la Basse Californie à l'Équateur. Il est à la fois côtier et semi-pélagique selon les régions et les stades de vie, affectionnant des profondeurs comprises entre la surface et jusqu'à potentiellement plus de 250 mètres, mais généralement autour de 30m. Il apprécie plus particulièrement les eaux boueuses ou à forte turbidité, par exemple à embouchure d'un fleuve après un cyclone tropical."
     },
@@ -174,7 +174,7 @@
     "white_shark": {
       "name": "Grand requin blanc",
       "scientific_name": "Carcharodon carcharias",
-      "description": "Le requin blanc est un requin exceptionnellement grand mesurant en moyenne ente 4 et 6 m pour un poids d'environ 2 tonnes. Officiellement, le plus grand spécimen pêché et reconnu par les scientifiques mesurait 6,40 m et pesait 3 220 kg. Il possède un museau conique assez long. Ses dents, tranchantes comme des lames de rasoir, sont plates, triangulaires et dentelées et peuvent mesurer sept centimètres de long dont six centimètres dépassent des gencives. Sa mâchoire impressionnante comporte entre quatre et six rangées de dents dont seules les deux premières sont fonctionnelles. Quand il lui arrive de perdre une dent, une autre de la rangée arrière vient prendre sa place. La mâchoire de ce requin est dotée entre quarante-quatre à cinquante deux dents. Si les fentes branchiales sont très longues, elles n'encerclent pas totalement la tête. Ces branchies précèdent les nageoires pectorales de forme falciforme et bien développée. La nageoire caudale est courte, presque symétrique en forme de croissant. Super-prédateur des océans, le requin blanc a néanmoins son point faible. En effet, pour survivre, il doit être en mouvement constant afin de pouvoir s'oxygéner en permanence.",
+      "description": "Le plus grand des requins prédateurs, le plus emblématique grâce aux médias. Se trouve dans le monde entier avec la plus large répartition de tous les requins et peut être trouvé dans la plupart des océans. Saute jusqu'à 3 m hors de l'eau. Enquêtes sur les humains, impliqué dans les morsures de requin.",
       "uicn_status": "VU",
       "distribution": "L'habitat du grand requin blanc est principalement côtier dans les eaux tempérées, mais il a aussi été observé en zones épipélagiques dans l'océan. C'est un amateur des eaux peu profondes, mais un spécimen a cependant été pêché sur une longue ligne de 1 280 m."
     },
@@ -195,7 +195,7 @@
     "shortfin_mako_shark": {
       "name": "Requin mako",
       "scientific_name": "Isurus oxyrinchus",
-      "description": "Le requin mako est un grand prédateur vivant en haute mer, atteignant une longueur de 12 pieds (3,8 m) et un poids d'au moins 1200 livres (545 kg). Avec une vitesse maximale de 45 miles par heure (74 kilomètres par heure), le requin mako est le plus rapide des requins et l'un des poissons les plus rapides de la planète. L'athlétisme de cette espèce ne se limite pas à sa vitesse de nage. Il est connu pour son incroyable capacité de saut et peut être observé sautant à des hauteurs extrêmes (hors de l'eau) lorsqu'il chasse.",
+      "description": "Le requin le plus rapide de tous, atteignant jusqu'à 64 km/h. Trouvé dans le monde entier dans les mers tempérées et tropicales. Couleur bleue éclatante. Très prisé pour sa viande et ses nageoires.",
       "uicn_status": "EN",
       "distribution": "Pélagique et parfois côtier en eaux tropicales et tempérées. Évolue de la surface à 740 mètres de profondeur"
     },

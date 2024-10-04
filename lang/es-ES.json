@@ -132,7 +132,7 @@
     "bull_shark": {
       "name": "Bull shark",
       "scientific_name": "Carcharhinus leucas",
-      "description": "El tiburón toro es una especie depredadora que vive en los mares costeros y es el tiburón con mejor capacidad para moverse en aguas dulces, especialmente en los grandes ríos y lagos costeros. Pueden moverse fácilmente entre el agua salada y el agua dulce. Este comportamiento hace que entren en contacto con humanos más que la mayoría de las especies de tiburones, por lo que son responsables de morder fatalmente a más personas que cualquier otra especie.",
+      "description": "Un tiburón grande y robusto. Vive en mares tropicales y subtropicales de todo el mundo. Uno de los pocos tiburones capaces de nadar en agua dulce. Activo en aguas turbias cerca de las costas y ríos. Se alimenta principalmente de peces y aves marinas. Responsable de la mayoría de las mordeduras.",
       "uicn_status": "NT",
       "distribution": "El tiburón toro se encuentra en las costas de todos los mares tropicales y subtropicales del mundo. Es común en el Atlántico y el Indo-Pacífico, pero mucho más raro en el Mar Rojo. En el Océano Pacífico, se encuentra desde Baja California hasta el Ecuador. Es tanto costero como semipelágico según las regiones y etapas de vida, aficionado a las profundidades entre la superficie y hasta potencialmente más de 250 metros, pero generalmente alrededor de los 30 m. Aprecia especialmente el agua fangosa o muy turbia, por ejemplo en la desembocadura de un río después de un ciclón tropical."
     },
@@ -174,7 +174,7 @@
     "white_shark": {
       "name": "Great White shark",
       "scientific_name": "Carcharodon carcharias",
-      "description": "El tiburón blanco es un tiburón excepcionalmente grande que mide en promedio entre 4 y 6 m para un peso de alrededor de 2 toneladas. Oficialmente, el ejemplar más grande capturado y reconocido por los científicos medía 6,40 my pesaba 3.220 kg. Tiene un hocico cónico bastante largo. Sus dientes, afilados como hojas de afeitar, son planos, triangulares y aserrados y pueden medir siete centímetros de largo de los cuales seis centímetros sobresalen de las encías. Su impresionante mandíbula tiene entre cuatro y seis filas de dientes, de los cuales solo las dos primeras son funcionales. Cuando pierde un diente, otro de la última fila viene a ocupar su lugar. La mandíbula de este tiburón tiene entre cuarenta y cuatro a cincuenta y dos dientes. Si las hendiduras branquiales son muy largas, no rodean completamente la cabeza. Estas branquias preceden a las aletas pectorales en forma de hoz bien desarrolladas. La aleta caudal es corta, casi simétrica en forma de media luna. Súper depredador de los océanos, el tiburón blanco tiene sin embargo su punto débil. De hecho, para sobrevivir, debe estar en constante movimiento para poder oxigenarse permanentemente.",
+      "description": "El mayor de los tiburones depredadores, el más icónico debido a los medios. Se encuentra en todo el mundo con el rango más amplio de cualquier tiburón y puede encontrarse en la mayoría de los océanos. Salta hasta 3 m en el aire. Investiga a los humanos, implicado en mordeduras de tiburón.",
       "uicn_status": "VU",
       "distribution": "El hábitat del gran tiburón blanco es principalmente costero en aguas templadas, pero también se ha observado en áreas epipelágicas en el océano. Es un amante de las aguas poco profundas, sin embargo, un espécimen fue capturado en una línea de 1280 m de largo."
     },
@@ -195,7 +195,7 @@
     "shortfin_mako_shark": {
       "name": "Shortfin mako shark",
       "scientific_name": "Isurus oxyrinchus",
-      "description": "El tiburón mako es un gran depredador que habita en aguas profundas, alcanzando una longitud de 12 pies (3,8 m) y un peso de al menos 1200 libras (545 kg). Con una velocidad máxima de 45 millas por hora (74 kilómetros por hora), el tiburón mako es el tiburón más rápido y uno de los peces más rápidos del planeta. El atletismo de esta especie no se limita a su velocidad de nado. Es conocido por su increíble capacidad de salto y se le puede observar saltando a alturas extremas (fuera del agua) cuando caza.",
+      "description": "El tiburón más rápido de todos, alcanzando hasta 64 km/h. Se encuentra en todo el mundo en mares templados y tropicales. Coloración azul brillante. Muy apreciado por su carne y aletas.",
       "uicn_status": "EN",
       "distribution": "Pelágico ya veces costero en aguas tropicales y templadas. Evoluciona desde la superficie hasta los 740 metros de profundidad."
     },

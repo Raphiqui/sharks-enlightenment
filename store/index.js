@@ -18,7 +18,7 @@ export const useSharkTableStore = defineStore("sharks", {
       {
         path: "bull_shark",
         scientific_name: "Carcharhinus leucas",
-        length: "3.25 m",
+        length: "4 m",
         uicn_status: "NT",
         cloudinary_object_id: "bull_shark_jtxo6z.jpg",
       },
@@ -60,7 +60,7 @@ export const useSharkTableStore = defineStore("sharks", {
       {
         path: "white_shark",
         scientific_name: "Carcharodon carcharias",
-        length: "4.8-6 m",
+        length: "6.4 m",
         uicn_status: "VU",
         cloudinary_object_id: "white_shark_wiqksu.jpg",
       },
@@ -81,7 +81,7 @@ export const useSharkTableStore = defineStore("sharks", {
       {
         path: "shortfin_mako_shark",
         scientific_name: "Isurus oxyrinchus",
-        length: "3.7 m",
+        length: "4 m",
         uicn_status: "EN",
         cloudinary_object_id: "shortfin_mako_shark_1_qud3zh.jpg",
       },
