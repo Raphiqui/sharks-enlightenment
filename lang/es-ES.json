@@ -117,129 +117,123 @@
   "sharks": {
     "blue_shark": {
       "name": "Tiburón azul",
-      "scientific_name": "Prionace glauca",
       "description": "Tiburón esbelto con una coloración azul iridiscente. Se encuentra en todo el mundo en aguas oceánicas templadas y tropicales, a menudo en grandes agregaciones segregadas por tamaño y sexo, y se alimenta principalmente de peces y calamares. El tiburón más pescado del mundo.",
-      "uicn_status": "NT",
       "distribution": "El tiburón azul habita en todos los océanos y mares del mundo. Este tiburón es pelágico, pero ocasionalmente puede permanecer cerca del cinturón continental. A veces se observan tiburones azules jóvenes cerca de la costa."
     },
     "bronze_whale_shark": {
       "name": "Bronze whale shark",
-      "scientific_name": "Carcharhinus brachyurus",
-      "uicn_status": "NT",
       "description": "El tiburón cobre es una especie de tiburón de la familia Carcharhinidae, y el único miembro de su género que se encuentra en latitudes correspondientes a un clima templado.",
       "distribution": "El tiburón cobre es el único miembro de su género que se encuentra ampliamente en aguas templadas en lugar de tropicales. Tiene una distribución bastante amplia, pero su rango está fragmentado, con poca o ninguna interacción entre ellos."
     },
     "bull_shark": {
       "name": "Bull shark",
-      "scientific_name": "Carcharhinus leucas",
       "description": "Un tiburón grande y robusto. Vive en mares tropicales y subtropicales de todo el mundo. Uno de los pocos tiburones capaces de nadar en agua dulce. Activo en aguas turbias cerca de las costas y ríos. Se alimenta principalmente de peces y aves marinas. Responsable de la mayoría de las mordeduras.",
-      "uicn_status": "NT",
       "distribution": "El tiburón toro se encuentra en las costas de todos los mares tropicales y subtropicales del mundo. Es común en el Atlántico y el Indo-Pacífico, pero mucho más raro en el Mar Rojo. En el Océano Pacífico, se encuentra desde Baja California hasta el Ecuador. Es tanto costero como semipelágico según las regiones y etapas de vida, aficionado a las profundidades entre la superficie y hasta potencialmente más de 250 metros, pero generalmente alrededor de los 30 m. Aprecia especialmente el agua fangosa o muy turbia, por ejemplo en la desembocadura de un río después de un ciclón tropical."
     },
     "dusty_shark": {
       "name": "Dusty shark",
-      "scientific_name": "Carcharhinus obscurus",
       "description": "El tiburón arena es un tiburón bastante masivo que puede alcanzar los 4 m y pesar más de 300 kg, pero la mayoría de los individuos observados miden alrededor de 2,5 m y pesan 200 kg. Es una especie de grandes ojos verdes/amarillos que se puede confundir con el tiburón bulldog, como su nombre indica tiene el dorso oscuro, gris oscuro en los juveniles y gris más claro en los adultos.",
-      "uicn_status": "EN",
       "distribution": "Está presente en los tres grandes océanos (Índico, Atlántico y Pacífico) pero prefiere aguas cálidas (por encima de los 25 grados) así como salobres. Esta especie también está presente en el Mediterráneo, más concretamente en el Mediterráneo oriental."
     },
     "gray_nurse_shark": {
       "name": "Gray nurse shark",
-      "scientific_name": "Carcharias taurus",
       "description": "El tiburón toro, también conocido como tiburón gris de arrecife, es un depredador costero de movimiento lento que se caracteriza por su hocico cónico aplanado y dientes afilados y sobresalientes similares a los del tiburón tigre. Tiene ojos pequeños y una piel de color marrón claro que se asemeja a la arena, lo que ayuda a que el tiburón se mezcle con su entorno cuando se ve desde arriba.",
-      "uicn_status": "CR",
       "distribution": "El tiburón toro vive frente a las costas de Australia, Estados Unidos y Sudáfrica, y más ampliamente en el Océano Atlántico, el Océano Índico, el Océano Pacífico, el Mar Rojo y el Mediterráneo (específicamente el Mediterráneo Occidental). Es un migrante, y se encuentra en muchas zonas templadas."
     },
     "hammerhead_shark": {
       "name": "Great Hammerhead shark",
-      "scientific_name": "Sphyrna zygaena",
       "description": "El gran tiburón martillo es la más grande de todas las especies de tiburones martillo, alcanzando una longitud máxima conocida de 20 pies (6,1 m) y un peso de 991 libras (450 kg). La especie se puede distinguir de otros tiburones martillo por su cabeza casi recta en forma de martillo (cefalofoil) que tiene una hendidura prominente en el medio.",
-      "uicn_status": "VU",
       "distribution": "Es un tiburón cosmopolita, ampliamente distribuido en los mares templados, tropicales y subtropicales de todo el mundo. Generalmente se encuentra en profundidades que van de 0 a 200 m. Se observa más fácilmente en el Golfo de Guinea durante la estación fría (diciembre a mayo) y especialmente hacia Senegal. Por el contrario, migra al norte en verano."
     },
     "tiger_shark": {
       "name": "Tiger shark",
-      "scientific_name": "Galeocerdo cuvier",
       "description": "El tiburón tigre recibe su nombre de las características barras verticales que recubren los costados de su cuerpo. Aunque estas barras se desvanecen ligeramente a medida que los individuos alcanzan la edad adulta, son muy notorias en los jóvenes y al menos parcialmente visibles a lo largo de la vida. Alcanzando longitudes de al menos 18 pies (5,5 m) y un peso de 2000 libras (casi una tonelada métrica), el tiburón tigre es el cuarto tiburón más grande y el segundo tiburón depredador más grande, solo detrás del gran tiburón blanco.",
-      "uicn_status": "NT",
       "distribution": "Su hábitat es costero y pelágico. Está presente en todos los mares tropicales y subtropicales, con preferencia por aguas con alta turbidez, estuarios, lagunas, desde la superficie hasta - 350 metros. Está muy presente en el Caribe, en el Océano Índico y en todo el Pacífico. Es solitario y residente o semi-residente alrededor de ciertas islas volcánicas, aunque a veces evoluciona en pequeños grupos. Aunque no es oceánica, pasa a operar largas travesías entre islas, especialmente en el Pacífico. Su actividad es principalmente nocturna. Durante el día se incorpora a las aguas profundas y sólo sale cuando cae la noche para cazar."
     },
     "whale_shark": {
       "name": "Whale shark",
-      "scientific_name": "Rhincodon typus",
       "description": "El pez más grande del mundo es el elegante e inofensivo tiburón ballena. Aunque alcanzan el tamaño de un autobús escolar, los tiburones ballena comen pequeños plancton y huevos de peces, que filtran mientras nadan lentamente con sus gigantescas bocas bien abiertas. Son una de las tres únicas especies de tiburones que se alimentan por filtración.",
-      "uicn_status": "EN",
       "distribution": "El tiburón ballena se encuentra en aguas tropicales y templadas a cálidas de los océanos Atlántico, Pacífico e Índico. En invierno, los tiburones ballena jóvenes vienen a alimentarse de plancton en las aguas ricas en nutrientes del golfo de Tadjourah, frente a la costa de Yibuti. El tiburón ballena vive en una banda alrededor del ecuador hasta los 30° de latitud norte y los 35° de latitud sur. Es una especie esencialmente pelágica que vive mar adentro en aguas muy profundas."
     },
     "white_shark": {
       "name": "Great White shark",
-      "scientific_name": "Carcharodon carcharias",
       "description": "El mayor de los tiburones depredadores, el más icónico debido a los medios. Se encuentra en todo el mundo con el rango más amplio de cualquier tiburón y puede encontrarse en la mayoría de los océanos. Salta hasta 3 m en el aire. Investiga a los humanos, implicado en mordeduras de tiburón.",
-      "uicn_status": "VU",
       "distribution": "El hábitat del gran tiburón blanco es principalmente costero en aguas templadas, pero también se ha observado en áreas epipelágicas en el océano. Es un amante de las aguas poco profundas, sin embargo, un espécimen fue capturado en una línea de 1280 m de largo."
     },
     "basking_shark": {
       "name": "Basking shark",
-      "scientific_name": "Cetorhinus maximus",
       "description": "El tiburón peregrino es el segundo pez más grande del mundo y, al igual que el pez más grande (el tiburón ballena) y el animal más grande (las grandes ballenas), se alimenta de plancton. Mide hasta 40 pies (12 m) y se parece a los tiburones depredadores en apariencia, el tiburón peregrino puede dar una impresión intimidante, pero es completamente inofensivo. Pasa la mayor parte de su tiempo cerca de la superficie, nadando con la boca bien abierta para filtrar su comida favorita, pero también puede sumergirse más profundo para alimentarse.",
-      "uicn_status": "EN",
       "distribution": "El halcón peregrino prefiere las zonas donde se concentra el zooplancton. Son frentes de encuentro de masas de agua o cabos y zonas de fuerte marea alrededor de islas y bahías. Un estudio de 2008 muestra que este tiburón también puede utilizar hábitats a más de 1000 m de profundidad."
     },
     "spiny_dogfish": {
       "name": "Spiny dogfish",
-      "scientific_name": "Squalus acanthias",
       "description": "La mielga puede tener muchos nombres, como la mielga, el salmón de roca y el perro puntiagudo, pero solo uno representa verdaderamente la estrategia de defensa única de este tiburón. Con espinas afiladas y venenosas en la parte delantera de cada aleta dorsal, la mielga es un depredador pequeño pero poderoso que no teme atacar a los peces que pasan. Se les considera una de las especies de tiburones vivos más abundantes en el océano, pero son inofensivos para los humanos.",
-      "uicn_status": "VU",
       "distribution": "La mielga se encuentra entre las aguas frías y poco profundas de las zonas templadas y subárticas del hemisferio norte, en los océanos Atlántico y Pacífico1. Vive a profundidades de 10 a 200 m, pero ya se ha observado a 960 m de profundidad. Es un pez migratorio estacional, que vive en aguas cuya temperatura fluctúa entre 5 y 16°C y que se reproduce mar adentro."
     },
     "shortfin_mako_shark": {
       "name": "Shortfin mako shark",
-      "scientific_name": "Isurus oxyrinchus",
       "description": "El tiburón más rápido de todos, alcanzando hasta 64 km/h. Se encuentra en todo el mundo en mares templados y tropicales. Coloración azul brillante. Muy apreciado por su carne y aletas.",
-      "uicn_status": "EN",
       "distribution": "Pelágico ya veces costero en aguas tropicales y templadas. Evoluciona desde la superficie hasta los 740 metros de profundidad."
     },
     "grey_shark": {
       "name": "Grey shark",
-      "scientific_name": "Carcharhinus amblyrhynchos",
       "description": "Tenga cuidado, dos especies de tiburones se llaman 'tiburones grises': Carcharhinus amblyrhynchos pero también Carcharhinus plumbeus. Por esta razón, es preferible especificar “Tiburón gris de arrecife” para Carcharhinus amblyrhynchos. El tiburón gris de arrecife tiene un cuerpo moderadamente delgado y un hocico largo, ancho y romo. Los ojos son casi circulares.",
-      "uicn_status": "NT",
       "distribution": "El tiburón gris de arrecife es nativo del Océano Índico y el Océano Pacífico. En el Océano Índico se encuentra desde Sudáfrica hasta la India, pasando por Madagascar y las islas cercanas, el Mar Rojo y las Maldivas. En el Océano Pacífico, vive desde el sur de China hasta el norte de Australia y Nueva Zelanda a través del Golfo de Tailandia, Filipinas e Indonesia. Esta especie también se ha observado en muchas islas del Pacífico."
     },
     "thresher_shark": {
       "name": "Thresher shark",
-      "scientific_name": "Alopias vulpinus",
       "description": "El tiburón zorro pelágico es uno de los tres tiburones zorro, todos conocidos por sus colas extremadamente largas. La cola de los tiburones zorro pelágicos adultos es más larga que el resto del cuerpo. Los científicos creen que son altamente migratorios, pero no se han realizado suficientes estudios de marcado para confirmar esta sospecha. Poco se sabe sobre la ecología de los tiburones zorro pelágicos, ya que son difíciles de estudiar en su hábitat natural (el mar abierto).",
-      "uicn_status": "VU",
       "distribution": "La distribución del tiburón zorro común abarca todas las aguas tropicales y templadas frías."
     },
     "porbeagle": {
       "name": "Porbeagle",
-      "scientific_name": "Lamna nasus",
       "description": "El marrajo sardinero es un tiburón de largo alcance que se reconoce por su hocico cónico, vientre blanco y dorso gris oscuro. Los investigadores han propuesto que el nombre del marrajo sardinero proviene de la combinación de 'marsopa' y 'beagle', en referencia a su forma de cuerpo redondeado y métodos de caza obstinados.",
-      "uicn_status": "VU",
       "distribution": "Este tiburón frecuenta la costa y la zona epipelágica (0 a 370 m) está ausente de las aguas ecuatoriales; prefiere aguas frías por debajo de 18°C. Presente principalmente en el Atlántico Norte, también se encuentra en Australia, Brasil y Chile."
     },
     "smalltooth_sand_tiger": {
       "name": "Tigre de dientes de arena",
-      "scientific_name": "Odontaspis ferox",
       "description": "El tiburón feroz es una especie de tiburón de la familia Odontaspididae, que vive hasta los 1.000 metros de profundidad y puede alcanzar los cinco metros de longitud. Se le llama 'feroz' debido a sus dientes prominentes y amenazantes, pero no parece agresivo con los humanos, a quienes es poco probable que conozca de todos modos dada su profundidad habitual.",
-      "uicn_status": "NT",
       "distribution": "Es un tiburón de aguas profundas, reportado puntualmente en todo el mundo. Se encuentra, por ejemplo, en aguas colombianas frente a la isla de Malpelo. En una determinada época del año, a veces se puede observar porque sube a menor profundidad cuando las aguas superficiales están frías (debido a la corriente de Humboldt)."
     },
     "bluntnose_sixgill_shark": {
       "name": "Bluntnose sixgill tiburón",
-      "scientific_name": "Hexanchus griseus",
       "description": "El tiburón nariz roma es un tiburón enorme, con una cabeza grande, redondeada o puntiaguda. Tiene 6 pares de hendiduras branquiales y una sola aleta dorsal en la parte posterior del cuerpo, caracteres a menudo descritos como primitivos en la literatura, así como pequeños ojos retráctiles de color verde fluorescente. La boca se coloca en el lado ventral y contiene 6 filas de dientes en forma de peine. La cola es corta y rechoncha. Solo ve en monocromo.",
-      "uicn_status": "NT",
       "distribution": "El tiburón nariz roma es uno de los tiburones más ampliamente distribuidos en el mundo ya que está presente en los mares templados o tropicales del Atlántico Oriental y Occidental, el Pacífico Occidental, Central y Oriental, así como en el Mar Mediterráneo, además de que su las poblaciones nunca son muy abundantes en las áreas de observación."
     },
     "salmon_shark": {
       "name": "Tiburón salmón",
-      "scientific_name": "Lamna ditropis",
       "description": "El tiburón salmón o marrajo sardinero (Lamna ditropis) es una especie de tiburón de la familia Lamnidae. Es un depredador del salmón del que toma su nombre. Puede alcanzar los 3 metros de longitud, es capaz de nadar a más de 50 km/h. El tiburón salmón tiene la capacidad de soportar temperaturas muy frías como las de Alaska donde, en invierno, la temperatura del agua varía entre 2 y 8°C. Esta facultad resulta de un sistema vascular específico.",
-      "uicn_status": "NT",
       "distribution": "Vive en el Océano Pacífico Norte, especialmente en Alaska, pero puede migrar a zonas subtropicales, ya que un estudio de marcado ha demostrado que podría bajar a Hawái y recorrer más de 18.000 km en 640 días. Las hembras son más comunes a lo largo de la costa de Alaska, mientras que los machos se concentran en el lado siberiano. Se encuentra desde la superficie hasta los 650 metros de profundidad."
+    },
+    "blacktip_shark": {
+      "name": "Tiburón de punta negra",
+      "description": "Tiburón robusto de tamaño mediano. Común en mares tropicales y subtropicales, y más abundante cerca de la costa. A menudo se encuentra nadando en grandes bancos y puede saltar completamente fuera del agua. Se alimenta principalmente de peces, calamares y cangrejos. Más activo al amanecer y al atardecer.",
+      "distribution": ""
+    },
+    "broadnose_sevengill_shark": {
+      "name": "Tiburón de siete branquias de nariz ancha",
+      "description": "Tiburón de tamaño mediano, distinguido por tener una sola aleta dorsal y siete branquias en lugar de las cinco normales. Tiene una amplia gama y se alimenta de peces, calamares y focas.",
+      "distribution": ""
+    },
+    "caribbean_reef_shark": {
+      "name": "Tiburón de arrecife del Caribe",
+      "description": "Tiburón común en los arrecifes tropicales del Atlántico Occidental. Se encuentra más frecuentemente cerca de los arrecifes de coral y caídas.",
+      "distribution": ""
+    },
+    "great_hammerhead_shark": {
+      "name": "Tiburón martillo gigante",
+      "description": "Tiburón muy grande, con una cabeza en forma de martillo y una aleta dorsal con forma de hoz. Se encuentra en aguas tropicales costeras y oceánicas, y usa su cabeza para cazar rayas, clavándolas en la arena.",
+      "distribution": ""
+    },
+    "lemon_shark": {
+      "name": "Tiburón Limón",
+      "description": "Nombrado por su coloración amarillo-marrón pálido. Se encuentra en mares tropicales y arrecifes de coral. Más activo por la noche, se alimenta de peces, cangrejos y moluscos. Se sabe que regresa a las zonas donde nació.",
+      "distribution": ""
+    },
+    "oceanic_whitetip_shark": {
+      "name": "Tiburón de Puntas Blancas Oceánico",
+      "description": "Se encuentra en todo el mundo en océanos tropicales y subtropicales, caracterizado por sus aletas pectorales y dorsales redondeadas. Más abundante en mares tropicales y cálidos oceánicos. Se alimenta de peces, rayas y ballenas muertas.",
+      "distribution": ""
     }
   }
 }
