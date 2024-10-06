@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" ref="elementRef">
     <div class="header">
       <h1>Shark Facts</h1>
       <p>Debunking myths and revealing the truth about sharks</p>
@@ -57,7 +57,7 @@
           </div>
         </div>
       </section>
-      <div class="bubbles" ref="bubblesContainer">
+      <div class="bubbles" ref="bubblesContainer" v-show="!isMobile">
         <Bubble
           v-for="(bubble, index) in bubbles"
           :key="index"
@@ -76,6 +76,8 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 import Bubble from "./Bubble.vue";
 
 const bubbles = ref([]);
+const isMobile = ref(false);
+const elementRef = ref(null);
 
 const createBubble = () => {
   if (bubbles.value.length < 30) {
@@ -99,6 +101,14 @@ onMounted(() => {
     createBubble();
   }
   setInterval(createBubble, 2000);
+
+  if (elementRef.value) {
+    const clientWidth = elementRef.value.clientWidth;
+
+    if (clientWidth < 768) {
+      isMobile.value = true;
+    }
+  }
 });
 
 onBeforeUnmount(() => {
@@ -122,6 +132,7 @@ main {
 }
 
 .header {
+  margin: 100px auto 0 auto;
   text-align: center;
   padding: 50px 20px;
   background-color: #002e66;
