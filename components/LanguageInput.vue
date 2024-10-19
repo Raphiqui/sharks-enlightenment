@@ -52,6 +52,7 @@ const activeLanguageStyle = computed(() => "active");
 
     @media (max-width: 768px) {
       margin-left: unset;
+      padding: 0;
     }
 
     li {

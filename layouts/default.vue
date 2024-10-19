@@ -119,6 +119,10 @@ const updateScroll = () => {
   scrolledNav.value = window.scrollY > 50;
 };
 
+const toggleMobileNav = () => {
+  mobileNav.value = !mobileNav.value;
+};
+
 onMounted(() => {
   window.addEventListener("resize", checkScreen);
   window.addEventListener("scroll", updateScroll);
@@ -397,6 +401,8 @@ header {
       background-color: cadetblue;
       top: 0;
       left: 0;
+      padding: 0;
+      margin: 0;
 
       li {
         margin-left: 0;
