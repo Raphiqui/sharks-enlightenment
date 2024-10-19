@@ -92,3 +92,6 @@ sw.*
 
 # Generetaed files
 .output
+
+# Cucumber 
+test/report/
