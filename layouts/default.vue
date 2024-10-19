@@ -52,7 +52,7 @@
           </div>
         </div>
         <transition name="mobile-nav">
-          <ul v-show="mobileNav" class="dropdown-nav">
+          <ul class="dropdown-nav" :class="mobileNav ? 'open' : ''">
             <li>
               <nuxt-link
                 class="link"
@@ -400,9 +400,14 @@ header {
       height: 100vh;
       background-color: cadetblue;
       top: 0;
-      left: 0;
+      left: -250px;
       padding: 0;
       margin: 0;
+      transition: 1s ease all;
+
+      &.open {
+        transform: translateX(250px);
+      }
 
       li {
         margin-left: 0;
