@@ -133,14 +133,14 @@ export const useSharkTableStore = defineStore("sharks", {
         scientific_name: "Notorynchus cepedianus",
         length: "3 m",
         uicn_status: "NT",
-        cloudinary_object_id: "",
+        cloudinary_object_id: "broadnose_sevengill_shark.jpg",
       },
       {
         path: "caribbean_reef_shark",
         scientific_name: "Carcharhinus perezi",
         length: "3 m",
         uicn_status: "NT",
-        cloudinary_object_id: "",
+        cloudinary_object_id: "caribbean_reef_shark",
       },
       {
         path: "great_hammerhead_shark",
