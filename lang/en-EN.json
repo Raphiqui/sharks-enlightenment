@@ -140,11 +140,6 @@
       "description": "The sand tiger shark, also known as the gray nurse shark, is a slow-moving coastal predator distinguished by its flattened, conical snout and spiked, protruding teeth similar to the tiger shark. It has small eyes and light brown skin that resembles sand, helping the shark blend into its surroundings when looked at from above.",
       "distribution": "The gray nurse shark lives off the coasts of Australia, the United States and South Africa, and more widely in the Atlantic Ocean, the Indian Ocean, the Pacific Ocean, the Red Sea and the Mediterranean (specifically the Western Mediterranean). It is a migrant, and it is found in many temperate zones."
     },
-    "hammerhead_shark": {
-      "name": "Great Hammerhead shark",
-      "description": "The great hammerhead shark is the largest of all hammerhead species, reaching a maximum known length of 20 feet (6.1 m) and weight of 991 pounds (450 kg). The species is distinguished from other hammerheads by its nearly straight hammer-shaped head (cephalofoil) that has a prominent indentation in the middle.",
-      "distribution": "It is a cosmopolitan shark, widely distributed in temperate, tropical and subtropical seas around the world. It is generally found in depths ranging from 0 to 200 m. It is more easily observed in the Gulf of Guinea during the cold season (December to May) and especially towards Senegal. On the contrary, it migrates north in summer."
-    },
     "tiger_shark": {
       "name": "Tiger shark",
       "description": "The tiger shark gets its name from the characteristic vertical bars that cover the sides of its body. Though these bars fade slightly as individuals reach adulthood, they are very noticeable in juveniles and at least party visible throughout the lifetime. Reaching lengths of at least 18 feet (5.5 m) and 2000 pounds (nearly a metric tonne), the tiger shark is the fourth largest shark and second largest predatory shark, behind only the great white.",
@@ -223,7 +218,7 @@
     "great_hammerhead_shark": {
       "name": "Great hammerhead shark",
       "description": "Very large shark, with a distinctive hammer-shaped head and sickle-shaped dorsal fin. Found in tropical coastal and oceanic waters, it uses its hammer (cephalofoil) to hunt for rays by pinning them to the sand.",
-      "distribution": ""
+      "distribution": "It is a cosmopolitan shark, widely distributed in temperate, tropical and subtropical seas around the world. It is generally found in depths ranging from 0 to 200 m. It is more easily observed in the Gulf of Guinea during the cold season (December to May) and especially towards Senegal. On the contrary, it migrates north in summer."
     },
     "lemon_shark": {
       "name": "Lemon shark",

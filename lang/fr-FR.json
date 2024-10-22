@@ -140,11 +140,6 @@
       "description": "Le Requin taureau, également connu sous le nom de requin gris de récif, est un prédateur côtier à déplacement lent caractérisé par son museau conique aplati et ses dents pointues et saillantes similaires à celles du requin tigre. Il a de petits yeux et une peau brun clair qui ressemble au sable, aidant le requin à se fondre dans son environnement lorsqu'il est observé depuis le dessus.",
       "distribution": "Le requin-taureau vit au large des côtes australiennes, américaines et sud-africaines, et plus largement dans l'océan Atlantique, l'océan Indien, l'océan Pacifique, la mer Rouge et la Méditerranée (plus précisément Méditerranée occidentale). C'est un migrateur, et on le retrouve dans de nombreuses zones tempérées."
     },
-    "hammerhead_shark": {
-      "name": "Requin marteau",
-      "description": "Le grand requin-marteau est le plus grand de toutes les espèces de requins-marteaux, atteignant une longueur maximale connue de 20 pieds (6,1 m) et un poids de 991 livres (450 kg). L'espèce se distingue des autres requins-marteaux par sa tête (céphalofoil) en forme de marteau presque droite qui a une indentation proéminente au milieu.",
-      "distribution": "C’est un requin cosmopolite, largement répandu dans les mers tempérées, tropicales et subtropicales du globe. On le retrouve généralement dans des profondeurs variant de 0 à 200 m. Il s’observe plus facilement dans le Golfe de Guinée durant la saison froide (décembre à mai) et notamment vers le Sénégal. Au contraire, il migre vers le nord en été."
-    },
     "tiger_shark": {
       "name": "Requin tigre",
       "description": "Le requin tigre tire son nom des barres verticales caractéristiques qui recouvrent les côtés de son corps. Bien que ces barres s'estompent légèrement lorsque les individus atteignent l'âge adulte, elles sont très visibles chez les jeunes et au moins partiellement visibles tout au long de leur vie. Atteignant des longueurs d'au moins 18 pieds (5,5 m) et un poids de 2000 livres (près d'une tonne métrique), le requin tigre est le quatrième plus grand requin et le deuxième plus grand requin prédateur, derrière seulement le grand blanc.",
@@ -223,7 +218,7 @@
     "great_hammerhead_shark": {
       "name": "Requin-marteau géant",
       "description": "Requin de grande taille, avec une nageoire dorsale distinctive en forme de faucille et une tête en forme de marteau. On le trouve dans les eaux tropicales et les océans côtiers, et il utilise son marteau pour chasser les raies en les épinglant dans le sable.",
-      "distribution": ""
+      "distribution": "C’est un requin cosmopolite, largement répandu dans les mers tempérées, tropicales et subtropicales du globe. On le retrouve généralement dans des profondeurs variant de 0 à 200 m. Il s’observe plus facilement dans le Golfe de Guinée durant la saison froide (décembre à mai) et notamment vers le Sénégal. Au contraire, il migre vers le nord en été."
     },
     "lemon_shark": {
       "name": "Requin Citron",

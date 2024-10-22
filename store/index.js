@@ -37,13 +37,6 @@ export const useSharkTableStore = defineStore("sharks", {
         cloudinary_object_id: "gray_nurse_shark_tlcayi.jpg",
       },
       {
-        path: "hammerhead_shark",
-        scientific_name: "Sphyrna zygaena",
-        length: "6.1 m",
-        uicn_status: "VU",
-        cloudinary_object_id: "hammerhead_shark_uow3b3.webp",
-      },
-      {
         path: "tiger_shark",
         scientific_name: "Galeocerdo cuvier",
         length: "3-4.2 m",
@@ -154,7 +147,7 @@ export const useSharkTableStore = defineStore("sharks", {
         scientific_name: "Sphyrna mokarran",
         length: "5,5 m",
         uicn_status: "EN",
-        cloudinary_object_id: "",
+        cloudinary_object_id: "hammerhead_shark_uow3b3.webp",
       },
       {
         path: "lemon_shark",

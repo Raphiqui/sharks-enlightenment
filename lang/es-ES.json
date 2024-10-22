@@ -140,11 +140,6 @@
       "description": "El tiburón toro, también conocido como tiburón gris de arrecife, es un depredador costero de movimiento lento que se caracteriza por su hocico cónico aplanado y dientes afilados y sobresalientes similares a los del tiburón tigre. Tiene ojos pequeños y una piel de color marrón claro que se asemeja a la arena, lo que ayuda a que el tiburón se mezcle con su entorno cuando se ve desde arriba.",
       "distribution": "El tiburón toro vive frente a las costas de Australia, Estados Unidos y Sudáfrica, y más ampliamente en el Océano Atlántico, el Océano Índico, el Océano Pacífico, el Mar Rojo y el Mediterráneo (específicamente el Mediterráneo Occidental). Es un migrante, y se encuentra en muchas zonas templadas."
     },
-    "hammerhead_shark": {
-      "name": "Great Hammerhead shark",
-      "description": "El gran tiburón martillo es la más grande de todas las especies de tiburones martillo, alcanzando una longitud máxima conocida de 20 pies (6,1 m) y un peso de 991 libras (450 kg). La especie se puede distinguir de otros tiburones martillo por su cabeza casi recta en forma de martillo (cefalofoil) que tiene una hendidura prominente en el medio.",
-      "distribution": "Es un tiburón cosmopolita, ampliamente distribuido en los mares templados, tropicales y subtropicales de todo el mundo. Generalmente se encuentra en profundidades que van de 0 a 200 m. Se observa más fácilmente en el Golfo de Guinea durante la estación fría (diciembre a mayo) y especialmente hacia Senegal. Por el contrario, migra al norte en verano."
-    },
     "tiger_shark": {
       "name": "Tiger shark",
       "description": "El tiburón tigre recibe su nombre de las características barras verticales que recubren los costados de su cuerpo. Aunque estas barras se desvanecen ligeramente a medida que los individuos alcanzan la edad adulta, son muy notorias en los jóvenes y al menos parcialmente visibles a lo largo de la vida. Alcanzando longitudes de al menos 18 pies (5,5 m) y un peso de 2000 libras (casi una tonelada métrica), el tiburón tigre es el cuarto tiburón más grande y el segundo tiburón depredador más grande, solo detrás del gran tiburón blanco.",
@@ -223,7 +218,7 @@
     "great_hammerhead_shark": {
       "name": "Tiburón martillo gigante",
       "description": "Tiburón muy grande, con una cabeza en forma de martillo y una aleta dorsal con forma de hoz. Se encuentra en aguas tropicales costeras y oceánicas, y usa su cabeza para cazar rayas, clavándolas en la arena.",
-      "distribution": ""
+      "distribution": "Es un tiburón cosmopolita, ampliamente distribuido en los mares templados, tropicales y subtropicales de todo el mundo. Generalmente se encuentra en profundidades que van de 0 a 200 m. Se observa más fácilmente en el Golfo de Guinea durante la estación fría (diciembre a mayo) y especialmente hacia Senegal. Por el contrario, migra al norte en verano."
     },
     "lemon_shark": {
       "name": "Tiburón Limón",
