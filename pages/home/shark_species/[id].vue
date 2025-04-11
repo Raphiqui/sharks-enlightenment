@@ -111,7 +111,7 @@
 </template>
 
 <script setup>
-import { useSharkTableStore, useIUCNStatusStore } from "../../store";
+import { useSharkTableStore, useIUCNStatusStore } from "@/store";
 
 const sharksTableStore = useSharkTableStore();
 const iucnStore = useIUCNStatusStore();
