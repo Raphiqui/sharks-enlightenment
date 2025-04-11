@@ -122,7 +122,10 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #002e66;
+  background-image: url("https://res.cloudinary.com/dncxe2je1/image/upload/c_limit,w_1414/f_auto/q_auto/v1/sharks-enlightenment/main_page1.png?_a=BBDAADAD0 1x, https://res.cloudinary.com/dncxe2je1/image/upload/c_limit,w_1414/f_auto/q_auto/v1/sharks-enlightenment/main_page1.png?_a=BBDAADAD0 2x");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #ecf0f1;
 }
 
@@ -135,7 +138,6 @@ main {
   margin: 100px auto 0 auto;
   text-align: center;
   padding: 50px 20px;
-  background-color: #002e66;
   color: #f1c40f;
 }
 
@@ -191,7 +193,6 @@ main {
 }
 
 .fact-card {
-  background-color: #002e66;
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;

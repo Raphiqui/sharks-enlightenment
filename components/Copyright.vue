@@ -14,7 +14,6 @@ export default {
 .copyright {
   text-align: center;
   padding: 20px;
-  background-color: #002e66;
   color: #f1c40f;
 }
 </style>
