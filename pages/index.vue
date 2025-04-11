@@ -6,6 +6,6 @@
 import MainLayer from "@/components/MainLayer.vue";
 
 useSeoMeta({
-  title: "My Amazing Site",
+  title: "Sharks enlightenment",
 });
 </script>
