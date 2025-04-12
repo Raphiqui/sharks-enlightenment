@@ -6,26 +6,17 @@ Static, cross-platform, responsive, interactive and multi-language app.
 
 ```bash
 # install dependencies
-$ yarn install
+$ npm install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# run the project to localhost 3000
+$ npm run dev
 ```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-## Env 
+## Environment 
 
 Don't forget to create a `.env` file with the cloudinary variables
 
@@ -39,6 +30,25 @@ docker build -t sharks-enlightenment .
 docker run -p 3000:3000 sharks-enlightenment
 ```
 
+## Tests 
+
+This project use cucumber and playright to run testing scenarios.
+To run it locally do the following
+
+```bash
+npm init playwright@latest
+
+Initializing project in '.'
+✔ Do you want to use TypeScript or JavaScript? · JavaScript
+✔ Where to put your end-to-end tests? · tests
+✔ Add a GitHub Actions workflow? (y/N) · false
+✔ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
+✔ Install Playwright operating system dependencies (requires sudo / root - can be done manually via 'sudo npx playwright install-deps')? (y/N) · false
+
+sudo apt-get install libnss3 libnspr4 libasound2t64
+```
+
+```
 ### `assets`
 
 The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
