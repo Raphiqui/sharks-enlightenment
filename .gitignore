@@ -95,3 +95,9 @@ sw.*
 
 # Cucumber 
 test/report/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

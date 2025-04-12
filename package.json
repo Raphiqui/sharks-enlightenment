@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2",
-    "@playwright/test": "^1.47.2",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
     "@vue/test-utils": "^2.4.6",
     "babel-core": "7.0.0-bridge.0",
     "cucumber-html-reporter": "^5.5.0",
