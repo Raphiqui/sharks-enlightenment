@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/cloudinary": "^3.1.0",
-    "@nuxtjs/i18n": "^8.5.3",
+    "@nuxtjs/i18n": "^8.5.6",
     "@pinia/nuxt": "0.5.4",
     "core-js": "^3.19.3",
     "nuxt": "^3.13.1",
@@ -23,6 +23,7 @@
     "sass": "^1.54.4",
     "sass-loader": "^10.3.1",
     "table": "^6.8.2",
+    "unhead": "^1.8.3",
     "vue": "^3.5.5",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14"
