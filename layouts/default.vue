@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout-wrapper" :style="backgroundStyle">
     <header :class="{ 'scrolled-nav': scrolledNav }">
       <nav>
         <nuxt-link @click.native="handle" to="/" no-prefetch>
@@ -65,7 +65,7 @@
             <li>
               <nuxt-link
                 class="link"
-                @click.native="handle"
+               @click.native="handle"
                 to="/home/interactive"
                 no-prefetch
                 >{{ $t("header.2") }}</nuxt-link
@@ -105,6 +105,22 @@ const scrolledNav = ref(null);
 const mobile = ref(false);
 const mobileNav = ref(false);
 const windowWidth = ref(null);
+
+const bgUrl = useCldImageUrl({
+      options: {
+        src: `sharks-enlightenment/main_page1.png`,
+        height: "1920",
+        width: "1414",
+      },
+    });
+
+const backgroundStyle = computed(() => ({
+  backgroundImage: `url(${bgUrl.url})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundAttachment: 'fixed',
+}))
 
 const handle = () => {
   mobileNav.value = false;
