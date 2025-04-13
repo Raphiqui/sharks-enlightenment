@@ -157,7 +157,7 @@ header {
   backdrop-filter: blur(12px);
   z-index: 99;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   transition: 0.3s ease all;
   color: white;
