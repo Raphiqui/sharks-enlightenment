@@ -122,10 +122,6 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("https://res.cloudinary.com/dncxe2je1/image/upload/c_limit,w_1414/f_auto/q_auto/v1/sharks-enlightenment/main_page1.png?_a=BBDAADAD0 1x, https://res.cloudinary.com/dncxe2je1/image/upload/c_limit,w_1414/f_auto/q_auto/v1/sharks-enlightenment/main_page1.png?_a=BBDAADAD0 2x");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: #ecf0f1;
 }
 
