@@ -241,6 +241,10 @@ onMounted(() => {
             grid-area: 2 / 1 / 2 / 5;
             height: unset;
           }
+
+          & > img {
+            width: 100%;
+          }
         }
 
         &.title {
