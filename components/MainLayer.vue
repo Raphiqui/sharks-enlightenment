@@ -131,7 +131,6 @@ main {
 }
 
 .header {
-  margin: 100px auto 0 auto;
   text-align: center;
   padding: 50px 20px;
   color: #f1c40f;
