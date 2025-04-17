@@ -197,41 +197,46 @@ main {
   padding: 20px;
 }
 
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.hero-text {
-  max-width: 700px;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.hero {
+  &-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
-  p {
-    font-size: 1.2rem;
-  }
-}
+  &-text {
+    max-width: 700px;
 
-.facts-section {
-  text-align: center;
-  margin-top: 30px;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    p {
+      font-size: 1.2rem;
+    }
   }
 }
 
-.facts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+
+.facts {
+  &-section {
+    text-align: center;
+    margin-top: 30px;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
 }
 
 .fact-card {
