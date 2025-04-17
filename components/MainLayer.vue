@@ -141,10 +141,6 @@ main {
   &-wave-animation-container {
     position: relative;
 
-    &-upfront {
-
-    }
-
     &-wave {
       color: blue;
       position: absolute;
@@ -171,7 +167,7 @@ main {
 		  );
 	  }
 
-	50% {
+	  50% {
 		  clip-path: polygon(
 			  0% 60%,
 			  15% 65%,
@@ -211,25 +207,25 @@ main {
 
 .hero-text {
   max-width: 700px;
-}
 
-.hero-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
 
-.hero-text p {
-  font-size: 1.2rem;
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 .facts-section {
   text-align: center;
   margin-top: 30px;
-}
 
-.facts-section h3 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
 }
 
 .facts-grid {
@@ -242,15 +238,16 @@ main {
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    background-color: #38ada9;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 }
 
-.fact-card:hover {
-  transform: translateY(-10px);
-  background-color: #38ada9;
-}
-
-.fact-card h4 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
 </style>
