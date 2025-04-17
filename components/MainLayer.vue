@@ -134,16 +134,18 @@ main {
   text-align: center;
   padding: 50px 20px;
   color: #f1c40f;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
 }
 
-.header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
 }
 
 .main-content {
