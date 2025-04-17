@@ -62,11 +62,11 @@ const activeLanguageStyle = computed(() => "active");
         cursor: pointer;
 
         &.active {
-          color: cadetblue;
+          color: darkblue;
           font-weight: 700;
 
           &::after {
-            background: cadetblue;
+            background: darkblue;
           }
 
           @media (max-width: 768px) {
