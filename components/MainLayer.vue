@@ -142,7 +142,7 @@ main {
     position: relative;
 
     &-wave {
-      color: blue;
+      color: darkblue;
       position: absolute;
       top: 0;
       right: 0;
