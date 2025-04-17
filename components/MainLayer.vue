@@ -1,7 +1,10 @@
 <template>
   <div class="main" ref="elementRef">
     <div class="header">
-      <h1>Shark Facts</h1>
+      <div class="header-wave-animation-container">
+        <h1 class="header-wave-animation-container-upfront">Shark Facts</h1>
+        <h1 class=header-wave-animation-container-wave>Shark Facts</h1>
+      </div>
       <p>Debunking myths and revealing the truth about sharks</p>
     </div>
 
@@ -135,6 +138,54 @@ main {
   padding: 50px 20px;
   color: #f1c40f;
 
+  &-wave-animation-container {
+    position: relative;
+
+    &-upfront {
+
+    }
+
+    &-wave {
+      color: blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      animation: waves 4s ease-in-out infinite;
+    }
+  }
+
+  @keyframes waves {
+  0%,
+    100% {
+		  clip-path: polygon(
+			  0% 45%,
+			  16% 44%,
+			  33% 50%,
+			  54% 60%,
+			  70% 61%,
+			  84% 59%,
+			  100% 52%,
+			  100% 100%,
+			  0% 100%
+		  );
+	  }
+
+	50% {
+		  clip-path: polygon(
+			  0% 60%,
+			  15% 65%,
+			  34% 66%,
+			  51% 62%,
+			  67% 50%,
+			  84% 45%,
+		  	100% 46%,
+	  		100% 100%,
+  			0% 100%
+		  );
+	  }
+  }
+
   h1 {
     font-size: 3rem;
     margin: 0;
@@ -144,8 +195,6 @@ main {
     font-size: 1.2rem;
     margin-top: 10px;
   }
-}
-
 }
 
 .main-content {
