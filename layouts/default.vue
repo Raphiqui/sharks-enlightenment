@@ -119,7 +119,6 @@ const backgroundStyle = computed(() => ({
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
-  backgroundAttachment: 'fixed',
 }))
 
 const handle = () => {
@@ -152,6 +151,16 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="scss">
+
+.layout-wrapper {
+
+  background-attachment: fixed;
+
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
+}
+
 header {
   background-color: transparent;
   backdrop-filter: blur(12px);
