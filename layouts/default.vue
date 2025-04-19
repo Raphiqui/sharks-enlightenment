@@ -210,11 +210,11 @@ header {
 
       &:hover::after {
 
-        @media (max-width: 768px) {
-          width: 0px
-        }
-
         width: 100%;
+
+        @media (max-width: 768px) {
+          width: 0px;
+        }
       }
     }
 
