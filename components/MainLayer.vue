@@ -76,35 +76,11 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import Bubble from "./Bubble.vue";
 
-const bubbles = ref([]);
 const isMobile = ref(false);
 const elementRef = ref(null);
 
-const createBubble = () => {
-  if (bubbles.value.length < 30) {
-    const size = Math.random() * 30 + 10;
-    const bubble = {
-      size: size,
-      left: Math.random() * 100,
-      duration: Math.random() * 10 + 5,
-    };
-    bubbles.value.push(bubble);
-  }
-};
-
-const resetBubblePosition = (index) => {
-  bubbles.value[index].left = Math.random() * 100;
-  bubbles.value[index].duration = Math.random() * 10 + 5;
-};
-
 onMounted(() => {
-  for (let i = 0; i < 30; i++) {
-    createBubble();
-  }
-  setInterval(createBubble, 2000);
-
   if (elementRef.value) {
     const clientWidth = elementRef.value.clientWidth;
 
@@ -114,10 +90,6 @@ onMounted(() => {
   }
 });
 
-onBeforeUnmount(() => {
-  clearInterval(createBubble);
-  bubbles.value = [];
-});
 </script>
 
 <style lang="scss">
