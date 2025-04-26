@@ -60,16 +60,6 @@
           </div>
         </div>
       </section>
-      <div class="bubbles" ref="bubblesContainer" v-show="!isMobile">
-        <Bubble
-          v-for="(bubble, index) in bubbles"
-          :key="index"
-          :size="bubble.size"
-          :left="bubble.left"
-          :duration="bubble.duration"
-          @resetPosition="resetBubblePosition(index)"
-        />
-      </div>
     </div>
   </div>
 </template>
