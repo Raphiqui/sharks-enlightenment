@@ -20,6 +20,27 @@
         </div>
       </section>
 
+      <section class="interactive-anatomy">
+        <div>
+          <svg class="-visible cards" fill="none" height="390" viewBox="0 0 450 390" width="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <foreignObject class="foreign-object" height="271" width="246" x="100" y="66">
+              <picture>
+                <img alt="" height="271" :src=greatWhite.url width="246">
+              </picture>
+            </foreignObject>
+            <g class="ca-interactive-images-container-left-item">
+              <circle class="ca-interactive-images-container-left-item-circle" cx="307" cy="92" fill="darkblue" r="7"></circle>
+              <circle class="ca-interactive-images-container-left-item-blur" cx="307" cy="92" r="13.5" stroke="darkblue">
+              </circle>
+              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="199" x2="405" y1="61" y2="61"></line>
+              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="307.5" x2="307.5" y1="78.5" y2="61.5"></line>
+              <text class="ca-interactive-images-container-left-item-text" fill="darkblue" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve"><tspan x="199" y="53.9312">interest1</tspan></text>
+            </g>
+            <g class="ca-interactive-images-container-left-item">
+            <circle class="ca-interactive-images-container-left-item-circle" cx="207" cy="186.5" fill="darkblue" r="7"></circle><circle class="ca-interactive-images-container-left-item-blur" cx="207" cy="186.5" r="13.5" stroke="darkblue"></circle><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="150.381" x2="30" y1="231" y2="231"></line><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="195.685" x2="150.066" y1="194.112" y2="231.112"></line><text class="ca-interactive-images-container-left-item-text" fill="#081621" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve"><tspan x="30" y="222.931">interest2</tspan></text></g><g class="ca-interactive-images-container-left-item"><circle class="ca-interactive-images-container-left-item-circle" cx="293" cy="300.5" fill="darkblue" r="7"></circle><circle class="ca-interactive-images-container-left-item-blur" cx="293" cy="300.5" r="13.5" stroke="darkblue"></circle><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="294" x2="47" y1="365.5" y2="365.5"></line><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="293.5" x2="293.5" y1="313.5" y2="365.5"></line><text class="ca-interactive-images-container-left-item-text" fill="#081621" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve"><tspan x="47" y="357.931">interest3</tspan></text></g></svg>
+        </div>
+      </section>
+
       <section class="facts-section">
         <h3>Shark Facts</h3>
         <div class="facts-grid">
@@ -70,6 +91,21 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 const isMobile = ref(false);
 const elementRef = ref(null);
 
+const greatWhite = useCldImageUrl({
+  options: {
+    src: `sharks-enlightenment/interactive-anatomy.png`,
+    height: "690",
+    width: "362",
+    },
+});
+
+const greatWhiteStyle = computed(() => ({
+  backgroundImage: `url(${greatWhite.url})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+}))
+
 onMounted(() => {
   if (elementRef.value) {
     const clientWidth = elementRef.value.clientWidth;
@@ -93,6 +129,11 @@ body {
 main {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.interactive-anatomy {
+  background-color: transparent;
+  backdrop-filter: blur(12px);
 }
 
 .header {
