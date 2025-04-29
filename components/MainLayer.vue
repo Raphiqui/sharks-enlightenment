@@ -21,11 +21,11 @@
       </section>
 
       <section class="interactive-anatomy">
-        <div>
-          <svg class="-visible cards" fill="none" height="390" viewBox="0 0 450 390" width="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="interactive-wrapper">
+          <svg class="responsive-svg" fill="none" height="390" viewBox="0 0 450 390" width="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <foreignObject class="foreign-object" height="271" width="246" x="100" y="66">
               <picture>
-                <img alt="" height="271" :src=greatWhite.url width="246">
+                <img alt="" height="" :src=greatWhite.url width="">
               </picture>
             </foreignObject>
             <g class="ca-interactive-images-container-left-item">
@@ -93,9 +93,7 @@ const elementRef = ref(null);
 
 const greatWhite = useCldImageUrl({
   options: {
-    src: `sharks-enlightenment/interactive-anatomy.png`,
-    height: "690",
-    width: "362",
+    src: `sharks-enlightenment/interactive-anatomy2.png`,
     },
 });
 
@@ -258,4 +256,57 @@ main {
   }
 }
 
+.interactive-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.responsive-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.foreign-object {
+  & > picture {
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.ca-interactive-images-container-left-item-blur:hover {
+  stroke-opacity: 1;
+  stroke-width: 1px;
+}
+
+.ca-interactive-images-container-left-item-blur {
+  fill: transparent;
+  fill-opacity: 0;
+  stroke: darkblue;
+  stroke-width: 13px;
+  stroke-opacity: .3;
+  cursor: pointer;
+  transition: all .3s ease;
+  }
+
+.ca-interactive-images-container-left-item-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.ca-interactive-images-container-left-item:hover .ca-interactive-images-container-left-item-line {
+  stroke-dashoffset: 0;
+}
+
+.ca-interactive-images-container-left-item-text {
+  opacity: 0;
+  transition: opacity 0.4s ease 0.3s;
+}
+
+.ca-interactive-images-container-left-item:hover .ca-interactive-images-container-left-item-text {
+  opacity: 1;
+}
 </style>
