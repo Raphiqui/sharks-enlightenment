@@ -3,7 +3,7 @@
     <div class="header">
       <div class="header-wave-animation-container">
         <h1 class="header-wave-animation-container-upfront">Shark Facts</h1>
-        <h1 class=header-wave-animation-container-wave>Shark Facts</h1>
+        <h1 class="header-wave-animation-container-wave">Shark Facts</h1>
       </div>
       <p>Debunking myths and revealing the truth about sharks</p>
     </div>
@@ -22,31 +22,156 @@
 
       <section class="interactive-anatomy">
         <div class="interactive-wrapper">
-          <svg class="responsive-svg" fill="none" height="390" viewBox="0 0 450 390" width="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <foreignObject class="foreign-object" height="271" width="246" x="100" y="66">
+          <svg
+            class="responsive-svg"
+            fill="none"
+            height="390"
+            viewBox="0 0 450 390"
+            width="450"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <foreignObject
+              class="foreign-object"
+              height="271"
+              width="246"
+              x="100"
+              y="66"
+            >
               <picture>
-                <img alt="" height="" :src=greatWhite.url width="">
+                <img :src="greatWhite.url" alt="" height="" width="" />
               </picture>
             </foreignObject>
             <g class="ca-interactive-images-container-left-item">
-              <circle class="ca-interactive-images-container-left-item-circle" cx="437" cy="152" fill="darkblue" r="7"></circle>
-              <circle class="ca-interactive-images-container-left-item-blur" cx="437" cy="152" r="13.5" stroke="darkblue">
-              </circle>
-              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="337" x2="537" y1="100" y2="100"></line>
-              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="437" x2="437" y1="139" y2="100"></line>
-              <text class="ca-interactive-images-container-left-item-text" fill="darkblue" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="437"
+                cy="152"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="437"
+                cy="152"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="337"
+                x2="537"
+                y1="100"
+                y2="100"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="437"
+                x2="437"
+                y1="139"
+                y2="100"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="darkblue"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
                 <tspan x="337" y="95">Dorsal Fin</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
-              <circle class="ca-interactive-images-container-left-item-circle" cx="207" cy="186.5" fill="darkblue" r="7"></circle>
-              <circle class="ca-interactive-images-container-left-item-blur" cx="207" cy="186.5" r="13.5" stroke="darkblue"></circle>
-              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="150.381" x2="30" y1="231" y2="231"></line>
-              <line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="195.685" x2="150.066" y1="194.112" y2="231.112"></line>
-              <text class="ca-interactive-images-container-left-item-text" fill="#081621" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="207"
+                cy="186.5"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="207"
+                cy="186.5"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="150.381"
+                x2="30"
+                y1="231"
+                y2="231"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="195.685"
+                x2="150.066"
+                y1="194.112"
+                y2="231.112"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="#081621"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
                 <tspan x="30" y="222.931">interest2</tspan>
-              </text></g>
-            <g class="ca-interactive-images-container-left-item"><circle class="ca-interactive-images-container-left-item-circle" cx="293" cy="300.5" fill="darkblue" r="7"></circle><circle class="ca-interactive-images-container-left-item-blur" cx="293" cy="300.5" r="13.5" stroke="darkblue"></circle><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="294" x2="47" y1="365.5" y2="365.5"></line><line class="ca-interactive-images-container-left-item-line" stroke="darkblue" x1="293.5" x2="293.5" y1="313.5" y2="365.5"></line><text class="ca-interactive-images-container-left-item-text" fill="#081621" font-family="Noto Sans" font-size="14" letter-spacing="0px" style="white-space:pre;" xml:space="preserve"><tspan x="47" y="357.931">interest3</tspan></text></g></svg>
+              </text>
+            </g>
+            <g class="ca-interactive-images-container-left-item">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="293"
+                cy="300.5"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="293"
+                cy="300.5"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="294"
+                x2="47"
+                y1="365.5"
+                y2="365.5"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="293.5"
+                x2="293.5"
+                y1="313.5"
+                y2="365.5"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="#081621"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
+                <tspan x="47" y="357.931">interest3</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
       </section>
 
@@ -103,15 +228,15 @@ const elementRef = ref(null);
 const greatWhite = useCldImageUrl({
   options: {
     src: `sharks-enlightenment/interactive-anatomy.png`,
-    },
+  },
 });
 
 const greatWhiteStyle = computed(() => ({
   backgroundImage: `url(${greatWhite.url})`,
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-}))
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+}));
 
 onMounted(() => {
   if (elementRef.value) {
@@ -122,7 +247,6 @@ onMounted(() => {
     }
   }
 });
-
 </script>
 
 <style lang="scss">
@@ -162,34 +286,34 @@ main {
   }
 
   @keyframes waves {
-  0%,
+    0%,
     100% {
-		  clip-path: polygon(
-			  0% 45%,
-			  16% 44%,
-			  33% 50%,
-			  54% 60%,
-			  70% 61%,
-			  84% 59%,
-			  100% 52%,
-			  100% 100%,
-			  0% 100%
-		  );
-	  }
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
 
-	  50% {
-		  clip-path: polygon(
-			  0% 60%,
-			  15% 65%,
-			  34% 66%,
-			  51% 62%,
-			  67% 50%,
-			  84% 45%,
-		  	100% 46%,
-	  		100% 100%,
-  			0% 100%
-		  );
-	  }
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
   }
 
   h1 {
@@ -229,7 +353,6 @@ main {
     }
   }
 }
-
 
 .facts {
   &-section {
@@ -295,13 +418,13 @@ main {
   fill-opacity: 0;
   stroke: darkblue;
   stroke-width: 13px;
-  stroke-opacity: .3;
+  stroke-opacity: 0.3;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .ca-interactive-images-container-left-item {
-  transform: scale(.550);
+  transform: scale(0.55);
 }
 
 .ca-interactive-images-container-left-item-line {
@@ -310,7 +433,8 @@ main {
   transition: stroke-dashoffset 1s ease;
 }
 
-.ca-interactive-images-container-left-item:hover .ca-interactive-images-container-left-item-line {
+.ca-interactive-images-container-left-item:hover
+  .ca-interactive-images-container-left-item-line {
   stroke-dashoffset: 0;
 }
 
@@ -319,7 +443,8 @@ main {
   transition: opacity 0.4s ease 0.3s;
 }
 
-.ca-interactive-images-container-left-item:hover .ca-interactive-images-container-left-item-text {
+.ca-interactive-images-container-left-item:hover
+  .ca-interactive-images-container-left-item-text {
   opacity: 1;
 }
 </style>

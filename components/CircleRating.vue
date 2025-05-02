@@ -13,9 +13,7 @@
         r="8"
       ></circle>
       <!-- Range Text -->
-      <text id="range" x="62%" y="70%">
-        {{ score }}%
-      </text>
+      <text id="range" x="62%" y="70%">{{ score }}%</text>
     </svg>
     <!-- Donut SVG End -->
   </div>
@@ -100,7 +98,7 @@ $cr-container-width: 320;
       stroke: $light-blue;
       stroke-width: 2;
 
-      &-stroke {  
+      &-stroke {
         fill: none;
         stroke: $white;
         stroke-width: 1.5;
