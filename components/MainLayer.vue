@@ -24,23 +24,17 @@
         <div class="interactive-wrapper">
           <svg
             class="responsive-svg"
+            viewBox="0 0 690 362"
             fill="none"
             height="390"
-            viewBox="0 0 450 390"
-            width="450"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-            <foreignObject
-              class="foreign-object"
-              height="271"
-              width="246"
-              x="100"
-              y="66"
-            >
-              <picture>
-                <img :src="greatWhite.url" alt="" height="" width="" />
-              </picture>
+            <foreignObject class="foreign-object" height="271" width="246">
+              <img
+                :src="greatWhite.url"
+                alt="geat white shark interactive anatomy"
+              />
             </foreignObject>
             <g class="ca-interactive-images-container-left-item">
               <circle
@@ -474,15 +468,13 @@ main {
 
 .responsive-svg {
   width: 100%;
-  height: auto;
-  display: block;
 }
 
 .foreign-object {
-  & > picture {
-    & > img {
-      width: 100%;
-    }
+  height: 362px;
+  width: 100%;
+  & > img {
+    margin: 0 auto;
   }
 }
 
@@ -499,10 +491,6 @@ main {
   stroke-opacity: 0.3;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.ca-interactive-images-container-left-item {
-  transform: scale(0.55);
 }
 
 .ca-interactive-images-container-left-item-line {
