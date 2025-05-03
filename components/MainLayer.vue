@@ -136,6 +136,13 @@
                 fill="darkblue"
                 r="7"
               ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="243"
+                cy="250"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
