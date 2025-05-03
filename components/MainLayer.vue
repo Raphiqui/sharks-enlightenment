@@ -196,7 +196,7 @@
               ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
-                fill="#081621"
+                fill="darkblue"
                 font-family="Noto Sans"
                 font-size="14"
                 letter-spacing="0px"
@@ -209,44 +209,44 @@
             <g class="ca-interactive-images-container-left-item">
               <circle
                 class="ca-interactive-images-container-left-item-circle"
-                cx="293"
-                cy="300.5"
+                cx="355"
+                cy="300"
                 fill="darkblue"
                 r="7"
               ></circle>
               <circle
                 class="ca-interactive-images-container-left-item-blur"
-                cx="293"
-                cy="300.5"
+                cx="355"
+                cy="300"
                 r="13.5"
                 stroke="darkblue"
               ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="294"
-                x2="47"
+                x1="355"
+                x2="100"
                 y1="365.5"
                 y2="365.5"
               ></line>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="293.5"
-                x2="293.5"
+                x1="355"
+                x2="355"
                 y1="313.5"
                 y2="365.5"
               ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
-                fill="#081621"
+                fill="darkblue"
                 font-family="Noto Sans"
                 font-size="14"
                 letter-spacing="0px"
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="47" y="357.931">interest3</tspan>
+                <tspan x="100" y="357.931">Pectoral fin</tspan>
               </text>
             </g>
           </svg>
