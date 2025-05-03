@@ -128,6 +128,49 @@
                 <tspan x="160" y="155">Gill slit</tspan>
               </text>
             </g>
+            <g class="ca-interactive-images-container-left-item">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="243"
+                cy="250"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="243"
+                cy="250"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="243"
+                x2="80"
+                y1="310"
+                y2="310"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="243"
+                x2="243"
+                y1="263"
+                y2="310"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="darkblue"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
+                <tspan x="80" y="305">Lorenzini bulbs</tspan>
+              </text>
+            </g>
               <text
                 class="ca-interactive-images-container-left-item-text"
                 fill="#081621"
