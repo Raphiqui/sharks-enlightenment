@@ -171,6 +171,29 @@
                 <tspan x="80" y="305">Lorenzini bulbs</tspan>
               </text>
             </g>
+            <g class="ca-interactive-images-container-left-item">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="580"
+                cy="240"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="580"
+                cy="240"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="593"
+                x2="750"
+                y1="240"
+                y2="240"
+              ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
                 fill="#081621"
@@ -180,7 +203,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="30" y="222.931">interest2</tspan>
+                <tspan x="600" y="235">Caudal fin</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
