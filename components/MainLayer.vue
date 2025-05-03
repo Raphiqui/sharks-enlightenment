@@ -39,33 +39,119 @@
             <g class="ca-interactive-images-container-left-item">
               <circle
                 class="ca-interactive-images-container-left-item-circle"
-                cx="437"
-                cy="152"
+                cx="390"
+                cy="70"
                 fill="darkblue"
                 r="7"
               ></circle>
               <circle
                 class="ca-interactive-images-container-left-item-blur"
-                cx="437"
-                cy="152"
+                cx="390"
+                cy="70"
                 r="13.5"
                 stroke="darkblue"
               ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="337"
-                x2="537"
+                x1="250"
+                x2="450"
+                y1="30"
+                y2="30"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="390"
+                x2="390"
+                y1="57"
+                y2="30"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="darkblue"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
+                <tspan x="250" y="25">Dorsal Fin</tspan>
+              </text>
+            </g>
+            <g class="ca-interactive-images-container-left-item">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="340"
+                cy="150"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="340"
+                cy="150"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="280"
+                x2="140"
+                y1="90"
+                y2="90"
+              ></line>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="340"
+                x2="280"
+                y1="137"
+                y2="90"
+              ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="darkblue"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
+                <tspan x="140" y="85">Gill slit</tspan>
+              </text>
+            </g>
+            <g class="ca-interactive-images-container-left-item">
+              <circle
+                class="ca-interactive-images-container-left-item-circle"
+                cx="90"
+                cy="200"
+                fill="darkblue"
+                r="7"
+              ></circle>
+              <circle
+                class="ca-interactive-images-container-left-item-blur"
+                cx="90"
+                cy="200"
+                r="13.5"
+                stroke="darkblue"
+              ></circle>
+              <line
+                class="ca-interactive-images-container-left-item-line"
+                stroke="darkblue"
+                x1="250"
+                x2="90"
                 y1="100"
                 y2="100"
               ></line>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="437"
-                x2="437"
-                y1="139"
-                y2="100"
+                x1="90"
+                x2="90"
+                y1="100"
+                y2="187"
               ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
@@ -76,39 +162,39 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="337" y="95">Dorsal Fin</tspan>
+                <tspan x="90" y="95">Lorenzini bulbs</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
               <circle
                 class="ca-interactive-images-container-left-item-circle"
-                cx="400"
-                cy="216"
+                cx="620"
+                cy="160"
                 fill="darkblue"
                 r="7"
               ></circle>
               <circle
                 class="ca-interactive-images-container-left-item-blur"
-                cx="400"
-                cy="216"
+                cx="620"
+                cy="160"
                 r="13.5"
                 stroke="darkblue"
               ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="350"
-                x2="160"
-                y1="160"
-                y2="160"
+                x1="470"
+                x2="620"
+                y1="90"
+                y2="90"
               ></line>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="400"
-                x2="350"
-                y1="202"
-                y2="160"
+                x1="620"
+                x2="620"
+                y1="90"
+                y2="147"
               ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
@@ -119,117 +205,39 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="160" y="155">Gill slit</tspan>
+                <tspan x="470" y="85">Caudal fin</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
               <circle
                 class="ca-interactive-images-container-left-item-circle"
-                cx="243"
-                cy="250"
+                cx="260"
+                cy="290"
                 fill="darkblue"
                 r="7"
               ></circle>
               <circle
                 class="ca-interactive-images-container-left-item-blur"
-                cx="243"
-                cy="250"
+                cx="260"
+                cy="290"
                 r="13.5"
                 stroke="darkblue"
               ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="243"
-                x2="80"
-                y1="310"
-                y2="310"
-              ></line>
-              <line
-                class="ca-interactive-images-container-left-item-line"
-                stroke="darkblue"
-                x1="243"
-                x2="243"
-                y1="263"
-                y2="310"
-              ></line>
-              <text
-                class="ca-interactive-images-container-left-item-text"
-                fill="darkblue"
-                font-family="Noto Sans"
-                font-size="14"
-                letter-spacing="0px"
-                style="white-space: pre"
-                xml:space="preserve"
-              >
-                <tspan x="80" y="305">Lorenzini bulbs</tspan>
-              </text>
-            </g>
-            <g class="ca-interactive-images-container-left-item">
-              <circle
-                class="ca-interactive-images-container-left-item-circle"
-                cx="580"
-                cy="240"
-                fill="darkblue"
-                r="7"
-              ></circle>
-              <circle
-                class="ca-interactive-images-container-left-item-blur"
-                cx="580"
-                cy="240"
-                r="13.5"
-                stroke="darkblue"
-              ></circle>
-              <line
-                class="ca-interactive-images-container-left-item-line"
-                stroke="darkblue"
-                x1="593"
-                x2="750"
-                y1="240"
-                y2="240"
-              ></line>
-              <text
-                class="ca-interactive-images-container-left-item-text"
-                fill="darkblue"
-                font-family="Noto Sans"
-                font-size="14"
-                letter-spacing="0px"
-                style="white-space: pre"
-                xml:space="preserve"
-              >
-                <tspan x="600" y="235">Caudal fin</tspan>
-              </text>
-            </g>
-            <g class="ca-interactive-images-container-left-item">
-              <circle
-                class="ca-interactive-images-container-left-item-circle"
-                cx="355"
-                cy="300"
-                fill="darkblue"
-                r="7"
-              ></circle>
-              <circle
-                class="ca-interactive-images-container-left-item-blur"
-                cx="355"
-                cy="300"
-                r="13.5"
-                stroke="darkblue"
-              ></circle>
-              <line
-                class="ca-interactive-images-container-left-item-line"
-                stroke="darkblue"
-                x1="355"
+                x1="260"
                 x2="100"
-                y1="365.5"
-                y2="365.5"
+                y1="340"
+                y2="340"
               ></line>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="355"
-                x2="355"
-                y1="313.5"
-                y2="365.5"
+                x1="260"
+                x2="260"
+                y1="303"
+                y2="340"
               ></line>
               <text
                 class="ca-interactive-images-container-left-item-text"
@@ -240,7 +248,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="100" y="357.931">Pectoral fin</tspan>
+                <tspan x="100" y="335">Pectoral fin</tspan>
               </text>
             </g>
           </svg>
