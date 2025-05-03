@@ -88,34 +88,46 @@
             <g class="ca-interactive-images-container-left-item">
               <circle
                 class="ca-interactive-images-container-left-item-circle"
-                cx="207"
-                cy="186.5"
+                cx="400"
+                cy="216"
                 fill="darkblue"
                 r="7"
               ></circle>
               <circle
                 class="ca-interactive-images-container-left-item-blur"
-                cx="207"
-                cy="186.5"
+                cx="400"
+                cy="216"
                 r="13.5"
                 stroke="darkblue"
               ></circle>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="150.381"
-                x2="30"
-                y1="231"
-                y2="231"
+                x1="350"
+                x2="160"
+                y1="160"
+                y2="160"
               ></line>
               <line
                 class="ca-interactive-images-container-left-item-line"
                 stroke="darkblue"
-                x1="195.685"
-                x2="150.066"
-                y1="194.112"
-                y2="231.112"
+                x1="400"
+                x2="350"
+                y1="202"
+                y2="160"
               ></line>
+              <text
+                class="ca-interactive-images-container-left-item-text"
+                fill="darkblue"
+                font-family="Noto Sans"
+                font-size="14"
+                letter-spacing="0px"
+                style="white-space: pre"
+                xml:space="preserve"
+              >
+                <tspan x="160" y="155">Gill slit</tspan>
+              </text>
+            </g>
               <text
                 class="ca-interactive-images-container-left-item-text"
                 fill="#081621"
