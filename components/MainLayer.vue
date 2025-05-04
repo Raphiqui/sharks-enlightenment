@@ -21,6 +21,7 @@
       </section>
 
       <section class="interactive-anatomy">
+        <h3>Shark anatomy</h3>
         <div class="interactive-wrapper">
           <svg
             class="responsive-svg"
@@ -434,17 +435,18 @@ main {
   }
 }
 
-.facts {
-  &-section {
-    text-align: center;
-    margin-top: 30px;
+.interactive-anatomy,
+.facts-section {
+  text-align: center;
+  margin-top: 30px;
 
-    h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
+}
 
+.facts {
   &-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -472,10 +474,17 @@ main {
   width: 100%;
   max-width: 1140px;
   margin: auto;
-}
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 
-.responsive-svg {
-  width: 100%;
+  @media (max-width: 768px) {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
 }
 
 .foreign-object {
