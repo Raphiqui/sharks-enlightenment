@@ -259,7 +259,12 @@
       <section class="facts-section">
         <h3>Shark Facts</h3>
         <div class="facts-grid">
-          <FactCard v-for="fact in facts" :key="fact.title" :fact="fact" />
+          <FactCard
+            v-for="(fact, index) in facts"
+            :key="fact.title"
+            :fact="fact"
+            :index="index"
+          />
         </div>
       </section>
     </div>
@@ -276,7 +281,6 @@ const greatWhiteSharkImage = useCldImageUrl({
     src: `sharks-enlightenment/interactive-anatomy.png`,
   },
 });
-
 </script>
 
 <style lang="scss">

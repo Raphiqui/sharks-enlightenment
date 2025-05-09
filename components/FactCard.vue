@@ -1,5 +1,5 @@
 <template>
-  <div class="fact-card">
+  <div class="fact-card" :style="factCardStyle">
     <div class="fact-card-inner">
       <h4>{{ fact.title }}</h4>
       <p>{{ fact.content }}</p>
@@ -13,9 +13,26 @@ const props = defineProps({
     type: Object,
     required: true,
   },
+  index: {
+    type: Number,
+    required: true,
+  },
 });
 
-const { fact } = props;
+const { fact, index } = props;
+
+const factImage = useCldImageUrl({
+  options: {
+    src: `sharks-enlightenment/fact${index}`,
+  },
+});
+
+const factCardStyle = computed(() => ({
+  backgroundImage: `url(${factImage.url})`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+}));
 </script>
 
 <style lang="scss">
@@ -23,10 +40,6 @@ const { fact } = props;
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   height: 200px;
-  background-image: url(https://res.cloudinary.com/dncxe2je1/image/upload/c_limit,w_1414/f_auto/q_auto/v1/sharks-enlightenment/main_page1.png?_a=BBDAADAD0);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
 
   &-inner {
