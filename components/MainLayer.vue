@@ -1,5 +1,5 @@
 <template>
-  <div class="main" ref="elementRef">
+  <div class="main">
     <div class="header">
       <div class="header-wave-animation-container">
         <h1 class="header-wave-animation-container-upfront">Shark Facts</h1>
@@ -267,10 +267,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
-
-const isMobile = ref(false);
-const elementRef = ref(null);
 
 const facts = {
   0: {
@@ -320,16 +316,6 @@ const greatWhiteStyle = computed(() => ({
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
 }));
-
-onMounted(() => {
-  if (elementRef.value) {
-    const clientWidth = elementRef.value.clientWidth;
-
-    if (clientWidth < 768) {
-      isMobile.value = true;
-    }
-  }
-});
 </script>
 
 <style lang="scss">
