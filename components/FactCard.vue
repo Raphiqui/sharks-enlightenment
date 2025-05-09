@@ -13,6 +13,7 @@ const props = defineProps({
     type: Object,
     required: true,
   },
+  // Index from the forloop is part of the image id
   index: {
     type: Number,
     required: true,
