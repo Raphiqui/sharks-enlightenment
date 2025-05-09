@@ -33,7 +33,7 @@
           >
             <foreignObject class="foreign-object" height="271" width="246">
               <img
-                :src="greatWhite.url"
+                :src="greatWhiteSharkImage.url"
                 alt="geat white shark interactive anatomy"
               />
             </foreignObject>
@@ -271,18 +271,12 @@ import { useFactCardsStore } from "~/store";
 
 const facts = useFactCardsStore().factCards;
 
-const greatWhite = useCldImageUrl({
+const greatWhiteSharkImage = useCldImageUrl({
   options: {
     src: `sharks-enlightenment/interactive-anatomy.png`,
   },
 });
 
-const greatWhiteStyle = computed(() => ({
-  backgroundImage: `url(${greatWhite.url})`,
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-}));
 </script>
 
 <style lang="scss">
