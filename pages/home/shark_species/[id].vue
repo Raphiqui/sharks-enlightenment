@@ -124,7 +124,7 @@ const iucnStatus = iucnStore.iucnStatus;
 const route = useRoute();
 
 const { data, status, error, refresh, clear } = await useAsyncData(
-  "sharkData",
+  () => `sharkData${route.params.id}`,
   async () => {
     const shark = sharksTableStore.sharksTable.find((shark) => {
       return shark.path === route.params.id;
