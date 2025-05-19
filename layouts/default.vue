@@ -4,7 +4,7 @@
       <nav>
         <nuxt-link @click.native="handle" to="/" no-prefetch>
           <div class="branding">
-            <img src="/android-chrome-512x512.png" alt="" />
+            <img src="/favicon-512x512.png" alt="" />
           </div>
         </nuxt-link>
         <ul v-show="!mobile" class="navigation">
@@ -65,7 +65,7 @@
             <li>
               <nuxt-link
                 class="link"
-               @click.native="handle"
+                @click.native="handle"
                 to="/home/interactive"
                 no-prefetch
                 >{{ $t("header.2") }}</nuxt-link
@@ -107,19 +107,19 @@ const mobileNav = ref(false);
 const windowWidth = ref(null);
 
 const bgUrl = useCldImageUrl({
-      options: {
-        src: `sharks-enlightenment/main_page1.png`,
-        height: "1920",
-        width: "1414",
-      },
-    });
+  options: {
+    src: `sharks-enlightenment/main_page1.png`,
+    height: "1920",
+    width: "1414",
+  },
+});
 
 const backgroundStyle = computed(() => ({
   backgroundImage: `url(${bgUrl.url})`,
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-}))
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+}));
 
 const handle = () => {
   mobileNav.value = false;
@@ -151,9 +151,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="scss">
-
 .layout-wrapper {
-
   background-attachment: fixed;
 
   @media (max-width: 768px) {
@@ -209,7 +207,6 @@ header {
       }
 
       &:hover::after {
-
         width: 100%;
 
         @media (max-width: 768px) {
