@@ -27,6 +27,25 @@ When("I navigate to the species page", { timeout: 10000 }, async function () {
 });
 
 When(
+  "I navigate to the {string} specie page",
+  { timeout: 10000 },
+  async function (specieExpected) {
+    this.browser = await chromium.launch();
+    this.context = await this.browser.newContext();
+    this.page = await this.context.newPage();
+
+    specieMapping = {
+      first: "blue_shark",
+      second: "bronze_whale_shark",
+    };
+
+    await this.page.goto(
+      `http://localhost:3000/home/shark_species/${specieMapping[specieExpected]}`
+    );
+  }
+);
+
+When(
   "I answer the question {string}",
   { timeout: 10000 },
   async function (expectedQuestion) {
