@@ -17,3 +17,10 @@ Then("I can see my final score", { timeout: 10000 }, async function () {
   expect(score).toBeTruthy();
   const scoreText = await score.textContent();
 });
+
+Then("I should see {string} cards", async function (expectedCount) {
+  const cardCount = await this.page
+    .locator(`[data-test-id="cardList"] li`)
+    .count();
+  expect(cardCount).toEqual(parseInt(expectedCount, 10));
+});

@@ -19,6 +19,13 @@ When(
   }
 );
 
+When("I navigate to the species page", { timeout: 10000 }, async function () {
+  this.browser = await chromium.launch();
+  this.context = await this.browser.newContext();
+  this.page = await this.context.newPage();
+  await this.page.goto("http://localhost:3000/home/species");
+});
+
 When(
   "I answer the question {string}",
   { timeout: 10000 },
