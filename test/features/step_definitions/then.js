@@ -58,3 +58,18 @@ Then(
     }
   }
 );
+
+Then("The website is in {string}", async function (expectedLanguage) {
+  languageMapping = {
+    french: "requins",
+    spanish: "tiburones",
+  };
+
+  const menuStringRepresentative = await this.page
+    .locator(`[data-test-id="internationalizationRepresentative"]`)
+    .innerText();
+
+  expect(menuStringRepresentative.toLowerCase()).toEqual(
+    languageMapping[expectedLanguage]
+  );
+});

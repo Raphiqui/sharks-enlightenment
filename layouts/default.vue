@@ -13,6 +13,7 @@
               class="link"
               @click.native="handle"
               to="/home/species"
+              data-test-id="internationalizationRepresentative"
               no-prefetch
               >{{ $t("header.1") }}</nuxt-link
             >
