@@ -6,6 +6,7 @@
           :class="{
             active: lang.code === locale,
           }"
+          :data-test-id="lang.code"
           @click="setLocale(lang.code)"
           >{{ lang.code }}</span
         >

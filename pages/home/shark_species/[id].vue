@@ -68,6 +68,7 @@
             style="margin-right: auto"
           >
             <svg
+              data-test-id="leftArrow"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -89,6 +90,7 @@
             style="margin-left: auto"
           >
             <svg
+              data-test-id="rightArrow"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
