@@ -1,4 +1,57 @@
 {
+  "main": {
+    "title": "Datos sobre tiburones",
+    "subtitles": "Desmintiendo mitos y revelando la verdad sobre los tiburones",
+    "hero": {
+      "title": "Descubre la verdadera verdad sobre los tiburones",
+      "subtitles": "Tu probabilidad de ser atacado por un tiburón es de 1 en 3.7 millones. Conoce más datos fascinantes que cambiarán tu percepción de estas magníficas criaturas."
+    },
+    "anatomy": {
+      "title": "Anatomía del tiburón",
+      "pois": {
+        "_0": "Ampollas de Lorenzini",
+        "_1": "Hendidura branquial",
+        "_2": "Aleta pectoral",
+        "_3": "Aleta dorsal",
+        "_4": "Aleta caudal"
+      }
+    },
+    "facts": {
+      "title": "Sobre tiburones",
+      "_0": {
+        "title": "1 en 3.7M",
+        "subtitles": "Probabilidad de ser atacado por un tiburón."
+      },
+      "_1": {
+        "title": "100M",
+        "subtitles": "Tiburones matados por humanos cada año."
+      },
+      "_2": {
+        "title": "400+",
+        "subtitles": "Especies de tiburones en el océano."
+      },
+      "_3": {
+        "title": "70%",
+        "subtitles": "Especies de tiburones amenazadas o en peligro"
+      },
+      "_4": {
+        "title": "Ampollas de Lorenzini",
+        "subtitles": "Les permiten detectar los campos eléctricos generados por otros animales."
+      },
+      "_5": {
+        "title": "72 kilómetros por hora",
+        "subtitles": "Velocidad del tiburón mako de aleta corta."
+      },
+      "_6": {
+        "title": "Más de 400 años",
+        "subtitles": "Vida del tiburón de Groenlandia."
+      },
+      "_7": {
+        "title": "Dentículos dérmicos",
+        "subtitles": "Pequeñas estructuras similares a dientes que cubren la piel del tiburón."
+      }
+    }
+  },
   "next": "siguiente",
   "restart": "reiniciar",
   "correct": "Respuesta correcta",
