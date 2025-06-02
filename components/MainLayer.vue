@@ -2,26 +2,28 @@
   <div class="main">
     <div class="header">
       <div class="header-wave-animation-container">
-        <h1 class="header-wave-animation-container-upfront">Shark Facts</h1>
-        <h1 class="header-wave-animation-container-wave">Shark Facts</h1>
+        <h1 class="header-wave-animation-container-upfront">
+          {{ $t("main.title") }}
+        </h1>
+        <h1 class="header-wave-animation-container-wave">
+          {{ $t("main.title") }}
+        </h1>
       </div>
-      <p>Debunking myths and revealing the truth about sharks</p>
+      <p>{{ $t("main.subtitles") }}</p>
     </div>
 
     <div class="main-content">
       <section class="hero-section">
         <div class="hero-text">
-          <h2>Discover the Real Truth About Sharks</h2>
+          <h2>{{ $t("main.hero.title") }}</h2>
           <p>
-            Your chance of being attacked by a shark is 1 in 3.7 million. Learn
-            more fascinating facts that will change your perception of these
-            magnificent creatures.
+            {{ $t("main.hero.subtitles") }}
           </p>
         </div>
       </section>
 
       <section class="interactive-anatomy">
-        <h3>Shark anatomy</h3>
+        <h3>{{ $t("main.anatomy.title") }}</h3>
         <div class="interactive-wrapper">
           <svg
             class="responsive-svg"
@@ -77,7 +79,9 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="250" y="25">Dorsal Fin</tspan>
+                <tspan x="250" y="25">
+                  {{ $t("main.anatomy.pois._3") }}
+                </tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
@@ -120,7 +124,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="140" y="85">Gill slit</tspan>
+                <tspan x="140" y="85">{{ $t("main.anatomy.pois._1") }}</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
@@ -163,7 +167,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="90" y="95">Lorenzini bulbs</tspan>
+                <tspan x="90" y="95">{{ $t("main.anatomy.pois._0") }}</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
@@ -206,7 +210,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="470" y="85">Caudal fin</tspan>
+                <tspan x="470" y="85">{{ $t("main.anatomy.pois._4") }}</tspan>
               </text>
             </g>
             <g class="ca-interactive-images-container-left-item">
@@ -249,7 +253,7 @@
                 style="white-space: pre"
                 xml:space="preserve"
               >
-                <tspan x="100" y="335">Pectoral fin</tspan>
+                <tspan x="100" y="335">{{ $t("main.anatomy.pois._2") }}</tspan>
               </text>
             </g>
           </svg>
@@ -257,7 +261,7 @@
       </section>
 
       <section class="facts-section">
-        <h3>Shark Facts</h3>
+        <h3>{{ $t("main.facts.title") }}</h3>
         <div class="facts-grid">
           <FactCard
             v-for="(fact, index) in facts"
