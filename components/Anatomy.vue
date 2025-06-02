@@ -33,7 +33,7 @@
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="250"
             x2="450"
             y1="30"
@@ -41,7 +41,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="390"
             x2="390"
             y1="57"
@@ -49,7 +49,7 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="darkblue"
+            fill="white"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
@@ -78,7 +78,7 @@
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="280"
             x2="140"
             y1="90"
@@ -86,7 +86,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="340"
             x2="280"
             y1="137"
@@ -94,7 +94,7 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="darkblue"
+            fill="white"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
@@ -121,7 +121,7 @@
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="250"
             x2="90"
             y1="100"
@@ -129,7 +129,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="90"
             x2="90"
             y1="100"
@@ -137,7 +137,7 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="darkblue"
+            fill="white"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
@@ -164,7 +164,7 @@
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="470"
             x2="620"
             y1="90"
@@ -172,7 +172,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="620"
             x2="620"
             y1="90"
@@ -180,7 +180,7 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="darkblue"
+            fill="white"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
@@ -207,7 +207,7 @@
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="260"
             x2="100"
             y1="340"
@@ -215,7 +215,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="darkblue"
+            stroke="white"
             x1="260"
             x2="260"
             y1="303"
@@ -223,7 +223,7 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="darkblue"
+            fill="white"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
