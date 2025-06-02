@@ -1,6 +1,6 @@
 <template>
   <div class="copyright">
-    <p>&copy; 2024 Sharks enlightenment. All rights reserved.</p>
+    <p>&copy; 2025</p>
   </div>
 </template>
 

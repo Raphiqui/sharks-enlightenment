@@ -1,4 +1,57 @@
 {
+  "main": {
+    "title": "Faits sur les requins",
+    "subtitles": "Démystifier les idées reçues et révéler la vérité sur les requins",
+    "hero": {
+      "title": "Découvrez la vérité sur les requins",
+      "subtitles": "Votre chance d'être attaqué par un requin est de 1 sur 3,7 millions. Découvrez d'autres faits fascinants qui changeront votre perception de ces créatures magnifiques."
+    },
+    "anatomy": {
+      "title": "Anatomie du requin",
+      "pois": {
+        "_0": "Ampoules de Lorenzini",
+        "_1": "Fente branchiale",
+        "_2": "Nageoire pectorale",
+        "_3": "Nageoire dorsale",
+        "_4": "Nageoire caudale"
+      }
+    },
+    "facts": {
+      "title": "Faits sur les requins",
+      "_0": {
+        "title": "1 sur 3,7M",
+        "subtitles": "Probabilité d'être attaqué par un requin."
+      },
+      "_1": {
+        "title": "100M",
+        "subtitles": "Requins tués par les humains chaque année."
+      },
+      "_2": {
+        "title": "400+",
+        "subtitles": "Espèces de requins dans l'océan."
+      },
+      "_3": {
+        "title": "70%",
+        "subtitles": "Espèces de requins menacées ou en danger"
+      },
+      "_4": {
+        "title": "Ampoules de Lorenzini",
+        "subtitles": "Leur permettent de détecter les champs électriques générés par d'autres animaux."
+      },
+      "_5": {
+        "title": "72 km/h",
+        "subtitles": "Vitesse du requin mako à nageoires courtes."
+      },
+      "_6": {
+        "title": "Plus de 400 ans",
+        "subtitles": "Durée de vie du requin du Groenland."
+      },
+      "_7": {
+        "title": "Denticules dermiques",
+        "subtitles": "Petites structures en forme de dents couvrant la peau du requin."
+      }
+    }
+  },
   "next": "suivant",
   "restart": "recommencer",
   "correct": "Réponse correcte",

@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-anatomy">
-    <h3>Shark anatomy</h3>
+    <h3>{{ $t("main.anatomy.title") }}</h3>
     <div class="interactive-wrapper">
       <svg
         class="responsive-svg"
@@ -21,7 +21,7 @@
             class="ca-interactive-images-container-left-item-circle"
             cx="390"
             cy="70"
-            fill="white"
+            fill="darkblue"
             r="7"
           ></circle>
           <circle
@@ -29,11 +29,11 @@
             cx="390"
             cy="70"
             r="13.5"
-            stroke="white"
+            stroke="darkblue"
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="250"
             x2="450"
             y1="30"
@@ -41,7 +41,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="390"
             x2="390"
             y1="57"
@@ -49,14 +49,16 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="white"
+            fill="darkblue"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
             style="white-space: pre"
             xml:space="preserve"
           >
-            <tspan x="250" y="25">Dorsal Fin</tspan>
+            <tspan x="250" y="25">
+              {{ $t("main.anatomy.pois._3") }}
+            </tspan>
           </text>
         </g>
         <g class="ca-interactive-images-container-left-item">
@@ -64,7 +66,7 @@
             class="ca-interactive-images-container-left-item-circle"
             cx="340"
             cy="150"
-            fill="white"
+            fill="darkblue"
             r="7"
           ></circle>
           <circle
@@ -72,11 +74,11 @@
             cx="340"
             cy="150"
             r="13.5"
-            stroke="white"
+            stroke="darkblue"
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="280"
             x2="140"
             y1="90"
@@ -84,7 +86,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="340"
             x2="280"
             y1="137"
@@ -92,14 +94,14 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="white"
+            fill="darkblue"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
             style="white-space: pre"
             xml:space="preserve"
           >
-            <tspan x="140" y="85">Gill slit</tspan>
+            <tspan x="140" y="85">{{ $t("main.anatomy.pois._1") }}</tspan>
           </text>
         </g>
         <g class="ca-interactive-images-container-left-item">
@@ -107,7 +109,7 @@
             class="ca-interactive-images-container-left-item-circle"
             cx="90"
             cy="200"
-            fill="white"
+            fill="darkblue"
             r="7"
           ></circle>
           <circle
@@ -115,11 +117,11 @@
             cx="90"
             cy="200"
             r="13.5"
-            stroke="white"
+            stroke="darkblue"
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="250"
             x2="90"
             y1="100"
@@ -127,7 +129,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="90"
             x2="90"
             y1="100"
@@ -135,14 +137,14 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="white"
+            fill="darkblue"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
             style="white-space: pre"
             xml:space="preserve"
           >
-            <tspan x="90" y="95">Lorenzini bulbs</tspan>
+            <tspan x="90" y="95">{{ $t("main.anatomy.pois._0") }}</tspan>
           </text>
         </g>
         <g class="ca-interactive-images-container-left-item">
@@ -150,7 +152,7 @@
             class="ca-interactive-images-container-left-item-circle"
             cx="620"
             cy="160"
-            fill="white"
+            fill="darkblue"
             r="7"
           ></circle>
           <circle
@@ -158,11 +160,11 @@
             cx="620"
             cy="160"
             r="13.5"
-            stroke="white"
+            stroke="darkblue"
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="470"
             x2="620"
             y1="90"
@@ -170,7 +172,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="620"
             x2="620"
             y1="90"
@@ -178,14 +180,14 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="white"
+            fill="darkblue"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
             style="white-space: pre"
             xml:space="preserve"
           >
-            <tspan x="470" y="85">Caudal fin</tspan>
+            <tspan x="470" y="85">{{ $t("main.anatomy.pois._4") }}</tspan>
           </text>
         </g>
         <g class="ca-interactive-images-container-left-item">
@@ -193,7 +195,7 @@
             class="ca-interactive-images-container-left-item-circle"
             cx="260"
             cy="290"
-            fill="white"
+            fill="darkblue"
             r="7"
           ></circle>
           <circle
@@ -201,11 +203,11 @@
             cx="260"
             cy="290"
             r="13.5"
-            stroke="white"
+            stroke="darkblue"
           ></circle>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="260"
             x2="100"
             y1="340"
@@ -213,7 +215,7 @@
           ></line>
           <line
             class="ca-interactive-images-container-left-item-line"
-            stroke="white"
+            stroke="darkblue"
             x1="260"
             x2="260"
             y1="303"
@@ -221,14 +223,14 @@
           ></line>
           <text
             class="ca-interactive-images-container-left-item-text"
-            fill="white"
+            fill="darkblue"
             font-family="Noto Sans"
             font-size="14"
             letter-spacing="0px"
             style="white-space: pre"
             xml:space="preserve"
           >
-            <tspan x="100" y="335">Pectoral fin</tspan>
+            <tspan x="100" y="335">{{ $t("main.anatomy.pois._2") }}</tspan>
           </text>
         </g>
       </svg>

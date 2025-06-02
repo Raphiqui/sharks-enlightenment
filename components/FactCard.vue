@@ -1,8 +1,8 @@
 <template>
   <div class="fact-card" :style="factCardStyle">
     <div class="fact-card-inner">
-      <h4>{{ fact.title }}</h4>
-      <p>{{ fact.content }}</p>
+      <h4>{{ $t(`main.facts._${index}.title`) }}</h4>
+      <p>{{ $t(`main.facts._${index}.subtitles`) }}</p>
     </div>
   </div>
 </template>

@@ -2,27 +2,30 @@
   <div class="main">
     <div class="header">
       <div class="header-wave-animation-container">
-        <h1 class="header-wave-animation-container-upfront">Shark Facts</h1>
-        <h1 class="header-wave-animation-container-wave">Shark Facts</h1>
+        <h1 class="header-wave-animation-container-upfront">
+          {{ $t("main.title") }}
+        </h1>
+        <h1 class="header-wave-animation-container-wave">
+          {{ $t("main.title") }}
+        </h1>
       </div>
-      <p>Debunking myths and revealing the truth about sharks</p>
+      <p>{{ $t("main.subtitles") }}</p>
     </div>
 
     <div class="main-content">
       <section class="hero-section">
         <div class="hero-text">
-          <h2>Discover the Real Truth About Sharks</h2>
+          <h2>{{ $t("main.hero.title") }}</h2>
           <p>
-            Your chance of being attacked by a shark is 1 in 3.7 million. Learn
-            more fascinating facts that will change your perception of these
-            magnificent creatures.
+            {{ $t("main.hero.subtitles") }}
           </p>
         </div>
       </section>
 
       <Anatomy />
+
       <section class="facts-section">
-        <h3>Shark Facts</h3>
+        <h3>{{ $t("main.facts.title") }}</h3>
         <div class="facts-grid">
           <FactCard
             v-for="(fact, index) in facts"
