@@ -65,7 +65,7 @@
           </div>
 
           <div v-else>
-            <span>No data available</span>
+            <span>{{ $t("404") }}</span>
           </div>
         </div>
         <div class="s-card-container-content-grid pagination">
