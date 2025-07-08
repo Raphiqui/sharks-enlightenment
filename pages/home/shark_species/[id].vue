@@ -53,13 +53,20 @@
           <span class="section-title">
             {{ $t("shark.dm") }}
           </span>
-          <img :src="`/svgs/${shark.path}.svg`" alt="Shark Image" />
 
-          <div class="separator"></div>
+          <div v-if="isDistributionMapAvailable">
+            <img :src="`/svgs/${shark.path}.svg`" alt="Shark Image" />
 
-          <span>
-            {{ $t(`sharks.${shark.path}.distribution`) }}
-          </span>
+            <div class="separator"></div>
+
+            <span>
+              {{ $t(`sharks.${shark.path}.distribution`) }}
+            </span>
+          </div>
+
+          <div v-else>
+            <span>No data available</span>
+          </div>
         </div>
         <div class="s-card-container-content-grid pagination">
           <div
@@ -150,6 +157,14 @@ const { data, status, error, refresh, clear } = await useAsyncData(
 shark.value = data.value.shark;
 url.value = data.value.url;
 
+const isDistributionMapAvailable = ref(false);
+
+async function checkDistributionMapExists() {
+  const distributionMapUrl = `/svgs/${shark.value.path}.svg`;
+  const response = await fetch(distributionMapUrl, { method: "HEAD" });
+  isDistributionMapAvailable.value = response.ok;
+}
+
 onMounted(() => {
   const paths = sharksTableStore.sharksTable.map((item) => {
     return item.path;
@@ -179,6 +194,8 @@ onMounted(() => {
     }`;
     next.value = null;
   }
+
+  checkDistributionMapExists();
 });
 </script>
 
