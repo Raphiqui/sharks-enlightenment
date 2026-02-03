@@ -35,6 +35,5 @@
     "cucumber-html-reporter": "^5.5.0",
     "playwright": "^1.15.0",
     "postcss": "^8.4.4"
-  },
-  "packageManager": "yarn@4.5.0"
+  }
 }
