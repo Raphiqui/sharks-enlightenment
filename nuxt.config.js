@@ -81,5 +81,11 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    optimizeDeps: {
+      include: ["@vue/devtools-core", "@vue/devtools-kit", "pinia"],
+    },
+  },
+
   compatibilityDate: "2024-09-29",
 });
